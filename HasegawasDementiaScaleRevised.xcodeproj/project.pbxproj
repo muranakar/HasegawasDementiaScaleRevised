@@ -13,6 +13,11 @@
 		B23A9E2527E0116F00FCB91F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B23A9E2327E0116F00FCB91F /* Main.storyboard */; };
 		B23A9E2727E0117000FCB91F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B23A9E2627E0117000FCB91F /* Assets.xcassets */; };
 		B23A9E2A27E0117000FCB91F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B23A9E2827E0117000FCB91F /* LaunchScreen.storyboard */; };
+		B23A9E3627E012BA00FCB91F /* Utilities in Resources */ = {isa = PBXBuildFile; fileRef = B23A9E3127E012BA00FCB91F /* Utilities */; };
+		B23A9E3727E012BA00FCB91F /* Alert in Resources */ = {isa = PBXBuildFile; fileRef = B23A9E3227E012BA00FCB91F /* Alert */; };
+		B23A9E3827E012BA00FCB91F /* Models in Resources */ = {isa = PBXBuildFile; fileRef = B23A9E3327E012BA00FCB91F /* Models */; };
+		B23A9E3927E012BA00FCB91F /* Color in Resources */ = {isa = PBXBuildFile; fileRef = B23A9E3427E012BA00FCB91F /* Color */; };
+		B23A9E3A27E012BA00FCB91F /* UIComponents in Resources */ = {isa = PBXBuildFile; fileRef = B23A9E3527E012BA00FCB91F /* UIComponents */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		B23A9E2627E0117000FCB91F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B23A9E2927E0117000FCB91F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B23A9E2B27E0117000FCB91F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B23A9E3127E012BA00FCB91F /* Utilities */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Utilities; sourceTree = "<group>"; };
+		B23A9E3227E012BA00FCB91F /* Alert */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Alert; sourceTree = "<group>"; };
+		B23A9E3327E012BA00FCB91F /* Models */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Models; sourceTree = "<group>"; };
+		B23A9E3427E012BA00FCB91F /* Color */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Color; sourceTree = "<group>"; };
+		B23A9E3527E012BA00FCB91F /* UIComponents */ = {isa = PBXFileReference; lastKnownFileType = folder; path = UIComponents; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +66,11 @@
 		B23A9E1C27E0116F00FCB91F /* HasegawasDementiaScaleRevised */ = {
 			isa = PBXGroup;
 			children = (
+				B23A9E3227E012BA00FCB91F /* Alert */,
+				B23A9E3427E012BA00FCB91F /* Color */,
+				B23A9E3327E012BA00FCB91F /* Models */,
+				B23A9E3527E012BA00FCB91F /* UIComponents */,
+				B23A9E3127E012BA00FCB91F /* Utilities */,
 				B23A9E1D27E0116F00FCB91F /* AppDelegate.swift */,
 				B23A9E1F27E0116F00FCB91F /* SceneDelegate.swift */,
 				B23A9E2127E0116F00FCB91F /* ViewController.swift */,
@@ -125,7 +140,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B23A9E3A27E012BA00FCB91F /* UIComponents in Resources */,
+				B23A9E3827E012BA00FCB91F /* Models in Resources */,
+				B23A9E3927E012BA00FCB91F /* Color in Resources */,
 				B23A9E2A27E0117000FCB91F /* LaunchScreen.storyboard in Resources */,
+				B23A9E3727E012BA00FCB91F /* Alert in Resources */,
+				B23A9E3627E012BA00FCB91F /* Utilities in Resources */,
 				B23A9E2727E0117000FCB91F /* Assets.xcassets in Resources */,
 				B23A9E2527E0116F00FCB91F /* Main.storyboard in Resources */,
 			);

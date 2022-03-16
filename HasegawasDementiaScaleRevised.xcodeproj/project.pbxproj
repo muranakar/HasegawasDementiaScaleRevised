@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		752ACA03575261E22368B686 /* Pods_HasegawasDementiaScaleRevised.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFF833C58B29C46FC45B7A82 /* Pods_HasegawasDementiaScaleRevised.framework */; };
 		B23A9E1E27E0116F00FCB91F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23A9E1D27E0116F00FCB91F /* AppDelegate.swift */; };
 		B23A9E2027E0116F00FCB91F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23A9E1F27E0116F00FCB91F /* SceneDelegate.swift */; };
 		B23A9E2227E0116F00FCB91F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23A9E2127E0116F00FCB91F /* ViewController.swift */; };
@@ -21,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A6F32D172EDD101DDE69E87B /* Pods-HasegawasDementiaScaleRevised.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HasegawasDementiaScaleRevised.debug.xcconfig"; path = "Target Support Files/Pods-HasegawasDementiaScaleRevised/Pods-HasegawasDementiaScaleRevised.debug.xcconfig"; sourceTree = "<group>"; };
+		AFF833C58B29C46FC45B7A82 /* Pods_HasegawasDementiaScaleRevised.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HasegawasDementiaScaleRevised.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B23A9E1A27E0116F00FCB91F /* HasegawasDementiaScaleRevised.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HasegawasDementiaScaleRevised.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B23A9E1D27E0116F00FCB91F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B23A9E1F27E0116F00FCB91F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -34,6 +37,7 @@
 		B23A9E3327E012BA00FCB91F /* Models */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Models; sourceTree = "<group>"; };
 		B23A9E3427E012BA00FCB91F /* Color */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Color; sourceTree = "<group>"; };
 		B23A9E3527E012BA00FCB91F /* UIComponents */ = {isa = PBXFileReference; lastKnownFileType = folder; path = UIComponents; sourceTree = "<group>"; };
+		EB863FDB070D3E8271BD6D6F /* Pods-HasegawasDementiaScaleRevised.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HasegawasDementiaScaleRevised.release.xcconfig"; path = "Target Support Files/Pods-HasegawasDementiaScaleRevised/Pods-HasegawasDementiaScaleRevised.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,17 +45,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				752ACA03575261E22368B686 /* Pods_HasegawasDementiaScaleRevised.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4E934AE4AA26A870A5E22427 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AFF833C58B29C46FC45B7A82 /* Pods_HasegawasDementiaScaleRevised.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B23A9E1127E0116F00FCB91F = {
 			isa = PBXGroup;
 			children = (
 				B23A9E1C27E0116F00FCB91F /* HasegawasDementiaScaleRevised */,
 				B23A9E1B27E0116F00FCB91F /* Products */,
+				CE0877FFBB5B372F1AE8D2E1 /* Pods */,
+				4E934AE4AA26A870A5E22427 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -82,6 +97,16 @@
 			path = HasegawasDementiaScaleRevised;
 			sourceTree = "<group>";
 		};
+		CE0877FFBB5B372F1AE8D2E1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A6F32D172EDD101DDE69E87B /* Pods-HasegawasDementiaScaleRevised.debug.xcconfig */,
+				EB863FDB070D3E8271BD6D6F /* Pods-HasegawasDementiaScaleRevised.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -89,9 +114,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B23A9E2E27E0117000FCB91F /* Build configuration list for PBXNativeTarget "HasegawasDementiaScaleRevised" */;
 			buildPhases = (
+				B25CBB6053A394A829C6346A /* [CP] Check Pods Manifest.lock */,
 				B23A9E1627E0116F00FCB91F /* Sources */,
 				B23A9E1727E0116F00FCB91F /* Frameworks */,
 				B23A9E1827E0116F00FCB91F /* Resources */,
+				4DF68B5EDE0D78B82917F6C1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +179,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4DF68B5EDE0D78B82917F6C1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HasegawasDementiaScaleRevised/Pods-HasegawasDementiaScaleRevised-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HasegawasDementiaScaleRevised/Pods-HasegawasDementiaScaleRevised-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HasegawasDementiaScaleRevised/Pods-HasegawasDementiaScaleRevised-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B25CBB6053A394A829C6346A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HasegawasDementiaScaleRevised-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B23A9E1627E0116F00FCB91F /* Sources */ = {
@@ -302,6 +371,7 @@
 		};
 		B23A9E2F27E0117000FCB91F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A6F32D172EDD101DDE69E87B /* Pods-HasegawasDementiaScaleRevised.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -330,6 +400,7 @@
 		};
 		B23A9E3027E0117000FCB91F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB863FDB070D3E8271BD6D6F /* Pods-HasegawasDementiaScaleRevised.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

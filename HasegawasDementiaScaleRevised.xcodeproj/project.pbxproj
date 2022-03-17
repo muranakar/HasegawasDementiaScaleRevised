@@ -54,6 +54,7 @@
 		B28D910127E3F8D80083CFC5 /* TargetPersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28D90FC27E3F8D70083CFC5 /* TargetPersonViewController.swift */; };
 		B28D910227E3F8D80083CFC5 /* InputTargetPerson.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B28D90FD27E3F8D70083CFC5 /* InputTargetPerson.storyboard */; };
 		B28D910327E3F8D80083CFC5 /* TargetPerson.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B28D90FE27E3F8D70083CFC5 /* TargetPerson.storyboard */; };
+		B28D910527E3FD310083CFC5 /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28D910427E3FD310083CFC5 /* UIApplication.swift */; };
 		B2B4261627E1665400C41DD0 /* RootNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B4261527E1665400C41DD0 /* RootNavigationController.swift */; };
 /* End PBXBuildFile section */
 
@@ -108,6 +109,7 @@
 		B28D90FC27E3F8D70083CFC5 /* TargetPersonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TargetPersonViewController.swift; sourceTree = "<group>"; };
 		B28D90FD27E3F8D70083CFC5 /* InputTargetPerson.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = InputTargetPerson.storyboard; sourceTree = "<group>"; };
 		B28D90FE27E3F8D70083CFC5 /* TargetPerson.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TargetPerson.storyboard; sourceTree = "<group>"; };
+		B28D910427E3FD310083CFC5 /* UIApplication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
 		B2B4261527E1665400C41DD0 /* RootNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootNavigationController.swift; sourceTree = "<group>"; };
 		EB863FDB070D3E8271BD6D6F /* Pods-HasegawasDementiaScaleRevised.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HasegawasDementiaScaleRevised.release.xcconfig"; path = "Target Support Files/Pods-HasegawasDementiaScaleRevised/Pods-HasegawasDementiaScaleRevised.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -155,6 +157,7 @@
 			children = (
 				B23A9E1D27E0116F00FCB91F /* AppDelegate.swift */,
 				B23A9E1F27E0116F00FCB91F /* SceneDelegate.swift */,
+				B28D910427E3FD310083CFC5 /* UIApplication.swift */,
 				B2647D8D27E2177A00ED5F12 /* Alert */,
 				B2647D9027E2178500ED5F12 /* Color */,
 				B2647DC027E217A400ED5F12 /* Utilities */,
@@ -505,6 +508,7 @@
 				B2647DB927E2179D00ED5F12 /* FunctionSelectionItemButton.swift in Sources */,
 				B28D90F527E3F8BE0083CFC5 /* InputAssessorViewController.swift in Sources */,
 				B2647DD327E217A400ED5F12 /* DateFormatter.swift in Sources */,
+				B28D910527E3FD310083CFC5 /* UIApplication.swift in Sources */,
 				B28D910027E3F8D80083CFC5 /* TargetPersonTableViewCell.swift in Sources */,
 				B2647DA927E2179300ED5F12 /* Assessment.swift in Sources */,
 				B2647DD227E217A400ED5F12 /* TimerFormatter.swift in Sources */,

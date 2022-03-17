@@ -47,8 +47,6 @@ extension AssessorViewController: UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: AssessorTableViewCell = tableView.dequeueCell(for: indexPath)
-        print(String(describing: type(of: AssessorTableViewCell.self)))
-        print(String(describing: AssessorTableViewCell.self))
         cell.configue(assessor: assessors[indexPath.row])
         return cell
     }

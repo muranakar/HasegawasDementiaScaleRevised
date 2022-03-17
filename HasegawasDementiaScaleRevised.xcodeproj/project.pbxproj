@@ -10,15 +10,51 @@
 		752ACA03575261E22368B686 /* Pods_HasegawasDementiaScaleRevised.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFF833C58B29C46FC45B7A82 /* Pods_HasegawasDementiaScaleRevised.framework */; };
 		B23A9E1E27E0116F00FCB91F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23A9E1D27E0116F00FCB91F /* AppDelegate.swift */; };
 		B23A9E2027E0116F00FCB91F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23A9E1F27E0116F00FCB91F /* SceneDelegate.swift */; };
-		B23A9E2227E0116F00FCB91F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23A9E2127E0116F00FCB91F /* ViewController.swift */; };
 		B23A9E2527E0116F00FCB91F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B23A9E2327E0116F00FCB91F /* Main.storyboard */; };
 		B23A9E2727E0117000FCB91F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B23A9E2627E0117000FCB91F /* Assets.xcassets */; };
 		B23A9E2A27E0117000FCB91F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B23A9E2827E0117000FCB91F /* LaunchScreen.storyboard */; };
-		B23A9E3627E012BA00FCB91F /* Utilities in Resources */ = {isa = PBXBuildFile; fileRef = B23A9E3127E012BA00FCB91F /* Utilities */; };
-		B23A9E3727E012BA00FCB91F /* Alert in Resources */ = {isa = PBXBuildFile; fileRef = B23A9E3227E012BA00FCB91F /* Alert */; };
-		B23A9E3827E012BA00FCB91F /* Models in Resources */ = {isa = PBXBuildFile; fileRef = B23A9E3327E012BA00FCB91F /* Models */; };
-		B23A9E3927E012BA00FCB91F /* Color in Resources */ = {isa = PBXBuildFile; fileRef = B23A9E3427E012BA00FCB91F /* Color */; };
-		B23A9E3A27E012BA00FCB91F /* UIComponents in Resources */ = {isa = PBXBuildFile; fileRef = B23A9E3527E012BA00FCB91F /* UIComponents */; };
+		B2647D8F27E2177A00ED5F12 /* UIAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2647D8E27E2177A00ED5F12 /* UIAlertController.swift */; };
+		B2647D9227E2178500ED5F12 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2647D9127E2178500ED5F12 /* Colors.swift */; };
+		B2647DA327E2179300ED5F12 /* RealmEntityObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2647D9527E2179300ED5F12 /* RealmEntityObject.swift */; };
+		B2647DA427E2179300ED5F12 /* RealmAssessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2647D9627E2179300ED5F12 /* RealmAssessor.swift */; };
+		B2647DA527E2179300ED5F12 /* RealmTargetPerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2647D9727E2179300ED5F12 /* RealmTargetPerson.swift */; };
+		B2647DA627E2179300ED5F12 /* RealmAssessment.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2647D9827E2179300ED5F12 /* RealmAssessment.swift */; };
+		B2647DA727E2179300ED5F12 /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2647D9A27E2179300ED5F12 /* Entity.swift */; };
+		B2647DA827E2179300ED5F12 /* TargetPerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2647D9B27E2179300ED5F12 /* TargetPerson.swift */; };
+		B2647DA927E2179300ED5F12 /* Assessment.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2647D9C27E2179300ED5F12 /* Assessment.swift */; };
+		B2647DAA27E2179300ED5F12 /* Assessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2647D9D27E2179300ED5F12 /* Assessor.swift */; };
+		B2647DAB27E2179300ED5F12 /* AssessmentRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2647D9F27E2179300ED5F12 /* AssessmentRepository.swift */; };
+		B2647DAC27E2179300ED5F12 /* AssessorRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2647DA027E2179300ED5F12 /* AssessorRepository.swift */; };
+		B2647DAD27E2179300ED5F12 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2647DA127E2179300ED5F12 /* Repository.swift */; };
+		B2647DAE27E2179300ED5F12 /* TargetPersonRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2647DA227E2179300ED5F12 /* TargetPersonRepository.swift */; };
+		B2647DB827E2179D00ED5F12 /* BottomFloatingItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2647DB027E2179D00ED5F12 /* BottomFloatingItems.swift */; };
+		B2647DB927E2179D00ED5F12 /* FunctionSelectionItemButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2647DB127E2179D00ED5F12 /* FunctionSelectionItemButton.swift */; };
+		B2647DBA27E2179D00ED5F12 /* AssessmentItemButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2647DB227E2179D00ED5F12 /* AssessmentItemButton.swift */; };
+		B2647DBB27E2179D00ED5F12 /* RoundedTimerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2647DB327E2179D00ED5F12 /* RoundedTimerButton.swift */; };
+		B2647DBC27E2179D00ED5F12 /* RequestViaTwitterButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2647DB427E2179D00ED5F12 /* RequestViaTwitterButton.swift */; };
+		B2647DBD27E2179D00ED5F12 /* TimerLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2647DB527E2179D00ED5F12 /* TimerLabel.swift */; };
+		B2647DBE27E2179D00ED5F12 /* RoundedAddButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2647DB627E2179D00ED5F12 /* RoundedAddButton.swift */; };
+		B2647DBF27E2179D00ED5F12 /* InputFormContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2647DB727E2179D00ED5F12 /* InputFormContainerView.swift */; };
+		B2647DCF27E217A400ED5F12 /* UITableView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2647DC227E217A400ED5F12 /* UITableView+Extensions.swift */; };
+		B2647DD027E217A400ED5F12 /* DispatchQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2647DC427E217A400ED5F12 /* DispatchQueue.swift */; };
+		B2647DD127E217A400ED5F12 /* AssessmentResultPasteboardFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2647DC627E217A400ED5F12 /* AssessmentResultPasteboardFormatter.swift */; };
+		B2647DD227E217A400ED5F12 /* TimerFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2647DC727E217A400ED5F12 /* TimerFormatter.swift */; };
+		B2647DD327E217A400ED5F12 /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2647DC827E217A400ED5F12 /* DateFormatter.swift */; };
+		B2647DD427E217A400ED5F12 /* InputMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2647DC927E217A400ED5F12 /* InputMode.swift */; };
+		B2647DD527E217A400ED5F12 /* DisplayLinkWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2647DCB27E217A400ED5F12 /* DisplayLinkWrapper.swift */; };
+		B2647DD627E217A400ED5F12 /* Realm.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2647DCD27E217A400ED5F12 /* Realm.swift */; };
+		B2647DD727E217A400ED5F12 /* NotificationToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2647DCE27E217A400ED5F12 /* NotificationToken.swift */; };
+		B28D90F427E3F8BE0083CFC5 /* AssessorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28D90EF27E3F8BD0083CFC5 /* AssessorTableViewCell.swift */; };
+		B28D90F527E3F8BE0083CFC5 /* InputAssessorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28D90F027E3F8BD0083CFC5 /* InputAssessorViewController.swift */; };
+		B28D90F627E3F8BE0083CFC5 /* Assessor.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B28D90F127E3F8BD0083CFC5 /* Assessor.storyboard */; };
+		B28D90F727E3F8BE0083CFC5 /* InputAssessor.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B28D90F227E3F8BD0083CFC5 /* InputAssessor.storyboard */; };
+		B28D90F827E3F8BE0083CFC5 /* AssessorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28D90F327E3F8BD0083CFC5 /* AssessorViewController.swift */; };
+		B28D90FF27E3F8D80083CFC5 /* InputTargetPersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28D90FA27E3F8D70083CFC5 /* InputTargetPersonViewController.swift */; };
+		B28D910027E3F8D80083CFC5 /* TargetPersonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28D90FB27E3F8D70083CFC5 /* TargetPersonTableViewCell.swift */; };
+		B28D910127E3F8D80083CFC5 /* TargetPersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28D90FC27E3F8D70083CFC5 /* TargetPersonViewController.swift */; };
+		B28D910227E3F8D80083CFC5 /* InputTargetPerson.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B28D90FD27E3F8D70083CFC5 /* InputTargetPerson.storyboard */; };
+		B28D910327E3F8D80083CFC5 /* TargetPerson.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B28D90FE27E3F8D70083CFC5 /* TargetPerson.storyboard */; };
+		B2B4261627E1665400C41DD0 /* RootNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B4261527E1665400C41DD0 /* RootNavigationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,16 +63,52 @@
 		B23A9E1A27E0116F00FCB91F /* HasegawasDementiaScaleRevised.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HasegawasDementiaScaleRevised.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B23A9E1D27E0116F00FCB91F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B23A9E1F27E0116F00FCB91F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B23A9E2127E0116F00FCB91F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B23A9E2427E0116F00FCB91F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B23A9E2627E0117000FCB91F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B23A9E2927E0117000FCB91F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B23A9E2B27E0117000FCB91F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B23A9E3127E012BA00FCB91F /* Utilities */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Utilities; sourceTree = "<group>"; };
-		B23A9E3227E012BA00FCB91F /* Alert */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Alert; sourceTree = "<group>"; };
-		B23A9E3327E012BA00FCB91F /* Models */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Models; sourceTree = "<group>"; };
-		B23A9E3427E012BA00FCB91F /* Color */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Color; sourceTree = "<group>"; };
-		B23A9E3527E012BA00FCB91F /* UIComponents */ = {isa = PBXFileReference; lastKnownFileType = folder; path = UIComponents; sourceTree = "<group>"; };
+		B2647D8E27E2177A00ED5F12 /* UIAlertController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIAlertController.swift; sourceTree = "<group>"; };
+		B2647D9127E2178500ED5F12 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		B2647D9527E2179300ED5F12 /* RealmEntityObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmEntityObject.swift; sourceTree = "<group>"; };
+		B2647D9627E2179300ED5F12 /* RealmAssessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmAssessor.swift; sourceTree = "<group>"; };
+		B2647D9727E2179300ED5F12 /* RealmTargetPerson.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmTargetPerson.swift; sourceTree = "<group>"; };
+		B2647D9827E2179300ED5F12 /* RealmAssessment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmAssessment.swift; sourceTree = "<group>"; };
+		B2647D9A27E2179300ED5F12 /* Entity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
+		B2647D9B27E2179300ED5F12 /* TargetPerson.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TargetPerson.swift; sourceTree = "<group>"; };
+		B2647D9C27E2179300ED5F12 /* Assessment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assessment.swift; sourceTree = "<group>"; };
+		B2647D9D27E2179300ED5F12 /* Assessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assessor.swift; sourceTree = "<group>"; };
+		B2647D9F27E2179300ED5F12 /* AssessmentRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssessmentRepository.swift; sourceTree = "<group>"; };
+		B2647DA027E2179300ED5F12 /* AssessorRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssessorRepository.swift; sourceTree = "<group>"; };
+		B2647DA127E2179300ED5F12 /* Repository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		B2647DA227E2179300ED5F12 /* TargetPersonRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TargetPersonRepository.swift; sourceTree = "<group>"; };
+		B2647DB027E2179D00ED5F12 /* BottomFloatingItems.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomFloatingItems.swift; sourceTree = "<group>"; };
+		B2647DB127E2179D00ED5F12 /* FunctionSelectionItemButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunctionSelectionItemButton.swift; sourceTree = "<group>"; };
+		B2647DB227E2179D00ED5F12 /* AssessmentItemButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssessmentItemButton.swift; sourceTree = "<group>"; };
+		B2647DB327E2179D00ED5F12 /* RoundedTimerButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedTimerButton.swift; sourceTree = "<group>"; };
+		B2647DB427E2179D00ED5F12 /* RequestViaTwitterButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestViaTwitterButton.swift; sourceTree = "<group>"; };
+		B2647DB527E2179D00ED5F12 /* TimerLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerLabel.swift; sourceTree = "<group>"; };
+		B2647DB627E2179D00ED5F12 /* RoundedAddButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedAddButton.swift; sourceTree = "<group>"; };
+		B2647DB727E2179D00ED5F12 /* InputFormContainerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputFormContainerView.swift; sourceTree = "<group>"; };
+		B2647DC227E217A400ED5F12 /* UITableView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Extensions.swift"; sourceTree = "<group>"; };
+		B2647DC427E217A400ED5F12 /* DispatchQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DispatchQueue.swift; sourceTree = "<group>"; };
+		B2647DC627E217A400ED5F12 /* AssessmentResultPasteboardFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssessmentResultPasteboardFormatter.swift; sourceTree = "<group>"; };
+		B2647DC727E217A400ED5F12 /* TimerFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerFormatter.swift; sourceTree = "<group>"; };
+		B2647DC827E217A400ED5F12 /* DateFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
+		B2647DC927E217A400ED5F12 /* InputMode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputMode.swift; sourceTree = "<group>"; };
+		B2647DCB27E217A400ED5F12 /* DisplayLinkWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayLinkWrapper.swift; sourceTree = "<group>"; };
+		B2647DCD27E217A400ED5F12 /* Realm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Realm.swift; sourceTree = "<group>"; };
+		B2647DCE27E217A400ED5F12 /* NotificationToken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationToken.swift; sourceTree = "<group>"; };
+		B28D90EF27E3F8BD0083CFC5 /* AssessorTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssessorTableViewCell.swift; sourceTree = "<group>"; };
+		B28D90F027E3F8BD0083CFC5 /* InputAssessorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputAssessorViewController.swift; sourceTree = "<group>"; };
+		B28D90F127E3F8BD0083CFC5 /* Assessor.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Assessor.storyboard; sourceTree = "<group>"; };
+		B28D90F227E3F8BD0083CFC5 /* InputAssessor.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = InputAssessor.storyboard; sourceTree = "<group>"; };
+		B28D90F327E3F8BD0083CFC5 /* AssessorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssessorViewController.swift; sourceTree = "<group>"; };
+		B28D90FA27E3F8D70083CFC5 /* InputTargetPersonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputTargetPersonViewController.swift; sourceTree = "<group>"; };
+		B28D90FB27E3F8D70083CFC5 /* TargetPersonTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TargetPersonTableViewCell.swift; sourceTree = "<group>"; };
+		B28D90FC27E3F8D70083CFC5 /* TargetPersonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TargetPersonViewController.swift; sourceTree = "<group>"; };
+		B28D90FD27E3F8D70083CFC5 /* InputTargetPerson.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = InputTargetPerson.storyboard; sourceTree = "<group>"; };
+		B28D90FE27E3F8D70083CFC5 /* TargetPerson.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TargetPerson.storyboard; sourceTree = "<group>"; };
+		B2B4261527E1665400C41DD0 /* RootNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootNavigationController.swift; sourceTree = "<group>"; };
 		EB863FDB070D3E8271BD6D6F /* Pods-HasegawasDementiaScaleRevised.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HasegawasDementiaScaleRevised.release.xcconfig"; path = "Target Support Files/Pods-HasegawasDementiaScaleRevised/Pods-HasegawasDementiaScaleRevised.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -81,20 +153,184 @@
 		B23A9E1C27E0116F00FCB91F /* HasegawasDementiaScaleRevised */ = {
 			isa = PBXGroup;
 			children = (
-				B23A9E3227E012BA00FCB91F /* Alert */,
-				B23A9E3427E012BA00FCB91F /* Color */,
-				B23A9E3327E012BA00FCB91F /* Models */,
-				B23A9E3527E012BA00FCB91F /* UIComponents */,
-				B23A9E3127E012BA00FCB91F /* Utilities */,
 				B23A9E1D27E0116F00FCB91F /* AppDelegate.swift */,
 				B23A9E1F27E0116F00FCB91F /* SceneDelegate.swift */,
-				B23A9E2127E0116F00FCB91F /* ViewController.swift */,
-				B23A9E2327E0116F00FCB91F /* Main.storyboard */,
+				B2647D8D27E2177A00ED5F12 /* Alert */,
+				B2647D9027E2178500ED5F12 /* Color */,
+				B2647DC027E217A400ED5F12 /* Utilities */,
+				B2647DAF27E2179D00ED5F12 /* UIComponents */,
+				B2647D9327E2179300ED5F12 /* Models */,
+				B2B4261427E1660500C41DD0 /* Root */,
+				B28D90EE27E3F8BD0083CFC5 /* Assessor */,
+				B28D90F927E3F8D70083CFC5 /* TargetPerson */,
 				B23A9E2627E0117000FCB91F /* Assets.xcassets */,
 				B23A9E2827E0117000FCB91F /* LaunchScreen.storyboard */,
 				B23A9E2B27E0117000FCB91F /* Info.plist */,
 			);
 			path = HasegawasDementiaScaleRevised;
+			sourceTree = "<group>";
+		};
+		B2647D8D27E2177A00ED5F12 /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+				B2647D8E27E2177A00ED5F12 /* UIAlertController.swift */,
+			);
+			path = Alert;
+			sourceTree = "<group>";
+		};
+		B2647D9027E2178500ED5F12 /* Color */ = {
+			isa = PBXGroup;
+			children = (
+				B2647D9127E2178500ED5F12 /* Colors.swift */,
+			);
+			path = Color;
+			sourceTree = "<group>";
+		};
+		B2647D9327E2179300ED5F12 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B2647D9427E2179300ED5F12 /* RealmObjects */,
+				B2647D9927E2179300ED5F12 /* Values */,
+				B2647D9E27E2179300ED5F12 /* Repositories */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B2647D9427E2179300ED5F12 /* RealmObjects */ = {
+			isa = PBXGroup;
+			children = (
+				B2647D9527E2179300ED5F12 /* RealmEntityObject.swift */,
+				B2647D9627E2179300ED5F12 /* RealmAssessor.swift */,
+				B2647D9727E2179300ED5F12 /* RealmTargetPerson.swift */,
+				B2647D9827E2179300ED5F12 /* RealmAssessment.swift */,
+			);
+			path = RealmObjects;
+			sourceTree = "<group>";
+		};
+		B2647D9927E2179300ED5F12 /* Values */ = {
+			isa = PBXGroup;
+			children = (
+				B2647D9A27E2179300ED5F12 /* Entity.swift */,
+				B2647D9B27E2179300ED5F12 /* TargetPerson.swift */,
+				B2647D9C27E2179300ED5F12 /* Assessment.swift */,
+				B2647D9D27E2179300ED5F12 /* Assessor.swift */,
+			);
+			path = Values;
+			sourceTree = "<group>";
+		};
+		B2647D9E27E2179300ED5F12 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				B2647D9F27E2179300ED5F12 /* AssessmentRepository.swift */,
+				B2647DA027E2179300ED5F12 /* AssessorRepository.swift */,
+				B2647DA127E2179300ED5F12 /* Repository.swift */,
+				B2647DA227E2179300ED5F12 /* TargetPersonRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		B2647DAF27E2179D00ED5F12 /* UIComponents */ = {
+			isa = PBXGroup;
+			children = (
+				B2647DB027E2179D00ED5F12 /* BottomFloatingItems.swift */,
+				B2647DB127E2179D00ED5F12 /* FunctionSelectionItemButton.swift */,
+				B2647DB227E2179D00ED5F12 /* AssessmentItemButton.swift */,
+				B2647DB327E2179D00ED5F12 /* RoundedTimerButton.swift */,
+				B2647DB427E2179D00ED5F12 /* RequestViaTwitterButton.swift */,
+				B2647DB527E2179D00ED5F12 /* TimerLabel.swift */,
+				B2647DB627E2179D00ED5F12 /* RoundedAddButton.swift */,
+				B2647DB727E2179D00ED5F12 /* InputFormContainerView.swift */,
+			);
+			path = UIComponents;
+			sourceTree = "<group>";
+		};
+		B2647DC027E217A400ED5F12 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				B2647DC127E217A400ED5F12 /* UIKit */,
+				B2647DC327E217A400ED5F12 /* Dispatch */,
+				B2647DC527E217A400ED5F12 /* Formatter */,
+				B2647DC927E217A400ED5F12 /* InputMode.swift */,
+				B2647DCA27E217A400ED5F12 /* QuartzCore */,
+				B2647DCC27E217A400ED5F12 /* Realm */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		B2647DC127E217A400ED5F12 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				B2647DC227E217A400ED5F12 /* UITableView+Extensions.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		B2647DC327E217A400ED5F12 /* Dispatch */ = {
+			isa = PBXGroup;
+			children = (
+				B2647DC427E217A400ED5F12 /* DispatchQueue.swift */,
+			);
+			path = Dispatch;
+			sourceTree = "<group>";
+		};
+		B2647DC527E217A400ED5F12 /* Formatter */ = {
+			isa = PBXGroup;
+			children = (
+				B2647DC627E217A400ED5F12 /* AssessmentResultPasteboardFormatter.swift */,
+				B2647DC727E217A400ED5F12 /* TimerFormatter.swift */,
+				B2647DC827E217A400ED5F12 /* DateFormatter.swift */,
+			);
+			path = Formatter;
+			sourceTree = "<group>";
+		};
+		B2647DCA27E217A400ED5F12 /* QuartzCore */ = {
+			isa = PBXGroup;
+			children = (
+				B2647DCB27E217A400ED5F12 /* DisplayLinkWrapper.swift */,
+			);
+			path = QuartzCore;
+			sourceTree = "<group>";
+		};
+		B2647DCC27E217A400ED5F12 /* Realm */ = {
+			isa = PBXGroup;
+			children = (
+				B2647DCD27E217A400ED5F12 /* Realm.swift */,
+				B2647DCE27E217A400ED5F12 /* NotificationToken.swift */,
+			);
+			path = Realm;
+			sourceTree = "<group>";
+		};
+		B28D90EE27E3F8BD0083CFC5 /* Assessor */ = {
+			isa = PBXGroup;
+			children = (
+				B28D90EF27E3F8BD0083CFC5 /* AssessorTableViewCell.swift */,
+				B28D90F027E3F8BD0083CFC5 /* InputAssessorViewController.swift */,
+				B28D90F127E3F8BD0083CFC5 /* Assessor.storyboard */,
+				B28D90F227E3F8BD0083CFC5 /* InputAssessor.storyboard */,
+				B28D90F327E3F8BD0083CFC5 /* AssessorViewController.swift */,
+			);
+			path = Assessor;
+			sourceTree = "<group>";
+		};
+		B28D90F927E3F8D70083CFC5 /* TargetPerson */ = {
+			isa = PBXGroup;
+			children = (
+				B28D90FA27E3F8D70083CFC5 /* InputTargetPersonViewController.swift */,
+				B28D90FB27E3F8D70083CFC5 /* TargetPersonTableViewCell.swift */,
+				B28D90FC27E3F8D70083CFC5 /* TargetPersonViewController.swift */,
+				B28D90FD27E3F8D70083CFC5 /* InputTargetPerson.storyboard */,
+				B28D90FE27E3F8D70083CFC5 /* TargetPerson.storyboard */,
+			);
+			path = TargetPerson;
+			sourceTree = "<group>";
+		};
+		B2B4261427E1660500C41DD0 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				B23A9E2327E0116F00FCB91F /* Main.storyboard */,
+				B2B4261527E1665400C41DD0 /* RootNavigationController.swift */,
+			);
+			path = Root;
 			sourceTree = "<group>";
 		};
 		CE0877FFBB5B372F1AE8D2E1 /* Pods */ = {
@@ -167,14 +403,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B23A9E3A27E012BA00FCB91F /* UIComponents in Resources */,
-				B23A9E3827E012BA00FCB91F /* Models in Resources */,
-				B23A9E3927E012BA00FCB91F /* Color in Resources */,
 				B23A9E2A27E0117000FCB91F /* LaunchScreen.storyboard in Resources */,
-				B23A9E3727E012BA00FCB91F /* Alert in Resources */,
-				B23A9E3627E012BA00FCB91F /* Utilities in Resources */,
+				B28D910227E3F8D80083CFC5 /* InputTargetPerson.storyboard in Resources */,
+				B28D90F727E3F8BE0083CFC5 /* InputAssessor.storyboard in Resources */,
+				B28D90F627E3F8BE0083CFC5 /* Assessor.storyboard in Resources */,
 				B23A9E2727E0117000FCB91F /* Assets.xcassets in Resources */,
 				B23A9E2527E0116F00FCB91F /* Main.storyboard in Resources */,
+				B28D910327E3F8D80083CFC5 /* TargetPerson.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,9 +479,46 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B23A9E2227E0116F00FCB91F /* ViewController.swift in Sources */,
+				B2647DB827E2179D00ED5F12 /* BottomFloatingItems.swift in Sources */,
+				B2647DA327E2179300ED5F12 /* RealmEntityObject.swift in Sources */,
+				B28D90FF27E3F8D80083CFC5 /* InputTargetPersonViewController.swift in Sources */,
+				B2647DA427E2179300ED5F12 /* RealmAssessor.swift in Sources */,
+				B2647DBD27E2179D00ED5F12 /* TimerLabel.swift in Sources */,
+				B2647D9227E2178500ED5F12 /* Colors.swift in Sources */,
+				B2647DD727E217A400ED5F12 /* NotificationToken.swift in Sources */,
+				B2B4261627E1665400C41DD0 /* RootNavigationController.swift in Sources */,
+				B2647DBE27E2179D00ED5F12 /* RoundedAddButton.swift in Sources */,
+				B2647DAE27E2179300ED5F12 /* TargetPersonRepository.swift in Sources */,
+				B2647DCF27E217A400ED5F12 /* UITableView+Extensions.swift in Sources */,
+				B2647DBB27E2179D00ED5F12 /* RoundedTimerButton.swift in Sources */,
+				B2647DBC27E2179D00ED5F12 /* RequestViaTwitterButton.swift in Sources */,
+				B2647DA627E2179300ED5F12 /* RealmAssessment.swift in Sources */,
+				B2647DAC27E2179300ED5F12 /* AssessorRepository.swift in Sources */,
+				B2647DD527E217A400ED5F12 /* DisplayLinkWrapper.swift in Sources */,
+				B28D90F427E3F8BE0083CFC5 /* AssessorTableViewCell.swift in Sources */,
 				B23A9E1E27E0116F00FCB91F /* AppDelegate.swift in Sources */,
+				B2647DA727E2179300ED5F12 /* Entity.swift in Sources */,
+				B2647DBF27E2179D00ED5F12 /* InputFormContainerView.swift in Sources */,
+				B2647DAA27E2179300ED5F12 /* Assessor.swift in Sources */,
+				B2647DA527E2179300ED5F12 /* RealmTargetPerson.swift in Sources */,
+				B2647DD027E217A400ED5F12 /* DispatchQueue.swift in Sources */,
+				B2647DB927E2179D00ED5F12 /* FunctionSelectionItemButton.swift in Sources */,
+				B28D90F527E3F8BE0083CFC5 /* InputAssessorViewController.swift in Sources */,
+				B2647DD327E217A400ED5F12 /* DateFormatter.swift in Sources */,
+				B28D910027E3F8D80083CFC5 /* TargetPersonTableViewCell.swift in Sources */,
+				B2647DA927E2179300ED5F12 /* Assessment.swift in Sources */,
+				B2647DD227E217A400ED5F12 /* TimerFormatter.swift in Sources */,
+				B2647DD627E217A400ED5F12 /* Realm.swift in Sources */,
+				B28D910127E3F8D80083CFC5 /* TargetPersonViewController.swift in Sources */,
+				B2647DAD27E2179300ED5F12 /* Repository.swift in Sources */,
 				B23A9E2027E0116F00FCB91F /* SceneDelegate.swift in Sources */,
+				B2647D8F27E2177A00ED5F12 /* UIAlertController.swift in Sources */,
+				B2647DBA27E2179D00ED5F12 /* AssessmentItemButton.swift in Sources */,
+				B28D90F827E3F8BE0083CFC5 /* AssessorViewController.swift in Sources */,
+				B2647DAB27E2179300ED5F12 /* AssessmentRepository.swift in Sources */,
+				B2647DD127E217A400ED5F12 /* AssessmentResultPasteboardFormatter.swift in Sources */,
+				B2647DA827E2179300ED5F12 /* TargetPerson.swift in Sources */,
+				B2647DD427E217A400ED5F12 /* InputMode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

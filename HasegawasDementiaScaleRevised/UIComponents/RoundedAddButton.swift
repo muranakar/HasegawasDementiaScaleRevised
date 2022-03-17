@@ -43,7 +43,7 @@ class RoundedAddButton: UIButton {
         setBackgroundImage(backgroundImage, for: .normal)
         setBackgroundImage(backgroundImage, for: .highlighted)
         configuration = nil
-        backgroundColor = .clear
+        backgroundColor = Colors.mainColor
         tintColor = .white
     }
 

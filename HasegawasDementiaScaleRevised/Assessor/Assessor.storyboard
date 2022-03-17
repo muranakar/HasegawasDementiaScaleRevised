@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8Ot-WJ-dqo">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--InputAssessor-->
+        <scene sceneID="WlE-cr-ulH">
+            <objects>
+                <viewControllerPlaceholder storyboardName="InputAssessor" id="cbS-q2-GBS" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eVZ-N7-kPu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2370" y="286"/>
+        </scene>
+        <!--評価者-->
+        <scene sceneID="e4c-hJ-gHw">
+            <objects>
+                <viewController id="8Ot-WJ-dqo" customClass="AssessorViewController" customModule="HasegawasDementiaScaleRevised" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QQJ-Lk-nCq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" estimatedRowHeight="44" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="4ae-gt-1Hc">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="detailButton" indentationWidth="10" reuseIdentifier="AssessorTableViewCell" id="5iK-4V-Rhq" customClass="AssessorTableViewCell" customModule="HasegawasDementiaScaleRevised" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="5iK-4V-Rhq" id="O0e-Rj-aWg">
+                                            <rect key="frame" x="0.0" y="0.0" width="373.5" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Rh-lr-hUD">
+                                                    <rect key="frame" x="40" y="9" width="54.5" height="26.5"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="5Rh-lr-hUD" firstAttribute="centerY" secondItem="O0e-Rj-aWg" secondAttribute="centerY" id="1BY-Jv-Ihf"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="5Rh-lr-hUD" secondAttribute="trailing" constant="20" id="c7J-lp-rdS"/>
+                                                <constraint firstItem="5Rh-lr-hUD" firstAttribute="leading" secondItem="O0e-Rj-aWg" secondAttribute="leadingMargin" constant="20" id="zXR-KT-4RE"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="nameLabel" destination="5Rh-lr-hUD" id="K5U-Nh-8ea"/>
+                                            <segue destination="uha-W9-nfz" kind="show" destinationCreationSelector="makeTargetPersonWithCoder:sender:segueIdentifier:" id="QtU-9a-gnw"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="8Ot-WJ-dqo" id="wt2-J6-YYZ"/>
+                                    <outlet property="delegate" destination="8Ot-WJ-dqo" id="uDZ-S8-bDN"/>
+                                </connections>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="80" placeholderIntrinsicHeight="80" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dH3-1r-fAA" customClass="RoundedAddButton" customModule="HasegawasDementiaScaleRevised" customModuleProvider="target">
+                                <rect key="frame" x="284" y="732" width="80" height="80"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <connections>
+                                    <segue destination="cbS-q2-GBS" kind="presentation" identifier="input" modalPresentationStyle="fullScreen" id="2Hq-DQ-xr2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="130" placeholderIntrinsicHeight="60" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PIY-zh-m8v" customClass="RequestViaTwitterButton" customModule="HasegawasDementiaScaleRevised" customModuleProvider="target">
+                                <rect key="frame" x="20" y="782" width="130" height="60"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <connections>
+                                    <action selector="openTwitterWithSender:" destination="IJy-rK-8O1" eventType="touchUpInside" id="faQ-kl-lDW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="91c-fU-g0W"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="4ae-gt-1Hc" firstAttribute="trailing" secondItem="91c-fU-g0W" secondAttribute="trailing" id="9FH-kR-uqT"/>
+                            <constraint firstItem="91c-fU-g0W" firstAttribute="bottom" secondItem="dH3-1r-fAA" secondAttribute="bottom" constant="50" id="ED8-mX-3hz"/>
+                            <constraint firstItem="4ae-gt-1Hc" firstAttribute="bottom" secondItem="QQJ-Lk-nCq" secondAttribute="bottom" id="IG0-cu-pc6"/>
+                            <constraint firstItem="4ae-gt-1Hc" firstAttribute="top" secondItem="91c-fU-g0W" secondAttribute="top" id="QfS-9O-5ca"/>
+                            <constraint firstItem="91c-fU-g0W" firstAttribute="bottom" secondItem="PIY-zh-m8v" secondAttribute="bottom" constant="20" id="TBF-Tv-BBO"/>
+                            <constraint firstItem="4ae-gt-1Hc" firstAttribute="leading" secondItem="91c-fU-g0W" secondAttribute="leading" id="Xbk-ro-pdG"/>
+                            <constraint firstItem="PIY-zh-m8v" firstAttribute="leading" secondItem="91c-fU-g0W" secondAttribute="leading" constant="20" id="huI-A1-jXz"/>
+                            <constraint firstItem="91c-fU-g0W" firstAttribute="trailing" secondItem="dH3-1r-fAA" secondAttribute="trailing" constant="50" id="kOq-bz-gmp"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="評価者" id="L4W-l4-Lx7"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="tableView" destination="4ae-gt-1Hc" id="DxE-ky-gAe"/>
+                        <outletCollection property="floatingItems" destination="PIY-zh-m8v" collectionClass="NSMutableArray" id="6el-kb-khX"/>
+                        <outletCollection property="floatingItems" destination="dH3-1r-fAA" collectionClass="NSMutableArray" id="FKb-BC-bvi"/>
+                        <segue destination="cbS-q2-GBS" kind="presentation" identifier="edit" modalPresentationStyle="fullScreen" id="2k2-63-e0h"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IJy-rK-8O1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1558" y="151"/>
+        </scene>
+        <!--TargetPerson-->
+        <scene sceneID="wmW-eq-cgu">
+            <objects>
+                <viewControllerPlaceholder storyboardName="TargetPerson" id="uha-W9-nfz" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="8CC-GI-lb8"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ToW-Jf-Wld" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2370" y="-4"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="PIY-zh-m8v">
+            <size key="intrinsicContentSize" width="130" height="60"/>
+        </designable>
+        <designable name="dH3-1r-fAA">
+            <size key="intrinsicContentSize" width="80" height="80"/>
+        </designable>
+    </designables>
+    <inferredMetricsTieBreakers>
+        <segue reference="2k2-63-e0h"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

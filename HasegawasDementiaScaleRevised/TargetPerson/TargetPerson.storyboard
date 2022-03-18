@@ -42,6 +42,7 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="tagetPeronName" destination="xnP-7f-Lk6" id="VIW-Of-crW"/>
+                                            <segue destination="xnj-15-qcg" kind="show" destinationCreationSelector="makeFunctionSelectionWithCoder:sender:segueIdentifier:" id="j9D-Fv-2Jp"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -98,6 +99,16 @@
             </objects>
             <point key="canvasLocation" x="1797.1014492753625" y="795.53571428571422"/>
         </scene>
+        <!--FunctionSelection-->
+        <scene sceneID="Ydp-mx-SH9">
+            <objects>
+                <viewControllerPlaceholder storyboardName="FunctionSelection" id="xnj-15-qcg" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="A3k-CY-VDE"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oYi-6R-z8C" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2437" y="687"/>
+        </scene>
         <!--InputTargetPerson-->
         <scene sceneID="N2j-3c-ylZ">
             <objects>
@@ -116,7 +127,7 @@
         </designable>
     </designables>
     <inferredMetricsTieBreakers>
-        <segue reference="mib-IP-QCs"/>
+        <segue reference="07U-jD-VJo"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="chevron.backward" catalog="system" width="96" height="128"/>

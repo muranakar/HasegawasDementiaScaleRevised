@@ -99,32 +99,21 @@ extension TargetPersonViewController {
         }
     }
 
-//@IBSegueAction
-//    func makeFunctionSelection(
-//        coder: NSCoder,
-//        sender: Any?,
-//        segueIdentifier: String?
-//    ) -> FunctionSelectionViewController? {
-//        guard let cell = sender as? UITableViewCell, let indexPath = tableView.indexPath(for: cell) else {
-//            return nil
-//        }
-//        return .init(
-//            coder: coder,
-//            targetPerson: targetPersons[indexPath.row],
-//            repository: repository
-//        )
-//    }
-//    @IBSegueAction
-//    func makeAssessmentItem(coder: NSCoder, sender: Any?, segueIdentifier: String?) -> AssessmentItemViewController? {
-//        guard let cell = sender as? UITableViewCell, let indexPath = tableView.indexPath(for: cell) else {
-//            return nil
-//        }
-//        return AssessmentItemViewController(
-//            coder: coder,
-//            targetPerson: targetPersons[indexPath.row],
-//            repository: Repository.assessment()
-//        )
-//    }
+@IBSegueAction
+    func makeFunctionSelection(
+        coder: NSCoder,
+        sender: Any?,
+        segueIdentifier: String?
+    ) -> FunctionSelectionViewController? {
+        guard let cell = sender as? UITableViewCell, let indexPath = tableView.indexPath(for: cell) else {
+            return nil
+        }
+        return .init(
+            coder: coder,
+            targetPerson: targetPersons[indexPath.row],
+            repository: repository
+        )
+    }
 
     @IBAction private func backToTargetPersonTableViewController(segue: UIStoryboardSegue) {
     }

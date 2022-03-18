@@ -55,6 +55,8 @@
 		B28D910227E3F8D80083CFC5 /* InputTargetPerson.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B28D90FD27E3F8D70083CFC5 /* InputTargetPerson.storyboard */; };
 		B28D910327E3F8D80083CFC5 /* TargetPerson.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B28D90FE27E3F8D70083CFC5 /* TargetPerson.storyboard */; };
 		B28D910527E3FD310083CFC5 /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28D910427E3FD310083CFC5 /* UIApplication.swift */; };
+		B28D910A27E404360083CFC5 /* FunctionSelection.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B28D910827E404360083CFC5 /* FunctionSelection.storyboard */; };
+		B28D910B27E404360083CFC5 /* FunctionSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28D910927E404360083CFC5 /* FunctionSelectionViewController.swift */; };
 		B2B4261627E1665400C41DD0 /* RootNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B4261527E1665400C41DD0 /* RootNavigationController.swift */; };
 /* End PBXBuildFile section */
 
@@ -110,6 +112,8 @@
 		B28D90FD27E3F8D70083CFC5 /* InputTargetPerson.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = InputTargetPerson.storyboard; sourceTree = "<group>"; };
 		B28D90FE27E3F8D70083CFC5 /* TargetPerson.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TargetPerson.storyboard; sourceTree = "<group>"; };
 		B28D910427E3FD310083CFC5 /* UIApplication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
+		B28D910827E404360083CFC5 /* FunctionSelection.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = FunctionSelection.storyboard; sourceTree = "<group>"; };
+		B28D910927E404360083CFC5 /* FunctionSelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunctionSelectionViewController.swift; sourceTree = "<group>"; };
 		B2B4261527E1665400C41DD0 /* RootNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootNavigationController.swift; sourceTree = "<group>"; };
 		EB863FDB070D3E8271BD6D6F /* Pods-HasegawasDementiaScaleRevised.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HasegawasDementiaScaleRevised.release.xcconfig"; path = "Target Support Files/Pods-HasegawasDementiaScaleRevised/Pods-HasegawasDementiaScaleRevised.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -166,6 +170,7 @@
 				B2B4261427E1660500C41DD0 /* Root */,
 				B28D90EE27E3F8BD0083CFC5 /* Assessor */,
 				B28D90F927E3F8D70083CFC5 /* TargetPerson */,
+				B28D910727E404360083CFC5 /* FunctionSelection */,
 				B23A9E2627E0117000FCB91F /* Assets.xcassets */,
 				B23A9E2827E0117000FCB91F /* LaunchScreen.storyboard */,
 				B23A9E2B27E0117000FCB91F /* Info.plist */,
@@ -327,6 +332,15 @@
 			path = TargetPerson;
 			sourceTree = "<group>";
 		};
+		B28D910727E404360083CFC5 /* FunctionSelection */ = {
+			isa = PBXGroup;
+			children = (
+				B28D910827E404360083CFC5 /* FunctionSelection.storyboard */,
+				B28D910927E404360083CFC5 /* FunctionSelectionViewController.swift */,
+			);
+			path = FunctionSelection;
+			sourceTree = "<group>";
+		};
 		B2B4261427E1660500C41DD0 /* Root */ = {
 			isa = PBXGroup;
 			children = (
@@ -413,6 +427,7 @@
 				B23A9E2727E0117000FCB91F /* Assets.xcassets in Resources */,
 				B23A9E2527E0116F00FCB91F /* Main.storyboard in Resources */,
 				B28D910327E3F8D80083CFC5 /* TargetPerson.storyboard in Resources */,
+				B28D910A27E404360083CFC5 /* FunctionSelection.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -503,6 +518,7 @@
 				B2647DA727E2179300ED5F12 /* Entity.swift in Sources */,
 				B2647DBF27E2179D00ED5F12 /* InputFormContainerView.swift in Sources */,
 				B2647DAA27E2179300ED5F12 /* Assessor.swift in Sources */,
+				B28D910B27E404360083CFC5 /* FunctionSelectionViewController.swift in Sources */,
 				B2647DA527E2179300ED5F12 /* RealmTargetPerson.swift in Sources */,
 				B2647DD027E217A400ED5F12 /* DispatchQueue.swift in Sources */,
 				B2647DB927E2179D00ED5F12 /* FunctionSelectionItemButton.swift in Sources */,

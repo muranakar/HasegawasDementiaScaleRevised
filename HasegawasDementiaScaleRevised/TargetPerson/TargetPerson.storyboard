@@ -11,7 +11,7 @@
         <!--対象者-->
         <scene sceneID="6Ww-r0-X45">
             <objects>
-                <viewController storyboardIdentifier="targetPerson" id="AgY-rI-kT1" customClass="TargetPersonViewController" customModule="HasegawasDementiaScaleRevised" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="targetPerson" id="AgY-rI-kT1" customClass="TargetPersonViewController" customModule="HasegawasDementiaScaleRevised" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="CBn-f6-Sbm">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

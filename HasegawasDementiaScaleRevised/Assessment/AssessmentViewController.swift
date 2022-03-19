@@ -8,13 +8,11 @@
 import UIKit
 
 class AssessmentViewController: UIViewController {
-
     private let targetPerson: TargetPerson
     private let repository: AssessmentRepository
 
     @IBOutlet private weak var progressTextLabel: UILabel!
     @IBOutlet private weak var progressView: UIProgressView!
-
     @IBOutlet private weak var button1: UIButton!
     @IBOutlet private weak var button2: UIButton!
     @IBOutlet private weak var button3: UIButton!
@@ -22,6 +20,8 @@ class AssessmentViewController: UIViewController {
     @IBOutlet private weak var button5: UIButton!
     @IBOutlet private weak var button6: UIButton!
     @IBOutlet private weak var button7: UIButton!
+
+    var hdsrIndex: Int = 0
 
     required init?(coder: NSCoder, targetPerson: TargetPerson, repository: AssessmentRepository) {
         self.targetPerson = targetPerson
@@ -46,8 +46,14 @@ class AssessmentViewController: UIViewController {
         super.viewDidLoad()
         decodeHDSRJsonFile()
         print(hdsrAssessment)
+
     }
 }
+
+
+
+
+
 // MARK: - JSONファイルのデコーダー
 private extension AssessmentViewController {
     ///　HDS-Rの評価に関する情報

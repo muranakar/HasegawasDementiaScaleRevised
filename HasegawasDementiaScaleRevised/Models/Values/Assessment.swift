@@ -34,7 +34,7 @@ extension Assessment {
 }
 
 // MARK: - TimerAssessment
-/// 時間評価
+/// HDSR評価
 struct Assessment {
     let id: ID
     var resultHDSR: HDSR

@@ -21,45 +21,66 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="decideWithSender:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="fmi-yR-o7r"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mES-nS-TRc" customClass="AssessmentAnswerButton" customModule="HasegawasDementiaScaleRevised" customModuleProvider="target">
                                 <rect key="frame" x="236" y="573" width="142" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="decideWithSender:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="GAU-Xe-R87"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yIC-EB-Nyc" customClass="AssessmentAnswerButton" customModule="HasegawasDementiaScaleRevised" customModuleProvider="target">
                                 <rect key="frame" x="50" y="641" width="142" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title=""/>
+                                <connections>
+                                    <action selector="decideWithSender:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="17V-al-BvY"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dW0-Ju-FdS" customClass="AssessmentAnswerButton" customModule="HasegawasDementiaScaleRevised" customModuleProvider="target">
                                 <rect key="frame" x="50" y="709" width="142" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="decideWithSender:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="bGl-M4-DzA"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H19-4a-FO7" customClass="AssessmentAnswerButton" customModule="HasegawasDementiaScaleRevised" customModuleProvider="target">
                                 <rect key="frame" x="236" y="726" width="142" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="decideWithSender:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="tIl-6n-kCw"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JUX-bK-Vhb" customClass="AssessmentAnswerButton" customModule="HasegawasDementiaScaleRevised" customModuleProvider="target">
                                 <rect key="frame" x="50" y="777" width="142" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="decideWithSender:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="0hV-nl-up5"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZCX-bH-U2P" customClass="AssessmentAnswerButton" customModule="HasegawasDementiaScaleRevised" customModuleProvider="target">
                                 <rect key="frame" x="236" y="650" width="142" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="decideWithSender:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="aNw-qM-ff3"/>
+                                </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="hw6-ld-eAH">
-                                <rect key="frame" x="42" y="198" width="323" height="259"/>
+                                <rect key="frame" x="46" y="247" width="323" height="259"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
@@ -67,17 +88,10 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m3M-kf-nXc">
-                                <rect key="frame" x="50" y="107" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lox-YJ-YeH">
+                                <rect key="frame" x="50" y="176" width="315" height="63"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lox-YJ-YeH">
-                                <rect key="frame" x="50" y="154" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -92,12 +106,44 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="問題" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gxZ-n1-aUA">
+                                <rect key="frame" x="50" y="147" width="35" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="項目" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3D6-90-2G4">
+                                <rect key="frame" x="43" y="114" width="35" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m3M-kf-nXc">
+                                <rect key="frame" x="113" y="104" width="142" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
+                        <outlet property="assessmentAttentionTextView" destination="hw6-ld-eAH" id="V70-KK-nkb"/>
+                        <outlet property="assessmentItemTitleLabel" destination="m3M-kf-nXc" id="9Bs-dI-Jai"/>
+                        <outlet property="assessmentQuestionLabel" destination="Lox-YJ-YeH" id="3YZ-Tn-DVp"/>
                         <outlet property="button1" destination="8A3-Ui-jCE" id="3Zj-nh-NSa"/>
+                        <outlet property="button2" destination="mES-nS-TRc" id="hYd-xO-jdB"/>
+                        <outlet property="button3" destination="yIC-EB-Nyc" id="pOQ-dM-ddF"/>
+                        <outlet property="button4" destination="ZCX-bH-U2P" id="2Gd-zz-w5I"/>
+                        <outlet property="button5" destination="dW0-Ju-FdS" id="UFv-82-Voj"/>
+                        <outlet property="button6" destination="H19-4a-FO7" id="xUI-pP-6HR"/>
+                        <outlet property="button7" destination="JUX-bK-Vhb" id="HyZ-a3-NPb"/>
+                        <outlet property="progressTextLabel" destination="lfx-Ci-9yD" id="T0h-Xa-qc8"/>
+                        <outlet property="progressView" destination="juh-St-rWr" id="z7T-kY-CdD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -109,7 +155,22 @@
         <designable name="8A3-Ui-jCE">
             <size key="intrinsicContentSize" width="30" height="34"/>
         </designable>
+        <designable name="H19-4a-FO7">
+            <size key="intrinsicContentSize" width="30" height="34"/>
+        </designable>
+        <designable name="JUX-bK-Vhb">
+            <size key="intrinsicContentSize" width="30" height="34"/>
+        </designable>
+        <designable name="ZCX-bH-U2P">
+            <size key="intrinsicContentSize" width="30" height="34"/>
+        </designable>
+        <designable name="dW0-Ju-FdS">
+            <size key="intrinsicContentSize" width="30" height="34"/>
+        </designable>
         <designable name="mES-nS-TRc">
+            <size key="intrinsicContentSize" width="30" height="34"/>
+        </designable>
+        <designable name="yIC-EB-Nyc">
             <size key="intrinsicContentSize" width="30" height="34"/>
         </designable>
     </designables>

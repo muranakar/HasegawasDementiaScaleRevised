@@ -15,6 +15,7 @@
 		B23A9E2A27E0117000FCB91F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B23A9E2827E0117000FCB91F /* LaunchScreen.storyboard */; };
 		B24FBD0E27E5C25B00063F42 /* DetailAssessment.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B24FBD0D27E5C25B00063F42 /* DetailAssessment.storyboard */; };
 		B24FBD1227E5C28700063F42 /* DetailAssessmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24FBD1127E5C28700063F42 /* DetailAssessmentViewController.swift */; };
+		B24FBD1427E5C57700063F42 /* DetailAssessmentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24FBD1327E5C57700063F42 /* DetailAssessmentTableViewCell.swift */; };
 		B26201F027E528DA00AEF4BB /* AssessmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26201EF27E528DA00AEF4BB /* AssessmentViewController.swift */; };
 		B26201F227E528EB00AEF4BB /* Assessment.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B26201F127E528EB00AEF4BB /* Assessment.storyboard */; };
 		B26201F427E52DD900AEF4BB /* HDSR.json in Resources */ = {isa = PBXBuildFile; fileRef = B26201F327E52DD900AEF4BB /* HDSR.json */; };
@@ -79,6 +80,7 @@
 		B23A9E2B27E0117000FCB91F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B24FBD0D27E5C25B00063F42 /* DetailAssessment.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetailAssessment.storyboard; sourceTree = "<group>"; };
 		B24FBD1127E5C28700063F42 /* DetailAssessmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailAssessmentViewController.swift; sourceTree = "<group>"; };
+		B24FBD1327E5C57700063F42 /* DetailAssessmentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailAssessmentTableViewCell.swift; sourceTree = "<group>"; };
 		B26201EF27E528DA00AEF4BB /* AssessmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssessmentViewController.swift; sourceTree = "<group>"; };
 		B26201F127E528EB00AEF4BB /* Assessment.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Assessment.storyboard; sourceTree = "<group>"; };
 		B26201F327E52DD900AEF4BB /* HDSR.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = HDSR.json; sourceTree = "<group>"; };
@@ -201,6 +203,7 @@
 			children = (
 				B24FBD0D27E5C25B00063F42 /* DetailAssessment.storyboard */,
 				B24FBD1127E5C28700063F42 /* DetailAssessmentViewController.swift */,
+				B24FBD1327E5C57700063F42 /* DetailAssessmentTableViewCell.swift */,
 			);
 			path = DetailAssessment;
 			sourceTree = "<group>";
@@ -590,6 +593,7 @@
 				B2647DD227E217A400ED5F12 /* TimerFormatter.swift in Sources */,
 				B2647DD627E217A400ED5F12 /* Realm.swift in Sources */,
 				B28D910127E3F8D80083CFC5 /* TargetPersonViewController.swift in Sources */,
+				B24FBD1427E5C57700063F42 /* DetailAssessmentTableViewCell.swift in Sources */,
 				B2647DAD27E2179300ED5F12 /* Repository.swift in Sources */,
 				B23A9E2027E0116F00FCB91F /* SceneDelegate.swift in Sources */,
 				B2647D8F27E2177A00ED5F12 /* UIAlertController.swift in Sources */,

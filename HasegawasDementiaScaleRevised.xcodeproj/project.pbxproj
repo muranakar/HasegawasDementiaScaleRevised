@@ -13,6 +13,8 @@
 		B23A9E2527E0116F00FCB91F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B23A9E2327E0116F00FCB91F /* Main.storyboard */; };
 		B23A9E2727E0117000FCB91F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B23A9E2627E0117000FCB91F /* Assets.xcassets */; };
 		B23A9E2A27E0117000FCB91F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B23A9E2827E0117000FCB91F /* LaunchScreen.storyboard */; };
+		B24FBD0E27E5C25B00063F42 /* DetailAssessment.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B24FBD0D27E5C25B00063F42 /* DetailAssessment.storyboard */; };
+		B24FBD1227E5C28700063F42 /* DetailAssessmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24FBD1127E5C28700063F42 /* DetailAssessmentViewController.swift */; };
 		B26201F027E528DA00AEF4BB /* AssessmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26201EF27E528DA00AEF4BB /* AssessmentViewController.swift */; };
 		B26201F227E528EB00AEF4BB /* Assessment.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B26201F127E528EB00AEF4BB /* Assessment.storyboard */; };
 		B26201F427E52DD900AEF4BB /* HDSR.json in Resources */ = {isa = PBXBuildFile; fileRef = B26201F327E52DD900AEF4BB /* HDSR.json */; };
@@ -75,6 +77,8 @@
 		B23A9E2627E0117000FCB91F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B23A9E2927E0117000FCB91F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B23A9E2B27E0117000FCB91F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B24FBD0D27E5C25B00063F42 /* DetailAssessment.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetailAssessment.storyboard; sourceTree = "<group>"; };
+		B24FBD1127E5C28700063F42 /* DetailAssessmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailAssessmentViewController.swift; sourceTree = "<group>"; };
 		B26201EF27E528DA00AEF4BB /* AssessmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssessmentViewController.swift; sourceTree = "<group>"; };
 		B26201F127E528EB00AEF4BB /* Assessment.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Assessment.storyboard; sourceTree = "<group>"; };
 		B26201F327E52DD900AEF4BB /* HDSR.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = HDSR.json; sourceTree = "<group>"; };
@@ -182,11 +186,37 @@
 				B28D90F927E3F8D70083CFC5 /* TargetPerson */,
 				B28D910727E404360083CFC5 /* FunctionSelection */,
 				B26201EE27E528A000AEF4BB /* Assessment */,
+				B24FBD0B27E5C1EF00063F42 /* PastAssessment */,
+				B24FBD0A27E5C1D900063F42 /* DetailAssessment */,
+				B24FBD0C27E5C22C00063F42 /* EditAssessment */,
 				B23A9E2627E0117000FCB91F /* Assets.xcassets */,
 				B23A9E2827E0117000FCB91F /* LaunchScreen.storyboard */,
 				B23A9E2B27E0117000FCB91F /* Info.plist */,
 			);
 			path = HasegawasDementiaScaleRevised;
+			sourceTree = "<group>";
+		};
+		B24FBD0A27E5C1D900063F42 /* DetailAssessment */ = {
+			isa = PBXGroup;
+			children = (
+				B24FBD0D27E5C25B00063F42 /* DetailAssessment.storyboard */,
+				B24FBD1127E5C28700063F42 /* DetailAssessmentViewController.swift */,
+			);
+			path = DetailAssessment;
+			sourceTree = "<group>";
+		};
+		B24FBD0B27E5C1EF00063F42 /* PastAssessment */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = PastAssessment;
+			sourceTree = "<group>";
+		};
+		B24FBD0C27E5C22C00063F42 /* EditAssessment */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = EditAssessment;
 			sourceTree = "<group>";
 		};
 		B26201EE27E528A000AEF4BB /* Assessment */ = {
@@ -446,6 +476,7 @@
 				B23A9E2A27E0117000FCB91F /* LaunchScreen.storyboard in Resources */,
 				B28D910227E3F8D80083CFC5 /* InputTargetPerson.storyboard in Resources */,
 				B28D90F727E3F8BE0083CFC5 /* InputAssessor.storyboard in Resources */,
+				B24FBD0E27E5C25B00063F42 /* DetailAssessment.storyboard in Resources */,
 				B28D90F627E3F8BE0083CFC5 /* Assessor.storyboard in Resources */,
 				B26201F827E5744B00AEF4BB /* ImageList.storyboard in Resources */,
 				B26201F427E52DD900AEF4BB /* HDSR.json in Resources */,
@@ -530,6 +561,7 @@
 				B2647DA427E2179300ED5F12 /* RealmAssessor.swift in Sources */,
 				B2647DBD27E2179D00ED5F12 /* TimerLabel.swift in Sources */,
 				B2647D9227E2178500ED5F12 /* Colors.swift in Sources */,
+				B24FBD1227E5C28700063F42 /* DetailAssessmentViewController.swift in Sources */,
 				B2647DD727E217A400ED5F12 /* NotificationToken.swift in Sources */,
 				B2B4261627E1665400C41DD0 /* RootNavigationController.swift in Sources */,
 				B2647DBE27E2179D00ED5F12 /* RoundedAddButton.swift in Sources */,

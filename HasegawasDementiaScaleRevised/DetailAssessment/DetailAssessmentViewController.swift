@@ -9,17 +9,19 @@ import UIKit
 
 class DetailAssessmentViewController: UIViewController {
     private let assessment: Assessment
-    private let repository: AssessmentRepository
 
     @IBOutlet private weak var tableView: UITableView!
-    required init?(coder: NSCoder, assessment: Assessment, repository: AssessmentRepository) {
+    required init?(coder: NSCoder, repository: AssessmentRepository, id: Assessment.ID) {
+        guard let assessment = repository.load(id: id) else {
+            return nil
+        }
         self.assessment = assessment
-        self.repository = repository
         super.init(coder: coder)
     }
-    // TODO アセスメントの項目名を入力
-
-    // TODO アセスメントの項目の結果を入力
+    private var assessmentItemName = Assessment.hdsrItemName
+    private var assessmentItemResult: [Int] {
+        assessment.hdsrItemResut()
+    }
 
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
@@ -42,7 +44,10 @@ extension DetailAssessmentViewController: UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: DetailAssessmentTableViewCell = tableView.dequeueCell(for: indexPath)
-        // TODO　セルの設定。項目名、結果の配列ができていない
+        cell.configure(
+            itemTitle: assessmentItemName[indexPath.row],
+            itemNum: assessmentItemResult[indexPath.row]
+        )
         return cell
     }
 }

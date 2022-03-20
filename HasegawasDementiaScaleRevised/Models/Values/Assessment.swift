@@ -33,7 +33,7 @@ extension Assessment {
     }
 }
 
-// MARK: - TimerAssessment
+// MARK: - Assessment
 /// HDSR評価
 struct Assessment {
     let id: ID
@@ -68,5 +68,33 @@ extension Assessment: Entity {
             updatedAt: object.updatedAt,
             targetPerson: object.targetPersons.first.flatMap(TargetPerson.init)
         )
+    }
+}
+
+extension Assessment {
+    static let hdsrItemName = [
+        "年齢",
+        "日付の見当識",
+        "場所の見当識",
+        "即時記憶",
+        "計算",
+        "逆唱",
+        "遅延再生",
+        "視覚記憶",
+        "語想起・流暢性"
+    ]
+
+    func hdsrItemResut() -> [Int] {
+        var items: [Int] = []
+        items.append(self.resultHDSR.itemAge)
+        items.append(self.resultHDSR.itemDateOrientation)
+        items.append(self.resultHDSR.itemPlaceOrientation)
+        items.append(self.resultHDSR.itemMemory)
+        items.append(self.resultHDSR.itemCalculation)
+        items.append(self.resultHDSR.itemDigitSpan)
+        items.append(self.resultHDSR.itemDelayedPlayback)
+        items.append(self.resultHDSR.itemVisualMemory)
+        items.append(self.resultHDSR.itemWordRecall)
+        return items
     }
 }

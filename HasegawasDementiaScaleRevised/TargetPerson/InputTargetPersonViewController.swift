@@ -32,6 +32,7 @@ final class InputTargetPersonViewController: UIViewController {
     @IBAction private func saveAction(_ sender: Any) {
         let name = targetPersonNameTextField.text ?? ""
         switch mode {
+             // swiftlint:disable:next identifier_name
         case .input(let id):
             repository.add(value: .init(name: name), id: id)
         case .edit(var value):

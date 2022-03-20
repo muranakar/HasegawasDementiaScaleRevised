@@ -144,11 +144,22 @@
                         <outlet property="button7" destination="JUX-bK-Vhb" id="HyZ-a3-NPb"/>
                         <outlet property="progressTextLabel" destination="lfx-Ci-9yD" id="T0h-Xa-qc8"/>
                         <outlet property="progressView" destination="juh-St-rWr" id="z7T-kY-CdD"/>
+                        <segue destination="b11-r7-PbP" kind="show" identifier="DetailAssessmentTableViewCell" destinationCreationSelector="makeDetailWithCoder:sender:segueIdentifier:" id="Ihc-Az-UdW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-17.39130434782609" y="56.919642857142854"/>
+        </scene>
+        <!--DetailAssessment-->
+        <scene sceneID="GLJ-Xu-Fo7">
+            <objects>
+                <viewControllerPlaceholder storyboardName="DetailAssessment" id="b11-r7-PbP" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="PPd-PD-6bH"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K88-BK-pLO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="756" y="55"/>
         </scene>
     </scenes>
     <designables>

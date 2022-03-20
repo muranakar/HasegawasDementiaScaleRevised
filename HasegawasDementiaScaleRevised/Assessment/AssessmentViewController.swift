@@ -87,7 +87,6 @@ class AssessmentViewController: UIViewController {
         print(assessmentResultHDSR)
         hdsrIndex += 1
         if hdsrIndex == 9 {
-            // TODO 画面遷移処理
             let assessmet = Assessment(resultHDSR: .init(
                 itemAge: assessmentResultHDSR[0],
                 itemDateOrientation: assessmentResultHDSR[1],
@@ -100,7 +99,8 @@ class AssessmentViewController: UIViewController {
                 itemWordRecall: assessmentResultHDSR[8])
             )
             repository.add(value: assessmet, id: targetPerson.id)
-
+            // TODO 画面遷移処理
+            performSegue(withIdentifier: "DetailAssessmentTableViewCell", sender: assessmet.id)
         } else {
             buttonViewConfigue()
             labelViewConfigue()
@@ -119,10 +119,20 @@ private extension AssessmentViewController {
         assessmentAttentionTextView.text = hdsrAssessment[hdsrIndex].itemAttention
     }
     func buttonViewConfigue() {
-    buttons.forEach { button in
-                button.isHidden = dictonaryButtonAndButtonText[button]! == nil
-                button.setTitle(dictonaryButtonAndButtonText[button]!, for: .normal)
+        buttons.forEach { button in
+            button.isHidden = dictonaryButtonAndButtonText[button]! == nil
+            button.setTitle(dictonaryButtonAndButtonText[button]!, for: .normal)
+        }
+    }
+}
+
+extension AssessmentViewController {
+    @IBSegueAction
+    func makeDetail(coder: NSCoder, sender: Any?, segueIdentifier: String?) -> DetailAssessmentViewController? {
+            guard let id = sender as? Assessment.ID else {
+                return nil
             }
+            return .init(coder: coder, repository: repository, id: id)
     }
 }
 

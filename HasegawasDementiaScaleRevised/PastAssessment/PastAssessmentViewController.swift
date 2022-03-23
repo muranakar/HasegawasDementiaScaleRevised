@@ -26,11 +26,6 @@ final class PastAssessmentViewController: UIViewController {
         }
     }
 
-    @IBOutlet weak private var assessmentItemNameLabel: UILabel! {
-        willSet(label) {
-            label.text = targetPerson.name
-        }
-    }
     @IBOutlet weak private var tableView: UITableView! {
         didSet {
             // TODO: 未編集
@@ -56,7 +51,6 @@ final class PastAssessmentViewController: UIViewController {
 }
 
 private extension PastAssessmentViewController {
-    // TODO: ここまで完了
     private func startObserving() {
         token = repository.observe(id: targetPerson.id, sortKey: "createdAt") { [weak self] in
             self?.ascending
@@ -76,11 +70,11 @@ extension PastAssessmentViewController {
     @objc func copyPasteboard(sender: PastAssessmentTableViewCellCopyButton) {
         guard
             let id = sender.id,
-            let timerAssessment = repository.load(id: id)
+            let assessment = repository.load(id: id)
         else {
             return
         }
-        UIPasteboard.general.string = pasteboardFormatter.string(from: timerAssessment)
+        UIPasteboard.general.string = pasteboardFormatter.string(from: assessment)
         present(UIAlertController.copyingCompletedPastAssessment(), animated: true)
     }
 }

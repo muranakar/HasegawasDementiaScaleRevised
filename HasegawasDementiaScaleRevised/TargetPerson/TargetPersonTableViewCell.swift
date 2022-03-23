@@ -9,7 +9,6 @@ import UIKit
 
 final class TargetPersonTableViewCell: UITableViewCell {
     @IBOutlet private weak var tagetPeronName: UILabel!
-
     func configue(name: String) {
         tagetPeronName.text = name
     }

@@ -68,8 +68,9 @@
 		B2B4261627E1665400C41DD0 /* RootNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B4261527E1665400C41DD0 /* RootNavigationController.swift */; };
 		B2BFCF3927EBB87500C9F138 /* PastAssessment.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2BFCF3827EBB87500C9F138 /* PastAssessment.storyboard */; };
 		B2BFCF3B27EBB88F00C9F138 /* PastAssessmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BFCF3A27EBB88F00C9F138 /* PastAssessmentViewController.swift */; };
-		B2BFCF3E27EBB8AC00C9F138 /* PastAssessmentTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BFCF3C27EBB8AC00C9F138 /* PastAssessmentTableViewController.swift */; };
-		B2BFCF3F27EBB8AC00C9F138 /* PastAssessmentTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2BFCF3D27EBB8AC00C9F138 /* PastAssessmentTableViewController.xib */; };
+		B2BFCF4127EBBA7600C9F138 /* PastAssessmentViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BFCF4027EBBA7600C9F138 /* PastAssessmentViewItem.swift */; };
+		B2BFCF4427EBBE3C00C9F138 /* PastAssessmentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BFCF4227EBBE3C00C9F138 /* PastAssessmentTableViewCell.swift */; };
+		B2BFCF4527EBBE3C00C9F138 /* PastAssessmentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2BFCF4327EBBE3C00C9F138 /* PastAssessmentTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -137,8 +138,9 @@
 		B2B4261527E1665400C41DD0 /* RootNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootNavigationController.swift; sourceTree = "<group>"; };
 		B2BFCF3827EBB87500C9F138 /* PastAssessment.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PastAssessment.storyboard; sourceTree = "<group>"; };
 		B2BFCF3A27EBB88F00C9F138 /* PastAssessmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastAssessmentViewController.swift; sourceTree = "<group>"; };
-		B2BFCF3C27EBB8AC00C9F138 /* PastAssessmentTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastAssessmentTableViewController.swift; sourceTree = "<group>"; };
-		B2BFCF3D27EBB8AC00C9F138 /* PastAssessmentTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PastAssessmentTableViewController.xib; sourceTree = "<group>"; };
+		B2BFCF4027EBBA7600C9F138 /* PastAssessmentViewItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastAssessmentViewItem.swift; sourceTree = "<group>"; };
+		B2BFCF4227EBBE3C00C9F138 /* PastAssessmentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastAssessmentTableViewCell.swift; sourceTree = "<group>"; };
+		B2BFCF4327EBBE3C00C9F138 /* PastAssessmentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PastAssessmentTableViewCell.xib; sourceTree = "<group>"; };
 		EB863FDB070D3E8271BD6D6F /* Pods-HasegawasDementiaScaleRevised.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HasegawasDementiaScaleRevised.release.xcconfig"; path = "Target Support Files/Pods-HasegawasDementiaScaleRevised/Pods-HasegawasDementiaScaleRevised.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -221,8 +223,9 @@
 			children = (
 				B2BFCF3A27EBB88F00C9F138 /* PastAssessmentViewController.swift */,
 				B2BFCF3827EBB87500C9F138 /* PastAssessment.storyboard */,
-				B2BFCF3C27EBB8AC00C9F138 /* PastAssessmentTableViewController.swift */,
-				B2BFCF3D27EBB8AC00C9F138 /* PastAssessmentTableViewController.xib */,
+				B2BFCF4027EBBA7600C9F138 /* PastAssessmentViewItem.swift */,
+				B2BFCF4227EBBE3C00C9F138 /* PastAssessmentTableViewCell.swift */,
+				B2BFCF4327EBBE3C00C9F138 /* PastAssessmentTableViewCell.xib */,
 			);
 			path = PastAssessment;
 			sourceTree = "<group>";
@@ -497,9 +500,9 @@
 				B26201F827E5744B00AEF4BB /* ImageList.storyboard in Resources */,
 				B26201F427E52DD900AEF4BB /* HDSR.json in Resources */,
 				B26201F227E528EB00AEF4BB /* Assessment.storyboard in Resources */,
-				B2BFCF3F27EBB8AC00C9F138 /* PastAssessmentTableViewController.xib in Resources */,
 				B23A9E2727E0117000FCB91F /* Assets.xcassets in Resources */,
 				B23A9E2527E0116F00FCB91F /* Main.storyboard in Resources */,
+				B2BFCF4527EBBE3C00C9F138 /* PastAssessmentTableViewCell.xib in Resources */,
 				B28D910327E3F8D80083CFC5 /* TargetPerson.storyboard in Resources */,
 				B28D910A27E404360083CFC5 /* FunctionSelection.storyboard in Resources */,
 			);
@@ -562,7 +565,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n\n";
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -594,7 +597,6 @@
 				B23A9E1E27E0116F00FCB91F /* AppDelegate.swift in Sources */,
 				B2647DA727E2179300ED5F12 /* Entity.swift in Sources */,
 				B2647DBF27E2179D00ED5F12 /* InputFormContainerView.swift in Sources */,
-				B2BFCF3E27EBB8AC00C9F138 /* PastAssessmentTableViewController.swift in Sources */,
 				B2647DAA27E2179300ED5F12 /* Assessor.swift in Sources */,
 				B28D910B27E404360083CFC5 /* FunctionSelectionViewController.swift in Sources */,
 				B2647DA527E2179300ED5F12 /* RealmTargetPerson.swift in Sources */,
@@ -605,12 +607,14 @@
 				B28D910527E3FD310083CFC5 /* UIApplication.swift in Sources */,
 				B26201F627E571D700AEF4BB /* AssessmentAnswerButton.swift in Sources */,
 				B28D910027E3F8D80083CFC5 /* TargetPersonTableViewCell.swift in Sources */,
+				B2BFCF4427EBBE3C00C9F138 /* PastAssessmentTableViewCell.swift in Sources */,
 				B2647DA927E2179300ED5F12 /* Assessment.swift in Sources */,
 				B2647DD227E217A400ED5F12 /* TimerFormatter.swift in Sources */,
 				B2647DD627E217A400ED5F12 /* Realm.swift in Sources */,
 				B28D910127E3F8D80083CFC5 /* TargetPersonViewController.swift in Sources */,
 				B24FBD1427E5C57700063F42 /* DetailAssessmentTableViewCell.swift in Sources */,
 				B2647DAD27E2179300ED5F12 /* Repository.swift in Sources */,
+				B2BFCF4127EBBA7600C9F138 /* PastAssessmentViewItem.swift in Sources */,
 				B23A9E2027E0116F00FCB91F /* SceneDelegate.swift in Sources */,
 				B2647D8F27E2177A00ED5F12 /* UIAlertController.swift in Sources */,
 				B2647DBA27E2179D00ED5F12 /* AssessmentItemButton.swift in Sources */,

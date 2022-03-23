@@ -20,7 +20,7 @@ class DetailAssessmentViewController: UIViewController {
     }
     private var assessmentItemName = Assessment.hdsrItemName
     private var assessmentItemResult: [Int] {
-        assessment.hdsrItemResut()
+        assessment.hdsrItemResult()
     }
 
     required init?(coder: NSCoder) {

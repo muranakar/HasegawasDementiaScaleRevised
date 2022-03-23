@@ -84,7 +84,19 @@ extension Assessment {
         "語想起・流暢性"
     ]
 
-    func hdsrItemResut() -> [Int] {
+    var hdsrItemSum: Int {
+        self.resultHDSR.itemAge +
+        self.resultHDSR.itemDateOrientation +
+        self.resultHDSR.itemPlaceOrientation +
+        self.resultHDSR.itemMemory +
+        self.resultHDSR.itemCalculation +
+        self.resultHDSR.itemDigitSpan +
+        self.resultHDSR.itemDelayedPlayback +
+        self.resultHDSR.itemVisualMemory +
+        self.resultHDSR.itemWordRecall
+    }
+
+    func hdsrItemResult() -> [Int] {
         var items: [Int] = []
         items.append(self.resultHDSR.itemAge)
         items.append(self.resultHDSR.itemDateOrientation)

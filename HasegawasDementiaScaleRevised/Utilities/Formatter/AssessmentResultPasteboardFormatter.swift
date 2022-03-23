@@ -10,9 +10,6 @@ import Foundation
 final class AssessmentResultPasteboardFormatter {
     /// 評価日 formatter
     private let evaluatedFormatter: DateFormatter = .evaluated()
-    /// 時間評価 formatter
-    private let resultTimeFormatter: ResultTimerFormatter = .init()
-
     /// 評価結果
     ///
     /// 下記のフォーマットに整形する
@@ -23,7 +20,7 @@ final class AssessmentResultPasteboardFormatter {
     /// 評価者:XXX
     /// 対象者:XXX
     /// 評価項目:XXX
-    /// 評価結果:99時99分99秒99
+    /// 評価結果:
     /// ```
     func string(from assessment: Assessment) -> String? {
         guard
@@ -39,6 +36,16 @@ final class AssessmentResultPasteboardFormatter {
         対象者:\(targetPerson.name)
         評価項目:\("HDS-R")
         評価結果:
+        合計:\(assessment.hdsrItemSum)
+        年齢:\(assessment.resultHDSR.itemAge)
+        日付の見当識:\(assessment.resultHDSR.itemDateOrientation)
+        場所の見当識:\(assessment.resultHDSR.itemPlaceOrientation)
+        即時記憶:\(assessment.resultHDSR.itemMemory)
+        計算:\(assessment.resultHDSR.itemCalculation)
+        逆唱:\(assessment.resultHDSR.itemDigitSpan)
+        遅延再生:\(assessment.resultHDSR.itemDelayedPlayback)
+        視覚記憶:\(assessment.resultHDSR.itemVisualMemory)
+        語想起・流暢性:\(assessment.resultHDSR.itemWordRecall)
         """
     }
 }

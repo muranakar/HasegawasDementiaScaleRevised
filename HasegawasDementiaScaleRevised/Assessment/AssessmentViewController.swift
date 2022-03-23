@@ -99,7 +99,6 @@ class AssessmentViewController: UIViewController {
                 itemWordRecall: assessmentResultHDSR[8])
             )
             repository.add(value: assessmet, id: targetPerson.id)
-            // TODO 画面遷移処理
             performSegue(withIdentifier: "DetailAssessmentTableViewCell", sender: assessmet.id)
         } else {
             buttonViewConfigue()

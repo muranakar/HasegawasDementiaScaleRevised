@@ -66,6 +66,10 @@
 		B28D910A27E404360083CFC5 /* FunctionSelection.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B28D910827E404360083CFC5 /* FunctionSelection.storyboard */; };
 		B28D910B27E404360083CFC5 /* FunctionSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28D910927E404360083CFC5 /* FunctionSelectionViewController.swift */; };
 		B2B4261627E1665400C41DD0 /* RootNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B4261527E1665400C41DD0 /* RootNavigationController.swift */; };
+		B2BFCF3927EBB87500C9F138 /* PastAssessment.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2BFCF3827EBB87500C9F138 /* PastAssessment.storyboard */; };
+		B2BFCF3B27EBB88F00C9F138 /* PastAssessmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BFCF3A27EBB88F00C9F138 /* PastAssessmentViewController.swift */; };
+		B2BFCF3E27EBB8AC00C9F138 /* PastAssessmentTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BFCF3C27EBB8AC00C9F138 /* PastAssessmentTableViewController.swift */; };
+		B2BFCF3F27EBB8AC00C9F138 /* PastAssessmentTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2BFCF3D27EBB8AC00C9F138 /* PastAssessmentTableViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -131,6 +135,10 @@
 		B28D910827E404360083CFC5 /* FunctionSelection.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = FunctionSelection.storyboard; sourceTree = "<group>"; };
 		B28D910927E404360083CFC5 /* FunctionSelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunctionSelectionViewController.swift; sourceTree = "<group>"; };
 		B2B4261527E1665400C41DD0 /* RootNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootNavigationController.swift; sourceTree = "<group>"; };
+		B2BFCF3827EBB87500C9F138 /* PastAssessment.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PastAssessment.storyboard; sourceTree = "<group>"; };
+		B2BFCF3A27EBB88F00C9F138 /* PastAssessmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastAssessmentViewController.swift; sourceTree = "<group>"; };
+		B2BFCF3C27EBB8AC00C9F138 /* PastAssessmentTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastAssessmentTableViewController.swift; sourceTree = "<group>"; };
+		B2BFCF3D27EBB8AC00C9F138 /* PastAssessmentTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PastAssessmentTableViewController.xib; sourceTree = "<group>"; };
 		EB863FDB070D3E8271BD6D6F /* Pods-HasegawasDementiaScaleRevised.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HasegawasDementiaScaleRevised.release.xcconfig"; path = "Target Support Files/Pods-HasegawasDementiaScaleRevised/Pods-HasegawasDementiaScaleRevised.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -211,6 +219,10 @@
 		B24FBD0B27E5C1EF00063F42 /* PastAssessment */ = {
 			isa = PBXGroup;
 			children = (
+				B2BFCF3A27EBB88F00C9F138 /* PastAssessmentViewController.swift */,
+				B2BFCF3827EBB87500C9F138 /* PastAssessment.storyboard */,
+				B2BFCF3C27EBB8AC00C9F138 /* PastAssessmentTableViewController.swift */,
+				B2BFCF3D27EBB8AC00C9F138 /* PastAssessmentTableViewController.xib */,
 			);
 			path = PastAssessment;
 			sourceTree = "<group>";
@@ -481,9 +493,11 @@
 				B28D90F727E3F8BE0083CFC5 /* InputAssessor.storyboard in Resources */,
 				B24FBD0E27E5C25B00063F42 /* DetailAssessment.storyboard in Resources */,
 				B28D90F627E3F8BE0083CFC5 /* Assessor.storyboard in Resources */,
+				B2BFCF3927EBB87500C9F138 /* PastAssessment.storyboard in Resources */,
 				B26201F827E5744B00AEF4BB /* ImageList.storyboard in Resources */,
 				B26201F427E52DD900AEF4BB /* HDSR.json in Resources */,
 				B26201F227E528EB00AEF4BB /* Assessment.storyboard in Resources */,
+				B2BFCF3F27EBB8AC00C9F138 /* PastAssessmentTableViewController.xib in Resources */,
 				B23A9E2727E0117000FCB91F /* Assets.xcassets in Resources */,
 				B23A9E2527E0116F00FCB91F /* Main.storyboard in Resources */,
 				B28D910327E3F8D80083CFC5 /* TargetPerson.storyboard in Resources */,
@@ -566,6 +580,7 @@
 				B2647D9227E2178500ED5F12 /* Colors.swift in Sources */,
 				B24FBD1227E5C28700063F42 /* DetailAssessmentViewController.swift in Sources */,
 				B2647DD727E217A400ED5F12 /* NotificationToken.swift in Sources */,
+				B2BFCF3B27EBB88F00C9F138 /* PastAssessmentViewController.swift in Sources */,
 				B2B4261627E1665400C41DD0 /* RootNavigationController.swift in Sources */,
 				B2647DBE27E2179D00ED5F12 /* RoundedAddButton.swift in Sources */,
 				B2647DAE27E2179300ED5F12 /* TargetPersonRepository.swift in Sources */,
@@ -579,6 +594,7 @@
 				B23A9E1E27E0116F00FCB91F /* AppDelegate.swift in Sources */,
 				B2647DA727E2179300ED5F12 /* Entity.swift in Sources */,
 				B2647DBF27E2179D00ED5F12 /* InputFormContainerView.swift in Sources */,
+				B2BFCF3E27EBB8AC00C9F138 /* PastAssessmentTableViewController.swift in Sources */,
 				B2647DAA27E2179300ED5F12 /* Assessor.swift in Sources */,
 				B28D910B27E404360083CFC5 /* FunctionSelectionViewController.swift in Sources */,
 				B2647DA527E2179300ED5F12 /* RealmTargetPerson.swift in Sources */,

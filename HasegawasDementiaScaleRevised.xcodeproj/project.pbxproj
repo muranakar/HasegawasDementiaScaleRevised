@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		752ACA03575261E22368B686 /* Pods_HasegawasDementiaScaleRevised.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFF833C58B29C46FC45B7A82 /* Pods_HasegawasDementiaScaleRevised.framework */; };
+		B238EEC827EE837400D0E265 /* ImageListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B238EEC727EE837400D0E265 /* ImageListViewController.swift */; };
 		B23A9E1E27E0116F00FCB91F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23A9E1D27E0116F00FCB91F /* AppDelegate.swift */; };
 		B23A9E2027E0116F00FCB91F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23A9E1F27E0116F00FCB91F /* SceneDelegate.swift */; };
 		B23A9E2527E0116F00FCB91F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B23A9E2327E0116F00FCB91F /* Main.storyboard */; };
@@ -76,6 +77,7 @@
 /* Begin PBXFileReference section */
 		A6F32D172EDD101DDE69E87B /* Pods-HasegawasDementiaScaleRevised.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HasegawasDementiaScaleRevised.debug.xcconfig"; path = "Target Support Files/Pods-HasegawasDementiaScaleRevised/Pods-HasegawasDementiaScaleRevised.debug.xcconfig"; sourceTree = "<group>"; };
 		AFF833C58B29C46FC45B7A82 /* Pods_HasegawasDementiaScaleRevised.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HasegawasDementiaScaleRevised.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B238EEC727EE837400D0E265 /* ImageListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageListViewController.swift; sourceTree = "<group>"; };
 		B23A9E1A27E0116F00FCB91F /* HasegawasDementiaScaleRevised.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HasegawasDementiaScaleRevised.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B23A9E1D27E0116F00FCB91F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B23A9E1F27E0116F00FCB91F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -244,6 +246,7 @@
 				B26201F127E528EB00AEF4BB /* Assessment.storyboard */,
 				B26201F327E52DD900AEF4BB /* HDSR.json */,
 				B26201F727E5744B00AEF4BB /* ImageList.storyboard */,
+				B238EEC727EE837400D0E265 /* ImageListViewController.swift */,
 			);
 			path = Assessment;
 			sourceTree = "<group>";
@@ -614,6 +617,7 @@
 				B28D910127E3F8D80083CFC5 /* TargetPersonViewController.swift in Sources */,
 				B24FBD1427E5C57700063F42 /* DetailAssessmentTableViewCell.swift in Sources */,
 				B2647DAD27E2179300ED5F12 /* Repository.swift in Sources */,
+				B238EEC827EE837400D0E265 /* ImageListViewController.swift in Sources */,
 				B2BFCF4127EBBA7600C9F138 /* PastAssessmentViewItem.swift in Sources */,
 				B23A9E2027E0116F00FCB91F /* SceneDelegate.swift in Sources */,
 				B2647D8F27E2177A00ED5F12 /* UIAlertController.swift in Sources */,

@@ -45,7 +45,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="hw6-ld-eAH">
-                                <rect key="frame" x="46" y="247" width="323" height="259"/>
+                                <rect key="frame" x="46" y="235" width="323" height="259"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
@@ -54,7 +54,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8A3-Ui-jCE" customClass="AssessmentAnswerButton" customModule="HasegawasDementiaScaleRevised" customModuleProvider="target">
-                                <rect key="frame" x="50" y="573" width="142" height="60"/>
+                                <rect key="frame" x="50" y="607" width="142" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
@@ -63,7 +63,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mES-nS-TRc" customClass="AssessmentAnswerButton" customModule="HasegawasDementiaScaleRevised" customModuleProvider="target">
-                                <rect key="frame" x="236" y="573" width="142" height="60"/>
+                                <rect key="frame" x="236" y="607" width="142" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
@@ -72,7 +72,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yIC-EB-Nyc" customClass="AssessmentAnswerButton" customModule="HasegawasDementiaScaleRevised" customModuleProvider="target">
-                                <rect key="frame" x="50" y="641" width="142" height="60"/>
+                                <rect key="frame" x="50" y="675" width="142" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title=""/>
@@ -81,7 +81,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZCX-bH-U2P" customClass="AssessmentAnswerButton" customModule="HasegawasDementiaScaleRevised" customModuleProvider="target">
-                                <rect key="frame" x="236" y="650" width="142" height="60"/>
+                                <rect key="frame" x="236" y="684" width="142" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
@@ -90,7 +90,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dW0-Ju-FdS" customClass="AssessmentAnswerButton" customModule="HasegawasDementiaScaleRevised" customModuleProvider="target">
-                                <rect key="frame" x="50" y="709" width="142" height="60"/>
+                                <rect key="frame" x="50" y="743" width="142" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
@@ -99,7 +99,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H19-4a-FO7" customClass="AssessmentAnswerButton" customModule="HasegawasDementiaScaleRevised" customModuleProvider="target">
-                                <rect key="frame" x="236" y="726" width="142" height="60"/>
+                                <rect key="frame" x="236" y="760" width="142" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
@@ -108,12 +108,21 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JUX-bK-Vhb" customClass="AssessmentAnswerButton" customModule="HasegawasDementiaScaleRevised" customModuleProvider="target">
-                                <rect key="frame" x="50" y="777" width="142" height="60"/>
+                                <rect key="frame" x="50" y="811" width="142" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                 <connections>
                                     <action selector="decideWithSender:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="0hV-nl-up5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aju-ZK-vMg">
+                                <rect key="frame" x="174" y="515" width="67" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <segue destination="Ca1-tR-3Vc" kind="presentation" modalPresentationStyle="fullScreen" id="q7E-IH-7By"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -158,28 +167,36 @@
             </objects>
             <point key="canvasLocation" x="756" y="55"/>
         </scene>
+        <!--ImageList-->
+        <scene sceneID="rSF-oD-bIl">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ImageList" id="Ca1-tR-3Vc" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AH0-qU-I0P" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="721" y="163"/>
+        </scene>
     </scenes>
     <designables>
         <designable name="8A3-Ui-jCE">
-            <size key="intrinsicContentSize" width="67" height="31"/>
+            <size key="intrinsicContentSize" width="30" height="34"/>
         </designable>
         <designable name="H19-4a-FO7">
-            <size key="intrinsicContentSize" width="67" height="31"/>
+            <size key="intrinsicContentSize" width="30" height="34"/>
         </designable>
         <designable name="JUX-bK-Vhb">
-            <size key="intrinsicContentSize" width="67" height="31"/>
+            <size key="intrinsicContentSize" width="30" height="34"/>
         </designable>
         <designable name="ZCX-bH-U2P">
-            <size key="intrinsicContentSize" width="67" height="31"/>
+            <size key="intrinsicContentSize" width="30" height="34"/>
         </designable>
         <designable name="dW0-Ju-FdS">
-            <size key="intrinsicContentSize" width="67" height="31"/>
+            <size key="intrinsicContentSize" width="30" height="34"/>
         </designable>
         <designable name="mES-nS-TRc">
-            <size key="intrinsicContentSize" width="67" height="31"/>
+            <size key="intrinsicContentSize" width="30" height="34"/>
         </designable>
         <designable name="yIC-EB-Nyc">
-            <size key="intrinsicContentSize" width="24" height="14"/>
+            <size key="intrinsicContentSize" width="30" height="34"/>
         </designable>
     </designables>
     <resources>

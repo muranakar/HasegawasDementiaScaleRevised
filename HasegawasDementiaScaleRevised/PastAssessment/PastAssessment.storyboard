@@ -22,6 +22,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <connections>
                                     <outlet property="dataSource" destination="Y6W-OH-hqX" id="XwA-8g-35o"/>
+                                    <outlet property="delegate" destination="Y6W-OH-hqX" id="KXj-JK-ujI"/>
                                 </connections>
                             </tableView>
                         </subviews>
@@ -39,11 +40,22 @@
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="tableView" destination="on2-DA-K1x" id="K81-9y-GMJ"/>
+                        <segue destination="xEv-vX-b3o" kind="show" identifier="DetailAssessment" destinationCreationSelector="makeDetailAssessmentWithCoder:sender:segueIdentifier:" id="8bJ-R5-Isb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-17.39130434782609" y="86.383928571428569"/>
+        </scene>
+        <!--DetailAssessment-->
+        <scene sceneID="0Io-0l-vod">
+            <objects>
+                <viewControllerPlaceholder storyboardName="DetailAssessment" id="xEv-vX-b3o" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="0Ss-Qo-kD0"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pvd-AY-r82" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="764" y="57"/>
         </scene>
     </scenes>
     <resources>

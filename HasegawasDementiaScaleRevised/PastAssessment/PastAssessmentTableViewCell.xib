@@ -3,47 +3,100 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="204" id="KGk-i7-Jjw" customClass="PastAssessmentTableViewCell" customModule="HasegawasDementiaScaleRevised" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="461" height="204"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="121" id="KGk-i7-Jjw" customClass="PastAssessmentTableViewCell" customModule="HasegawasDementiaScaleRevised" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="358" height="121"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="461" height="204"/>
+                <rect key="frame" x="0.0" y="0.0" width="358" height="121"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nNG-G9-HUo">
-                        <rect key="frame" x="58" y="64" width="42" height="21"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="合計" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zBg-Mt-BbD">
+                        <rect key="frame" x="30" y="20" width="71" height="36"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="71" id="fg3-FH-SeF"/>
+                            <constraint firstAttribute="height" constant="36" id="saq-Ov-zgQ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lDE-4h-2Cn">
-                        <rect key="frame" x="149" y="64" width="42" height="21"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="評価日" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oH6-zL-nkP">
+                        <rect key="frame" x="30" y="76" width="52" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="52" id="B64-3u-f5C"/>
+                            <constraint firstAttribute="height" constant="21" id="Xm8-RU-I2d"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IRn-Cv-Ss1" customClass="PastAssessmentTableViewCellCopyButton" customModule="HasegawasDementiaScaleRevised">
-                        <rect key="frame" x="328" y="81" width="67" height="31"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lDE-4h-2Cn">
+                        <rect key="frame" x="112" y="76" width="42" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="c08-qr-BjQ"/>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="42" id="rkd-f8-f8p"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IRn-Cv-Ss1" customClass="PastAssessmentTableViewCellCopyButton" customModule="HasegawasDementiaScaleRevised" customModuleProvider="target">
+                        <rect key="frame" x="258" y="20" width="80" height="80"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="80" id="0nn-Dq-ziX"/>
+                            <constraint firstAttribute="width" constant="80" id="7QI-bg-qRU"/>
+                        </constraints>
                         <state key="normal" title="Button"/>
-                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain" imagePlacement="top" title="copy">
+                            <imageReference key="image" image="doc.on.doc" catalog="system" symbolScale="large"/>
+                            <fontDescription key="titleFontDescription" type="system" pointSize="12"/>
+                            <color key="baseForegroundColor" name="AccentColor"/>
+                        </buttonConfiguration>
                     </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nNG-G9-HUo">
+                        <rect key="frame" x="121" y="23" width="59" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="59" id="LZP-8K-ceS"/>
+                            <constraint firstAttribute="height" constant="30" id="yiX-zi-GJ4"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
+                <constraints>
+                    <constraint firstItem="IRn-Cv-Ss1" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="1hg-aM-puh"/>
+                    <constraint firstAttribute="trailing" secondItem="IRn-Cv-Ss1" secondAttribute="trailing" constant="20" id="7Xz-8H-zLm"/>
+                    <constraint firstItem="oH6-zL-nkP" firstAttribute="top" secondItem="zBg-Mt-BbD" secondAttribute="bottom" constant="20" id="H6Q-Gf-8wO"/>
+                    <constraint firstItem="oH6-zL-nkP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="30" id="IE7-Ct-HhP"/>
+                    <constraint firstItem="nNG-G9-HUo" firstAttribute="leading" secondItem="zBg-Mt-BbD" secondAttribute="trailing" constant="20" id="WQ2-4t-Lhz"/>
+                    <constraint firstItem="zBg-Mt-BbD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="30" id="ewc-xx-U6V"/>
+                    <constraint firstItem="zBg-Mt-BbD" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="gLs-bl-8hH"/>
+                    <constraint firstItem="lDE-4h-2Cn" firstAttribute="centerY" secondItem="oH6-zL-nkP" secondAttribute="centerY" id="tkA-cw-Sgc"/>
+                    <constraint firstItem="lDE-4h-2Cn" firstAttribute="leading" secondItem="oH6-zL-nkP" secondAttribute="trailing" constant="30" id="wa0-Yk-enr"/>
+                    <constraint firstItem="nNG-G9-HUo" firstAttribute="centerY" secondItem="zBg-Mt-BbD" secondAttribute="centerY" id="zZK-EN-BBd"/>
+                </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="assessmentResultNumLabel" destination="nNG-G9-HUo" id="Cnt-sf-Cwz"/>
+                <outlet property="copyTextButton" destination="IRn-Cv-Ss1" id="YYC-cf-mun"/>
                 <outlet property="createdAtLabel" destination="lDE-4h-2Cn" id="3Mx-Q5-kh6"/>
             </connections>
-            <point key="canvasLocation" x="163.04347826086959" y="52.232142857142854"/>
+            <point key="canvasLocation" x="88.405797101449281" y="24.441964285714285"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="doc.on.doc" catalog="system" width="116" height="128"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
 </document>

@@ -14,16 +14,20 @@ final class PastAssessmentViewController: UIViewController {
     private let pasteboardFormatter = AssessmentResultPasteboardFormatter()
     private var ascending = false {
         didSet {
-            items = repository.load(id: targetPerson.id, sortKey: "createdAt", ascending: ascending)
+            assessmentViewItems = repository.load(id: targetPerson.id, sortKey: "createdAt", ascending: ascending)
                 .compactMap(PastAssessmentViewItem.init)
         }
     }
-    private var items = [PastAssessmentViewItem]() {
+    private var assessmentViewItems = [PastAssessmentViewItem]() {
         didSet {
             Task { [weak tableView] in
                 tableView?.reloadData()
             }
         }
+    }
+
+    private var assessments :[Assessment]{
+        repository.load(id: targetPerson.id, sortKey: "createdAt", ascending: ascending)
     }
 
     @IBOutlet weak private var tableView: UITableView! {
@@ -55,7 +59,7 @@ private extension PastAssessmentViewController {
         token = repository.observe(id: targetPerson.id, sortKey: "createdAt") { [weak self] in
             self?.ascending
         } callBack: { [weak self] result in
-            self?.items = (try result.get())
+            self?.assessmentViewItems = (try result.get())
                 .compactMap(PastAssessmentViewItem.init)
         }
     }
@@ -82,17 +86,38 @@ extension PastAssessmentViewController {
 // MARK: - UITableViewDataSource
 extension PastAssessmentViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        items.count
+        assessmentViewItems.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: PastAssessmentTableViewCell = tableView.dequeueCell(for: indexPath)
-        cell.configure(item: items[indexPath.row])
+        cell.configure(item: assessmentViewItems[indexPath.row])
         return cell
     }
 
     func tableView(_: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         guard editingStyle == .delete else { return }
-        repository.remove(id: items[indexPath.row].id)
+        repository.remove(id: assessmentViewItems[indexPath.row].id)
     }
+}
+
+extension PastAssessmentViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "DetailAssessment", sender: indexPath)
+    }
+}
+
+extension PastAssessmentViewController {
+    @IBSegueAction
+        func makeDetailAssessment(
+            coder: NSCoder,
+            sender: Any?,
+            segueIdentifier: String?
+        ) -> DetailAssessmentViewController? {
+//            guard let cell = sender as? UITableViewCell, let indexPath = tableView.indexPath(for: cell) else {
+//                return nil
+//            }
+            guard let indexPath = sender as? IndexPath else { return nil }
+            return .init(coder: coder, repository: repository, id: assessments[indexPath.row].id)
+        }
 }

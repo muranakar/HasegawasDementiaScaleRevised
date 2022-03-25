@@ -13,7 +13,7 @@ class PastAssessmentTableViewCell: UITableViewCell {
     @IBOutlet weak private var copyTextButton: PastAssessmentTableViewCellCopyButton!
 
     func configure(item: PastAssessmentViewItem) {
-//        copyTextButton.id = item.id
+        copyTextButton.id = item.id
         assessmentResultNumLabel.text = item.assessmentResult
         createdAtLabel.text = item.creationDate
     }

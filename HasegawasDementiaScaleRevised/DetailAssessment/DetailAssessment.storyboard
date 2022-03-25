@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Detail Assessment View Controller-->
+        <!--Title-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
                 <viewController id="Y6W-OH-hqX" customClass="DetailAssessmentViewController" customModule="HasegawasDementiaScaleRevised" customModuleProvider="target" sceneMemberID="viewController">
@@ -60,17 +60,28 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Title" id="0Pz-dT-tPu">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="chevron.backward" catalog="system" id="bbb-JN-s6y">
+                            <connections>
+                                <action selector="backToPastAssessmentOrAssessment:" destination="Y6W-OH-hqX" id="9Xq-ii-vE0"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="tableView" destination="EFb-vY-wJY" id="Hk2-Kc-OC9"/>
+                        <segue destination="1vq-ye-6Vw" kind="unwind" identifier="FunctionSelection" unwindAction="backToFunctionSelectionTableViewControllerWithSegue:" id="1Q3-po-ES1"/>
+                        <segue destination="1vq-ye-6Vw" kind="unwind" identifier="PastAssessment" unwindAction="backToPastAssessmentTableViewControllerWithSegue:" id="UJf-OD-h5o"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="1vq-ye-6Vw" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="131.8840579710145" y="73.660714285714278"/>
         </scene>
     </scenes>
     <resources>
+        <image name="chevron.backward" catalog="system" width="96" height="128"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

@@ -26,13 +26,12 @@ final class PastAssessmentViewController: UIViewController {
         }
     }
 
-    private var assessments :[Assessment]{
+    private var assessments: [Assessment] {
         repository.load(id: targetPerson.id, sortKey: "createdAt", ascending: ascending)
     }
 
     @IBOutlet weak private var tableView: UITableView! {
         didSet {
-            // TODO: 未編集
             tableView.registerNib(PastAssessmentTableViewCell.self)
         }
     }
@@ -118,6 +117,15 @@ extension PastAssessmentViewController {
 //                return nil
 //            }
             guard let indexPath = sender as? IndexPath else { return nil }
-            return .init(coder: coder, repository: repository, id: assessments[indexPath.row].id)
+            return .init(
+                coder: coder,
+                repository: repository,
+                id: assessments[indexPath.row].id,
+                segueMode: .pastassessmentlist
+            )
         }
+
+    @IBAction
+    func backToPastAssessmentTableViewController(segue: UIStoryboardSegue) {
+    }
 }

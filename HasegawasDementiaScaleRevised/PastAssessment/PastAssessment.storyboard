@@ -31,6 +31,11 @@
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Title" id="eIg-jt-hHz">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="chevron.backward" catalog="system" id="CuO-Tr-fbb">
+                            <connections>
+                                <segue destination="XZs-fw-gq3" kind="unwind" unwindAction="backToFunctionSelectionTableViewControllerWithSegue:" id="gye-LZ-sbB"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Item" image="arrow.up.arrow.down" catalog="system" id="jBX-ES-fed">
                             <connections>
                                 <action selector="sortTableView:" destination="Y6W-OH-hqX" id="1q4-XN-TDg"/>
@@ -44,6 +49,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="XZs-fw-gq3" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="-17.39130434782609" y="86.383928571428569"/>
         </scene>
@@ -60,6 +66,7 @@
     </scenes>
     <resources>
         <image name="arrow.up.arrow.down" catalog="system" width="128" height="98"/>
+        <image name="chevron.backward" catalog="system" width="96" height="128"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

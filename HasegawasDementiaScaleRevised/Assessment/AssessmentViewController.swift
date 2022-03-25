@@ -11,8 +11,6 @@ class AssessmentViewController: UIViewController {
     private let targetPerson: TargetPerson
     private let repository: AssessmentRepository
 
-    @IBOutlet private weak var progressTextLabel: UILabel!
-    @IBOutlet private weak var progressView: UIProgressView!
     @IBOutlet private weak var assessmentItemTitleLabel: UILabel!
     @IBOutlet private weak var assessmentQuestionLabel: UILabel!
     @IBOutlet private weak var assessmentAttentionTextView: UITextView!
@@ -131,7 +129,7 @@ extension AssessmentViewController {
             guard let id = sender as? Assessment.ID else {
                 return nil
             }
-            return .init(coder: coder, repository: repository, id: id)
+        return .init(coder: coder, repository: repository, id: id, segueMode: .assessment)
     }
 }
 

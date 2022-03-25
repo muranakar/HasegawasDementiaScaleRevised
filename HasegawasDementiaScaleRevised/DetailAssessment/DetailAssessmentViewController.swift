@@ -9,13 +9,20 @@ import UIKit
 
 class DetailAssessmentViewController: UIViewController {
     private let assessment: Assessment
+    private let segueMode: SegueMode
+
+    enum SegueMode {
+        case assessment
+        case pastassessmentlist
+    }
 
     @IBOutlet private weak var tableView: UITableView!
-    required init?(coder: NSCoder, repository: AssessmentRepository, id: Assessment.ID) {
+    required init?(coder: NSCoder, repository: AssessmentRepository, id: Assessment.ID, segueMode: SegueMode) {
         guard let assessment = repository.load(id: id) else {
             return nil
         }
         self.assessment = assessment
+        self.segueMode = segueMode
         super.init(coder: coder)
     }
     private var assessmentItemName = Assessment.hdsrItemName
@@ -31,6 +38,15 @@ class DetailAssessmentViewController: UIViewController {
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
+    }
+
+    @IBAction private func backToPastAssessmentOrAssessment(_ sender: Any) {
+        switch segueMode {
+        case .assessment:
+            performSegue(withIdentifier: "FunctionSelection", sender: nil)
+        case .pastassessmentlist:
+            performSegue(withIdentifier: "PastAssessment", sender: nil)
+        }
     }
 }
 
@@ -51,3 +67,4 @@ extension DetailAssessmentViewController: UITableViewDataSource {
         return cell
     }
 }
+

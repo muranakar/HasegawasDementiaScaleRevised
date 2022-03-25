@@ -17,6 +17,13 @@ class ImageListViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        //　参考　https://qiita.com/tanaka-tt/items/df1ebcc68f29e50c13c9
+        image1.isUserInteractionEnabled = true
+        image1.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(tapped)))
     }
-    
+
+    @objc
+    func tapped() {
+        
+    }
 }

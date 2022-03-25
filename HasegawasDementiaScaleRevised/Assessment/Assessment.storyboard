@@ -149,6 +149,7 @@
                         <outlet property="button5" destination="dW0-Ju-FdS" id="UFv-82-Voj"/>
                         <outlet property="button6" destination="H19-4a-FO7" id="xUI-pP-6HR"/>
                         <outlet property="button7" destination="JUX-bK-Vhb" id="HyZ-a3-NPb"/>
+                        <outlet property="imageListSegueButton" destination="Aju-ZK-vMg" id="mGU-N7-QFA"/>
                         <segue destination="b11-r7-PbP" kind="show" identifier="DetailAssessmentTableViewCell" destinationCreationSelector="makeDetailWithCoder:sender:segueIdentifier:" id="Ihc-Az-UdW"/>
                     </connections>
                 </viewController>

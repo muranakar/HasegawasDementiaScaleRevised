@@ -14,6 +14,7 @@ class AssessmentViewController: UIViewController {
     @IBOutlet private weak var assessmentItemTitleLabel: UILabel!
     @IBOutlet private weak var assessmentQuestionLabel: UILabel!
     @IBOutlet private weak var assessmentAttentionTextView: UITextView!
+    @IBOutlet weak var imageListSegueButton: UIButton!
     @IBOutlet private weak var button1: UIButton!
     @IBOutlet private weak var button2: UIButton!
     @IBOutlet private weak var button3: UIButton!
@@ -75,6 +76,7 @@ class AssessmentViewController: UIViewController {
         super.viewDidLoad()
         decodeHDSRJsonFile()
         // 以下、Viewに関するメソッド
+        imageListSegueButton.isHidden = true
         buttonViewConfigue()
         labelViewConfigue()
         textViewViewConfigue()
@@ -82,7 +84,6 @@ class AssessmentViewController: UIViewController {
 
     @IBAction private func decide(sender: UIButton) {
         assessmentResultHDSR.append(dictonaryButtonAndButtonResultNum[sender]!!)
-        print(assessmentResultHDSR)
         hdsrIndex += 1
         if hdsrIndex == 9 {
             let assessmet = Assessment(resultHDSR: .init(
@@ -99,6 +100,9 @@ class AssessmentViewController: UIViewController {
             repository.add(value: assessmet, id: targetPerson.id)
             performSegue(withIdentifier: "DetailAssessmentTableViewCell", sender: assessmet.id)
         } else {
+            if hdsrIndex == 7 {
+                imageListSegueButton.isHidden = false
+            }
             buttonViewConfigue()
             labelViewConfigue()
             textViewViewConfigue()

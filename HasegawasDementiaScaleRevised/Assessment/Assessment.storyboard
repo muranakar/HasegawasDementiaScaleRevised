@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -17,14 +18,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="項目" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3D6-90-2G4">
-                                <rect key="frame" x="43" y="114" width="35" height="21"/>
+                                <rect key="frame" x="97" y="114" width="35" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m3M-kf-nXc">
-                                <rect key="frame" x="113" y="104" width="142" height="41"/>
+                                <rect key="frame" x="167" y="104" width="142" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -125,21 +126,38 @@
                                     <segue destination="Ca1-tR-3Vc" kind="presentation" modalPresentationStyle="fullScreen" id="q7E-IH-7By"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CFT-sL-EIr">
+                                <rect key="frame" x="9" y="92" width="80" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="back">
+                                    <imageReference key="image" image="arrowshape.turn.up.backward" catalog="system" symbolScale="medium"/>
+                                </state>
+                                <buttonConfiguration key="configuration" style="plain" imagePlacement="top" title="１つ戻る">
+                                    <imageReference key="image" image="arrowshape.turn.up.backward" catalog="system" symbolScale="medium"/>
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="10"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="backOneAssessmentItem:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="9xv-Od-bnY"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Title" id="gQW-uP-yf2">
-                        <barButtonItem key="leftBarButtonItem" title="Item" image="chevron.backward" catalog="system" id="gbq-DZ-LPL">
+                        <barButtonItem key="leftBarButtonItem" title="中止" id="gbq-DZ-LPL">
                             <connections>
-                                <segue destination="POq-wL-UhI" kind="unwind" unwindAction="backToFunctionSelectionTableViewControllerWithSegue:" id="RZn-lm-PaX"/>
+                                <action selector="cancelAssessment:" destination="Y6W-OH-hqX" id="tlf-Wp-9L2"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="assessmentAttentionTextView" destination="hw6-ld-eAH" id="V70-KK-nkb"/>
+                        <outlet property="assessmentBackButton" destination="CFT-sL-EIr" id="0jO-vz-2B0"/>
                         <outlet property="assessmentItemTitleLabel" destination="m3M-kf-nXc" id="9Bs-dI-Jai"/>
                         <outlet property="assessmentQuestionLabel" destination="Lox-YJ-YeH" id="3YZ-Tn-DVp"/>
                         <outlet property="button1" destination="8A3-Ui-jCE" id="3Zj-nh-NSa"/>
@@ -151,6 +169,7 @@
                         <outlet property="button7" destination="JUX-bK-Vhb" id="HyZ-a3-NPb"/>
                         <outlet property="imageListSegueButton" destination="Aju-ZK-vMg" id="mGU-N7-QFA"/>
                         <segue destination="b11-r7-PbP" kind="show" identifier="DetailAssessmentTableViewCell" destinationCreationSelector="makeDetailWithCoder:sender:segueIdentifier:" id="Ihc-Az-UdW"/>
+                        <segue destination="POq-wL-UhI" kind="unwind" identifier="FunctionSelection" unwindAction="backToFunctionSelectionTableViewControllerWithSegue:" id="sZ1-hI-yWj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -171,7 +190,9 @@
         <!--ImageList-->
         <scene sceneID="rSF-oD-bIl">
             <objects>
-                <viewControllerPlaceholder storyboardName="ImageList" id="Ca1-tR-3Vc" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="ImageList" id="Ca1-tR-3Vc" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="x2y-SA-2O9"/>
+                </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AH0-qU-I0P" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="721" y="163"/>
@@ -201,7 +222,7 @@
         </designable>
     </designables>
     <resources>
-        <image name="chevron.backward" catalog="system" width="96" height="128"/>
+        <image name="arrowshape.turn.up.backward" catalog="system" width="128" height="106"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

@@ -25,4 +25,19 @@ extension UIAlertController {
         controller.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
         return controller
     }
+
+    static func checkStopAssessment(okHandler:@escaping () -> Void) -> Self {
+        let title = "評価中止"
+        let message = "入力データは途中保存されません。\n評価を中止しますか？"
+        let alertController = self.init(title: title, message: message, preferredStyle: .alert)
+        let okAction = UIAlertAction(
+            title: "中止する",
+            style: .cancel) { _ in
+                okHandler()
+            }
+        let cancelAction = UIAlertAction(title: "中止しない", style: .default)
+        alertController.addAction(okAction)
+        alertController.addAction(cancelAction)
+        return alertController
+    }
 }

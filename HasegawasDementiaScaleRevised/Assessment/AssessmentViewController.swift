@@ -11,10 +11,11 @@ class AssessmentViewController: UIViewController {
     private let targetPerson: TargetPerson
     private let repository: AssessmentRepository
 
+    @IBOutlet private weak var assessmentBackButton: UIButton!
     @IBOutlet private weak var assessmentItemTitleLabel: UILabel!
     @IBOutlet private weak var assessmentQuestionLabel: UILabel!
     @IBOutlet private weak var assessmentAttentionTextView: UITextView!
-    @IBOutlet weak var imageListSegueButton: UIButton!
+    @IBOutlet private weak var imageListSegueButton: UIButton!
     @IBOutlet private weak var button1: UIButton!
     @IBOutlet private weak var button2: UIButton!
     @IBOutlet private weak var button3: UIButton!
@@ -76,10 +77,26 @@ class AssessmentViewController: UIViewController {
         super.viewDidLoad()
         decodeHDSRJsonFile()
         // 以下、Viewに関するメソッド
-        imageListSegueButton.isHidden = true
-        buttonViewConfigue()
-        labelViewConfigue()
-        textViewViewConfigue()
+        navigationItem.title = "対象者:　\(targetPerson.name)　様"
+        allViewConfigure()
+    }
+
+    @IBAction private func cancelAssessment(_ sender: Any) {
+        present(
+            UIAlertController.checkStopAssessment(
+                okHandler: { [weak self] in
+                    self?.performSegue(withIdentifier: "FunctionSelection", sender: nil)
+                }),
+            animated: true)
+    }
+
+    // Assessment項目を一つ戻る
+    @IBAction private func backOneAssessmentItem(_ sender: Any) {
+        if hdsrIndex >= 1 {
+            hdsrIndex -= 1
+            assessmentResultHDSR.removeLast()
+            allViewConfigure()
+        }
     }
 
     @IBAction private func decide(sender: UIButton) {
@@ -100,18 +117,31 @@ class AssessmentViewController: UIViewController {
             repository.add(value: assessmet, id: targetPerson.id)
             performSegue(withIdentifier: "DetailAssessmentTableViewCell", sender: assessmet.id)
         } else {
-            if hdsrIndex == 7 {
-                imageListSegueButton.isHidden = false
-            }
-            buttonViewConfigue()
-            labelViewConfigue()
-            textViewViewConfigue()
+            allViewConfigure()
         }
     }
 }
 
 // MARK: - Viewに関する変更
 private extension AssessmentViewController {
+    func allViewConfigure() {
+        // 最初の項目の時だけ、１つ戻るボタンを表示。
+        if hdsrIndex == 0 {
+            assessmentBackButton.isHidden = true
+        } else {
+            assessmentBackButton.isHidden = false
+        }
+        // 視覚記憶の項目の時だけ、imageListへのボタンを表示。
+        if hdsrIndex == 7 {
+            imageListSegueButton.isHidden = false
+        } else {
+            imageListSegueButton.isHidden = true
+        }
+        labelViewConfigue()
+        textViewViewConfigue()
+        buttonViewConfigue()
+    }
+
     func labelViewConfigue() {
         assessmentItemTitleLabel.text = hdsrAssessment[hdsrIndex].itemName
         assessmentQuestionLabel.text = hdsrAssessment[hdsrIndex].itemQuestion
@@ -127,6 +157,7 @@ private extension AssessmentViewController {
     }
 }
 
+// MARK: - Segueに関する情報
 extension AssessmentViewController {
     @IBSegueAction
     func makeDetail(coder: NSCoder, sender: Any?, segueIdentifier: String?) -> DetailAssessmentViewController? {
@@ -135,6 +166,9 @@ extension AssessmentViewController {
             }
         return .init(coder: coder, repository: repository, id: id, segueMode: .assessment)
     }
+
+    @IBAction private func backToAssessmentTableViewController(segue: UIStoryboardSegue) {
+        }
 }
 
 // MARK: - JSONファイルのデコーダー

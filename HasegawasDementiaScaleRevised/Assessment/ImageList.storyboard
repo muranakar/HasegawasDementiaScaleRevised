@@ -16,26 +16,55 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Clock" translatesAutoresizingMaskIntoConstraints="NO" id="7Fa-SH-SSa">
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Clock" translatesAutoresizingMaskIntoConstraints="NO" id="7Fa-SH-SSa">
                                 <rect key="frame" x="20" y="406" width="170" height="174"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="8Gc-yG-O2c" appends="YES" id="OTj-6P-uJp"/>
+                                </connections>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Pen" translatesAutoresizingMaskIntoConstraints="NO" id="kuX-1D-wzY">
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Pen" translatesAutoresizingMaskIntoConstraints="NO" id="kuX-1D-wzY">
                                 <rect key="frame" x="198" y="424" width="183" height="167"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="XwC-gK-cJT" appends="YES" id="RnY-0B-LHa"/>
+                                </connections>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Key" translatesAutoresizingMaskIntoConstraints="NO" id="AbD-WZ-qFS">
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Key" translatesAutoresizingMaskIntoConstraints="NO" id="AbD-WZ-qFS">
                                 <rect key="frame" x="125" y="620" width="185" height="148"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="XNe-cL-068" appends="YES" id="xq7-88-XAm"/>
+                                </connections>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Hair" translatesAutoresizingMaskIntoConstraints="NO" id="LFO-HE-Mpb">
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Hair" translatesAutoresizingMaskIntoConstraints="NO" id="LFO-HE-Mpb">
                                 <rect key="frame" x="28" y="173" width="162" height="186"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="XAV-9k-FCI" appends="YES" id="mbJ-la-hsL"/>
+                                </connections>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Coin" translatesAutoresizingMaskIntoConstraints="NO" id="dsm-d3-YuI">
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Coin" translatesAutoresizingMaskIntoConstraints="NO" id="dsm-d3-YuI">
                                 <rect key="frame" x="212" y="207" width="169" height="120"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="hhm-iC-5aa" appends="YES" id="vhN-jK-02K"/>
+                                </connections>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fCX-Zv-34C">
+                                <rect key="frame" x="306" y="83" width="75" height="81"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="xmark" catalog="system"/>
+                                <connections>
+                                    <segue destination="Lwl-8P-eXo" kind="unwind" unwindAction="backToAssessmentTableViewControllerWithSegue:" id="nyH-ze-hOg"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -46,26 +75,75 @@
                         <outlet property="image3" destination="7Fa-SH-SSa" id="Xcx-Bs-WvF"/>
                         <outlet property="image4" destination="kuX-1D-wzY" id="Ra8-bE-Kox"/>
                         <outlet property="image5" destination="AbD-WZ-qFS" id="dGE-ZU-jcl"/>
+                        <segue destination="Sgt-Uy-KTl" kind="show" identifier="AnimatedTransitioning" destinationCreationSelector="makePastAssessmentWithCoder:sender:segueIdentifier:" id="n6K-EP-9Vl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="Lwl-8P-eXo" userLabel="Exit" sceneMemberID="exit"/>
+                <tapGestureRecognizer id="XAV-9k-FCI">
+                    <connections>
+                        <action selector="imageViewTapped:" destination="Y6W-OH-hqX" id="Zgv-2u-Qfy"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="hhm-iC-5aa">
+                    <connections>
+                        <action selector="imageViewTapped:" destination="Y6W-OH-hqX" id="6fN-au-Rzs"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="8Gc-yG-O2c">
+                    <connections>
+                        <action selector="imageViewTapped:" destination="Y6W-OH-hqX" id="aYN-eR-L6V"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="XwC-gK-cJT">
+                    <connections>
+                        <action selector="imageViewTapped:" destination="Y6W-OH-hqX" id="aor-4i-oJ9"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="XNe-cL-068">
+                    <connections>
+                        <action selector="imageViewTapped:" destination="Y6W-OH-hqX" id="fKj-TK-YJ7"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="131.8840579710145" y="109.82142857142857"/>
         </scene>
-        <!--View Controller-->
+        <!--Animated Transitioning View Controller-->
         <scene sceneID="5Gs-tq-D1V">
             <objects>
-                <viewController id="Sgt-Uy-KTl" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="overCurrentContext" id="Sgt-Uy-KTl" customClass="AnimatedTransitioningViewController" customModule="HasegawasDementiaScaleRevised" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yLX-Fo-1Gv">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fqm-eL-4xr">
+                                <rect key="frame" x="20" y="226" width="374" height="406"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q6H-Hm-7Ek">
+                                <rect key="frame" x="298" y="90" width="75" height="81"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="xmark" catalog="system"/>
+                                <connections>
+                                    <segue destination="02N-N4-0Es" kind="unwind" unwindAction="backToImageListTableViewControllerWithSegue:" id="bqs-ok-lry"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="AOd-Sq-niY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="2Pc-vQ-c3U">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="chevron.backward" catalog="system" id="F9o-MX-t8W"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="imageView" destination="fqm-eL-4xr" id="Ob5-VG-Y41"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AbG-xO-IV9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="02N-N4-0Es" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="978" y="110"/>
+            <point key="canvasLocation" x="976.81159420289862" y="109.82142857142857"/>
         </scene>
     </scenes>
     <resources>
@@ -74,6 +152,8 @@
         <image name="Hair" width="312.5" height="312.5"/>
         <image name="Key" width="567" height="425"/>
         <image name="Pen" width="800" height="800"/>
+        <image name="chevron.backward" catalog="system" width="96" height="128"/>
+        <image name="xmark" catalog="system" width="128" height="113"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

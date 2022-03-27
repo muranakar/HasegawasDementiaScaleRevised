@@ -125,7 +125,6 @@ extension PastAssessmentViewController {
             )
         }
 
-    @IBAction
-    func backToPastAssessmentTableViewController(segue: UIStoryboardSegue) {
+    @IBAction private func backToPastAssessmentTableViewController(segue: UIStoryboardSegue) {
     }
 }

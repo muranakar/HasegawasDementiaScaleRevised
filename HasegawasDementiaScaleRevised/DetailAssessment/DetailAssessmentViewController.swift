@@ -38,6 +38,7 @@ class DetailAssessmentViewController: UIViewController {
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
+        navigationItem.title = "対象者:　\(assessment.targetPerson!.name)　様"
     }
 
     @IBAction private func backToPastAssessmentOrAssessment(_ sender: Any) {
@@ -67,4 +68,3 @@ extension DetailAssessmentViewController: UITableViewDataSource {
         return cell
     }
 }
-

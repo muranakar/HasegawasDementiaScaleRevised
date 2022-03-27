@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Title-->
+        <!--NavigationItem-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
                 <viewController id="Y6W-OH-hqX" customClass="AssessmentViewController" customModule="HasegawasDementiaScaleRevised" customModuleProvider="target" sceneMemberID="viewController">
@@ -17,118 +17,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="項目" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3D6-90-2G4">
-                                <rect key="frame" x="97" y="114" width="35" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m3M-kf-nXc">
-                                <rect key="frame" x="167" y="104" width="142" height="41"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="問題" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gxZ-n1-aUA">
-                                <rect key="frame" x="50" y="147" width="35" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lox-YJ-YeH">
-                                <rect key="frame" x="50" y="176" width="315" height="63"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="hw6-ld-eAH">
-                                <rect key="frame" x="46" y="235" width="323" height="259"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <color key="textColor" systemColor="labelColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8A3-Ui-jCE" customClass="AssessmentAnswerButton" customModule="HasegawasDementiaScaleRevised" customModuleProvider="target">
-                                <rect key="frame" x="50" y="607" width="142" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
-                                <connections>
-                                    <action selector="decideWithSender:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="fmi-yR-o7r"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mES-nS-TRc" customClass="AssessmentAnswerButton" customModule="HasegawasDementiaScaleRevised" customModuleProvider="target">
-                                <rect key="frame" x="236" y="607" width="142" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
-                                <connections>
-                                    <action selector="decideWithSender:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="GAU-Xe-R87"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yIC-EB-Nyc" customClass="AssessmentAnswerButton" customModule="HasegawasDementiaScaleRevised" customModuleProvider="target">
-                                <rect key="frame" x="50" y="675" width="142" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title=""/>
-                                <connections>
-                                    <action selector="decideWithSender:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="17V-al-BvY"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZCX-bH-U2P" customClass="AssessmentAnswerButton" customModule="HasegawasDementiaScaleRevised" customModuleProvider="target">
-                                <rect key="frame" x="236" y="684" width="142" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
-                                <connections>
-                                    <action selector="decideWithSender:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="aNw-qM-ff3"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dW0-Ju-FdS" customClass="AssessmentAnswerButton" customModule="HasegawasDementiaScaleRevised" customModuleProvider="target">
-                                <rect key="frame" x="50" y="743" width="142" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
-                                <connections>
-                                    <action selector="decideWithSender:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="bGl-M4-DzA"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H19-4a-FO7" customClass="AssessmentAnswerButton" customModule="HasegawasDementiaScaleRevised" customModuleProvider="target">
-                                <rect key="frame" x="236" y="760" width="142" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
-                                <connections>
-                                    <action selector="decideWithSender:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="tIl-6n-kCw"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JUX-bK-Vhb" customClass="AssessmentAnswerButton" customModule="HasegawasDementiaScaleRevised" customModuleProvider="target">
-                                <rect key="frame" x="50" y="811" width="142" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
-                                <connections>
-                                    <action selector="decideWithSender:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="0hV-nl-up5"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aju-ZK-vMg">
-                                <rect key="frame" x="174" y="515" width="67" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
-                                <connections>
-                                    <segue destination="Ca1-tR-3Vc" kind="presentation" modalPresentationStyle="fullScreen" id="q7E-IH-7By"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CFT-sL-EIr">
-                                <rect key="frame" x="9" y="92" width="80" height="53"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CFT-sL-EIr">
+                                <rect key="frame" x="9" y="59" width="65" height="43"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="65" id="I9r-LJ-Pyj"/>
+                                    <constraint firstAttribute="height" constant="43" id="j0g-vc-WiC"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="back">
@@ -142,12 +36,183 @@
                                     <action selector="backOneAssessmentItem:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="9xv-Od-bnY"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="項目" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3D6-90-2G4">
+                                <rect key="frame" x="90" y="70" width="35" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="ZQk-b7-NQD"/>
+                                    <constraint firstAttribute="width" constant="35" id="rOy-ph-aLi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m3M-kf-nXc">
+                                <rect key="frame" x="150" y="60" width="142" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="142" id="9Le-ed-Mgc"/>
+                                    <constraint firstAttribute="height" constant="41" id="qDm-hK-sBW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="問題" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gxZ-n1-aUA">
+                                <rect key="frame" x="40" y="112" width="27" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lox-YJ-YeH">
+                                <rect key="frame" x="20" y="133" width="374" height="63"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="63" id="I83-FW-OYr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hw6-ld-eAH">
+                                <rect key="frame" x="20" y="201" width="374" height="326"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mES-nS-TRc" customClass="AssessmentAnswerButton" customModule="HasegawasDementiaScaleRevised" customModuleProvider="target">
+                                <rect key="frame" x="222" y="588" width="150" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="k44-b6-0Qm"/>
+                                    <constraint firstAttribute="width" constant="150" id="k7V-d5-2p5"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="decideWithSender:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="GAU-Xe-R87"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yIC-EB-Nyc" customClass="AssessmentAnswerButton" customModule="HasegawasDementiaScaleRevised" customModuleProvider="target">
+                                <rect key="frame" x="42" y="643" width="150" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="3UY-Ix-U5r"/>
+                                    <constraint firstAttribute="width" constant="150" id="eZN-JV-ztC"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title=""/>
+                                <connections>
+                                    <action selector="decideWithSender:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="17V-al-BvY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZCX-bH-U2P" customClass="AssessmentAnswerButton" customModule="HasegawasDementiaScaleRevised" customModuleProvider="target">
+                                <rect key="frame" x="222" y="643" width="150" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="BRZ-LK-Act"/>
+                                    <constraint firstAttribute="width" constant="150" id="DsL-1L-dAX"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="decideWithSender:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="aNw-qM-ff3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dW0-Ju-FdS" customClass="AssessmentAnswerButton" customModule="HasegawasDementiaScaleRevised" customModuleProvider="target">
+                                <rect key="frame" x="42" y="698" width="150" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="G6T-lE-uib"/>
+                                    <constraint firstAttribute="width" constant="150" id="TEM-nm-6YQ"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="decideWithSender:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="bGl-M4-DzA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H19-4a-FO7" customClass="AssessmentAnswerButton" customModule="HasegawasDementiaScaleRevised" customModuleProvider="target">
+                                <rect key="frame" x="222" y="698" width="150" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Akr-ew-zgx"/>
+                                    <constraint firstAttribute="width" constant="150" id="mcN-v4-e6N"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="decideWithSender:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="tIl-6n-kCw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JUX-bK-Vhb" customClass="AssessmentAnswerButton" customModule="HasegawasDementiaScaleRevised" customModuleProvider="target">
+                                <rect key="frame" x="132" y="753" width="150" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="6MC-1v-vR5"/>
+                                    <constraint firstAttribute="width" constant="150" id="Wg8-Lf-llr"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="decideWithSender:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="0hV-nl-up5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8A3-Ui-jCE" customClass="AssessmentAnswerButton" customModule="HasegawasDementiaScaleRevised" customModuleProvider="target">
+                                <rect key="frame" x="42" y="588" width="150" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="9xW-NN-vWe"/>
+                                    <constraint firstAttribute="width" constant="150" id="QaV-0v-pQf"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="decideWithSender:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="fmi-yR-o7r"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aju-ZK-vMg">
+                                <rect key="frame" x="166.5" y="537" width="81.5" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="81.5" id="22A-ae-VOc"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="画像一覧"/>
+                                <connections>
+                                    <segue destination="Ca1-tR-3Vc" kind="presentation" modalPresentationStyle="fullScreen" id="q7E-IH-7By"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="CFT-sL-EIr" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="15" id="2Na-kD-f0C"/>
+                            <constraint firstItem="3D6-90-2G4" firstAttribute="leading" secondItem="CFT-sL-EIr" secondAttribute="trailing" constant="16" id="3sY-aV-E1D"/>
+                            <constraint firstItem="Aju-ZK-vMg" firstAttribute="centerX" secondItem="hw6-ld-eAH" secondAttribute="centerX" id="4cK-FV-CWh"/>
+                            <constraint firstItem="H19-4a-FO7" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" constant="90" id="5A6-9k-8TZ"/>
+                            <constraint firstItem="Lox-YJ-YeH" firstAttribute="top" secondItem="gxZ-n1-aUA" secondAttribute="bottom" constant="5" id="5GW-SR-YAV"/>
+                            <constraint firstItem="yIC-EB-Nyc" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" constant="-90" id="8eI-LV-nQw"/>
+                            <constraint firstItem="dW0-Ju-FdS" firstAttribute="top" secondItem="yIC-EB-Nyc" secondAttribute="bottom" constant="5" id="9fK-FX-NVH"/>
+                            <constraint firstItem="dW0-Ju-FdS" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" constant="-90" id="CdX-Gz-K0k"/>
+                            <constraint firstItem="gxZ-n1-aUA" firstAttribute="top" secondItem="CFT-sL-EIr" secondAttribute="bottom" constant="10" id="EqX-TJ-z8x"/>
+                            <constraint firstItem="Lox-YJ-YeH" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="FIP-Te-sn7"/>
+                            <constraint firstItem="Aju-ZK-vMg" firstAttribute="top" secondItem="hw6-ld-eAH" secondAttribute="bottom" constant="10" id="HsV-Oa-jqz"/>
+                            <constraint firstItem="3D6-90-2G4" firstAttribute="centerY" secondItem="CFT-sL-EIr" secondAttribute="centerY" id="IRF-fX-AfX"/>
+                            <constraint firstItem="yIC-EB-Nyc" firstAttribute="top" secondItem="8A3-Ui-jCE" secondAttribute="bottom" constant="5" id="Kjn-l5-T8M"/>
+                            <constraint firstItem="H19-4a-FO7" firstAttribute="top" secondItem="ZCX-bH-U2P" secondAttribute="bottom" constant="5" id="LqO-SX-62o"/>
+                            <constraint firstItem="gxZ-n1-aUA" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="40" id="NeM-mx-7Jv"/>
+                            <constraint firstItem="hw6-ld-eAH" firstAttribute="top" secondItem="Lox-YJ-YeH" secondAttribute="bottom" constant="5" id="OEf-MD-9Bb"/>
+                            <constraint firstItem="m3M-kf-nXc" firstAttribute="centerY" secondItem="CFT-sL-EIr" secondAttribute="centerY" id="PCR-lg-XOs"/>
+                            <constraint firstItem="m3M-kf-nXc" firstAttribute="leading" secondItem="3D6-90-2G4" secondAttribute="trailing" constant="25" id="Rd4-JT-LVf"/>
+                            <constraint firstItem="8A3-Ui-jCE" firstAttribute="top" secondItem="Aju-ZK-vMg" secondAttribute="bottom" constant="20" id="SJR-ch-0jS"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="hw6-ld-eAH" secondAttribute="trailing" constant="20" id="d4X-3x-7RN"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Lox-YJ-YeH" secondAttribute="trailing" constant="20" id="dc8-Zd-tfB"/>
+                            <constraint firstItem="ZCX-bH-U2P" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" constant="90" id="ghs-aC-JPe"/>
+                            <constraint firstItem="JUX-bK-Vhb" firstAttribute="top" secondItem="dW0-Ju-FdS" secondAttribute="bottom" constant="5" id="hVp-j8-JAh"/>
+                            <constraint firstItem="JUX-bK-Vhb" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="hmW-tO-IMU"/>
+                            <constraint firstItem="JUX-bK-Vhb" firstAttribute="top" secondItem="H19-4a-FO7" secondAttribute="bottom" constant="5" id="kF7-KF-5qY"/>
+                            <constraint firstItem="8A3-Ui-jCE" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" constant="-90" id="khR-PX-2wY"/>
+                            <constraint firstItem="hw6-ld-eAH" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="oLa-Oe-zWM"/>
+                            <constraint firstItem="JUX-bK-Vhb" firstAttribute="bottom" secondItem="vDu-zF-Fre" secondAttribute="bottom" constant="-10" id="qzF-Sl-HcH"/>
+                            <constraint firstItem="ZCX-bH-U2P" firstAttribute="top" secondItem="mES-nS-TRc" secondAttribute="bottom" constant="5" id="snt-4a-dwG"/>
+                            <constraint firstItem="mES-nS-TRc" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" constant="90" id="yDI-so-XJ1"/>
+                            <constraint firstItem="CFT-sL-EIr" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="9" id="z1S-XN-acB"/>
+                        </constraints>
                     </view>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" title="Title" id="gQW-uP-yf2">
+                    <navigationItem key="navigationItem" title="NavigationItem" id="gQW-uP-yf2">
                         <barButtonItem key="leftBarButtonItem" title="中止" id="gbq-DZ-LPL">
                             <connections>
                                 <action selector="cancelAssessment:" destination="Y6W-OH-hqX" id="tlf-Wp-9L2"/>
@@ -185,7 +250,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K88-BK-pLO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="756" y="55"/>
+            <point key="canvasLocation" x="766" y="-40"/>
         </scene>
         <!--ImageList-->
         <scene sceneID="rSF-oD-bIl">
@@ -195,7 +260,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AH0-qU-I0P" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="721" y="163"/>
+            <point key="canvasLocation" x="730" y="151"/>
         </scene>
     </scenes>
     <designables>

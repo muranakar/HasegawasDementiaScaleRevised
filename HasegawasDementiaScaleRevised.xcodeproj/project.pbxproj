@@ -781,6 +781,7 @@
 				DEVELOPMENT_TEAM = DJ7VR35KC8;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = HasegawasDementiaScaleRevised/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "HDS-R";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -795,7 +796,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -810,6 +811,7 @@
 				DEVELOPMENT_TEAM = DJ7VR35KC8;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = HasegawasDementiaScaleRevised/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "HDS-R";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -824,7 +826,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

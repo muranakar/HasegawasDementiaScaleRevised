@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ga9-a2-xr2">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Function Selection View Controller-->
+        <scene sceneID="CHd-ME-Gbl">
+            <objects>
+                <viewController storyboardIdentifier="functionSelection" id="Ga9-a2-xr2" customClass="FunctionSelectionViewController" customModule="HasegawasDementiaScaleRevised" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="r7D-1r-vOT">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="200" placeholderIntrinsicHeight="70" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eoC-gw-awt" customClass="FunctionSelectionItemButton" customModule="HasegawasDementiaScaleRevised">
+                                <rect key="frame" x="107" y="363" width="200" height="70"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="評価開始"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="image" value="applepencil" catalog="system"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="n3G-45-8sd" kind="show" destinationCreationSelector="makeAssessmentWithCoder:sender:segueIdentifier:" id="9zl-ky-3RR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="200" placeholderIntrinsicHeight="70" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bKZ-3w-6GD" customClass="FunctionSelectionItemButton" customModule="HasegawasDementiaScaleRevised">
+                                <rect key="frame" x="107" y="503" width="200" height="70"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="過去評価一覧"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="image" value="list.dash" catalog="system"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="wBP-IL-DqP" kind="show" destinationCreationSelector="makePastAssessmentWithCoder:sender:segueIdentifier:" id="FS1-fj-MZF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="130" placeholderIntrinsicHeight="60" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DVW-9v-bJn" customClass="RequestViaTwitterButton" customModule="HasegawasDementiaScaleRevised" customModuleProvider="target">
+                                <rect key="frame" x="20" y="782" width="130" height="60"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <connections>
+                                    <action selector="openTwitterWithSender:" destination="s3g-Rx-O1n" eventType="touchUpInside" id="7eT-2p-3bW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="cpP-KG-AGu"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="cpP-KG-AGu" firstAttribute="bottom" secondItem="DVW-9v-bJn" secondAttribute="bottom" constant="20" id="FoX-Ls-JL7"/>
+                            <constraint firstItem="eoC-gw-awt" firstAttribute="centerY" secondItem="r7D-1r-vOT" secondAttribute="centerY" constant="-50" id="LGd-Ai-WjH"/>
+                            <constraint firstItem="eoC-gw-awt" firstAttribute="centerX" secondItem="r7D-1r-vOT" secondAttribute="centerX" id="LhX-lf-gcO"/>
+                            <constraint firstItem="DVW-9v-bJn" firstAttribute="leading" secondItem="cpP-KG-AGu" secondAttribute="leading" constant="20" id="aJA-0N-x44"/>
+                            <constraint firstItem="bKZ-3w-6GD" firstAttribute="centerX" secondItem="r7D-1r-vOT" secondAttribute="centerX" id="iOt-1a-7a1"/>
+                            <constraint firstItem="bKZ-3w-6GD" firstAttribute="centerY" secondItem="r7D-1r-vOT" secondAttribute="centerY" constant="90" id="xbp-pR-LXu"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="rSb-08-pdM">
+                        <barButtonItem key="leftBarButtonItem" image="chevron.backward" catalog="system" id="cUS-Ca-MX6">
+                            <connections>
+                                <segue destination="oel-Pm-gZu" kind="unwind" unwindAction="backToTargetPersonTableViewControllerWithSegue:" id="jbV-2l-mhr"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s3g-Rx-O1n" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="oel-Pm-gZu" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1802.8985507246377" y="79.6875"/>
+        </scene>
+        <!--Assessment-->
+        <scene sceneID="cDQ-a3-5Ai">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Assessment" id="n3G-45-8sd" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="sok-DW-4Cr"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9FZ-39-j2y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2452" y="1"/>
+        </scene>
+        <!--PastAssessment-->
+        <scene sceneID="C5Y-mU-oxM">
+            <objects>
+                <viewControllerPlaceholder storyboardName="PastAssessment" id="wBP-IL-DqP" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="xaG-Nu-leT"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dFe-v8-FrK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2454" y="148"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="DVW-9v-bJn">
+            <size key="intrinsicContentSize" width="130" height="60"/>
+        </designable>
+        <designable name="bKZ-3w-6GD">
+            <size key="intrinsicContentSize" width="200" height="70"/>
+        </designable>
+        <designable name="eoC-gw-awt">
+            <size key="intrinsicContentSize" width="200" height="70"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="applepencil" catalog="system" width="128" height="113"/>
+        <image name="chevron.backward" catalog="system" width="96" height="128"/>
+        <image name="list.dash" catalog="system" width="128" height="85"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

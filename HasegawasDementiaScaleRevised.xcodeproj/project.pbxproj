@@ -54,6 +54,8 @@
 		B2647DD527E217A400ED5F12 /* DisplayLinkWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2647DCB27E217A400ED5F12 /* DisplayLinkWrapper.swift */; };
 		B2647DD627E217A400ED5F12 /* Realm.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2647DCD27E217A400ED5F12 /* Realm.swift */; };
 		B2647DD727E217A400ED5F12 /* NotificationToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2647DCE27E217A400ED5F12 /* NotificationToken.swift */; };
+		B27B36F22839969900030FCA /* FunctionSelection.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B27B36F02839969900030FCA /* FunctionSelection.storyboard */; };
+		B27B36F32839969900030FCA /* FunctionSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27B36F12839969900030FCA /* FunctionSelectionViewController.swift */; };
 		B28D90F427E3F8BE0083CFC5 /* AssessorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28D90EF27E3F8BD0083CFC5 /* AssessorTableViewCell.swift */; };
 		B28D90F527E3F8BE0083CFC5 /* InputAssessorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28D90F027E3F8BD0083CFC5 /* InputAssessorViewController.swift */; };
 		B28D90F627E3F8BE0083CFC5 /* Assessor.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B28D90F127E3F8BD0083CFC5 /* Assessor.storyboard */; };
@@ -65,8 +67,6 @@
 		B28D910227E3F8D80083CFC5 /* InputTargetPerson.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B28D90FD27E3F8D70083CFC5 /* InputTargetPerson.storyboard */; };
 		B28D910327E3F8D80083CFC5 /* TargetPerson.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B28D90FE27E3F8D70083CFC5 /* TargetPerson.storyboard */; };
 		B28D910527E3FD310083CFC5 /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28D910427E3FD310083CFC5 /* UIApplication.swift */; };
-		B28D910A27E404360083CFC5 /* FunctionSelection.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B28D910827E404360083CFC5 /* FunctionSelection.storyboard */; };
-		B28D910B27E404360083CFC5 /* FunctionSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28D910927E404360083CFC5 /* FunctionSelectionViewController.swift */; };
 		B2B4261627E1665400C41DD0 /* RootNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B4261527E1665400C41DD0 /* RootNavigationController.swift */; };
 		B2BFCF3927EBB87500C9F138 /* PastAssessment.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2BFCF3827EBB87500C9F138 /* PastAssessment.storyboard */; };
 		B2BFCF3B27EBB88F00C9F138 /* PastAssessmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BFCF3A27EBB88F00C9F138 /* PastAssessmentViewController.swift */; };
@@ -126,6 +126,8 @@
 		B2647DCB27E217A400ED5F12 /* DisplayLinkWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayLinkWrapper.swift; sourceTree = "<group>"; };
 		B2647DCD27E217A400ED5F12 /* Realm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Realm.swift; sourceTree = "<group>"; };
 		B2647DCE27E217A400ED5F12 /* NotificationToken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationToken.swift; sourceTree = "<group>"; };
+		B27B36F02839969900030FCA /* FunctionSelection.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = FunctionSelection.storyboard; sourceTree = "<group>"; };
+		B27B36F12839969900030FCA /* FunctionSelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunctionSelectionViewController.swift; sourceTree = "<group>"; };
 		B28D90EF27E3F8BD0083CFC5 /* AssessorTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssessorTableViewCell.swift; sourceTree = "<group>"; };
 		B28D90F027E3F8BD0083CFC5 /* InputAssessorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputAssessorViewController.swift; sourceTree = "<group>"; };
 		B28D90F127E3F8BD0083CFC5 /* Assessor.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Assessor.storyboard; sourceTree = "<group>"; };
@@ -137,8 +139,6 @@
 		B28D90FD27E3F8D70083CFC5 /* InputTargetPerson.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = InputTargetPerson.storyboard; sourceTree = "<group>"; };
 		B28D90FE27E3F8D70083CFC5 /* TargetPerson.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TargetPerson.storyboard; sourceTree = "<group>"; };
 		B28D910427E3FD310083CFC5 /* UIApplication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
-		B28D910827E404360083CFC5 /* FunctionSelection.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = FunctionSelection.storyboard; sourceTree = "<group>"; };
-		B28D910927E404360083CFC5 /* FunctionSelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunctionSelectionViewController.swift; sourceTree = "<group>"; };
 		B2B4261527E1665400C41DD0 /* RootNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootNavigationController.swift; sourceTree = "<group>"; };
 		B2BFCF3827EBB87500C9F138 /* PastAssessment.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PastAssessment.storyboard; sourceTree = "<group>"; };
 		B2BFCF3A27EBB88F00C9F138 /* PastAssessmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastAssessmentViewController.swift; sourceTree = "<group>"; };
@@ -200,11 +200,10 @@
 				B2B4261427E1660500C41DD0 /* Root */,
 				B28D90EE27E3F8BD0083CFC5 /* Assessor */,
 				B28D90F927E3F8D70083CFC5 /* TargetPerson */,
-				B28D910727E404360083CFC5 /* FunctionSelection */,
+				B27B36EF2839969900030FCA /* FunctionSelection */,
 				B26201EE27E528A000AEF4BB /* Assessment */,
 				B24FBD0B27E5C1EF00063F42 /* PastAssessment */,
 				B24FBD0A27E5C1D900063F42 /* DetailAssessment */,
-				B24FBD0C27E5C22C00063F42 /* EditAssessment */,
 				B23A9E2627E0117000FCB91F /* Assets.xcassets */,
 				B23A9E2827E0117000FCB91F /* LaunchScreen.storyboard */,
 				B23A9E2B27E0117000FCB91F /* Info.plist */,
@@ -232,13 +231,6 @@
 				B2BFCF4327EBBE3C00C9F138 /* PastAssessmentTableViewCell.xib */,
 			);
 			path = PastAssessment;
-			sourceTree = "<group>";
-		};
-		B24FBD0C27E5C22C00063F42 /* EditAssessment */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = EditAssessment;
 			sourceTree = "<group>";
 		};
 		B26201EE27E528A000AEF4BB /* Assessment */ = {
@@ -385,6 +377,15 @@
 			path = Realm;
 			sourceTree = "<group>";
 		};
+		B27B36EF2839969900030FCA /* FunctionSelection */ = {
+			isa = PBXGroup;
+			children = (
+				B27B36F02839969900030FCA /* FunctionSelection.storyboard */,
+				B27B36F12839969900030FCA /* FunctionSelectionViewController.swift */,
+			);
+			path = FunctionSelection;
+			sourceTree = "<group>";
+		};
 		B28D90EE27E3F8BD0083CFC5 /* Assessor */ = {
 			isa = PBXGroup;
 			children = (
@@ -407,15 +408,6 @@
 				B28D90FE27E3F8D70083CFC5 /* TargetPerson.storyboard */,
 			);
 			path = TargetPerson;
-			sourceTree = "<group>";
-		};
-		B28D910727E404360083CFC5 /* FunctionSelection */ = {
-			isa = PBXGroup;
-			children = (
-				B28D910827E404360083CFC5 /* FunctionSelection.storyboard */,
-				B28D910927E404360083CFC5 /* FunctionSelectionViewController.swift */,
-			);
-			path = FunctionSelection;
 			sourceTree = "<group>";
 		};
 		B2B4261427E1660500C41DD0 /* Root */ = {
@@ -502,6 +494,7 @@
 				B28D90F727E3F8BE0083CFC5 /* InputAssessor.storyboard in Resources */,
 				B24FBD0E27E5C25B00063F42 /* DetailAssessment.storyboard in Resources */,
 				B28D90F627E3F8BE0083CFC5 /* Assessor.storyboard in Resources */,
+				B27B36F22839969900030FCA /* FunctionSelection.storyboard in Resources */,
 				B2BFCF3927EBB87500C9F138 /* PastAssessment.storyboard in Resources */,
 				B26201F827E5744B00AEF4BB /* ImageList.storyboard in Resources */,
 				B26201F427E52DD900AEF4BB /* HDSR.json in Resources */,
@@ -510,7 +503,6 @@
 				B23A9E2527E0116F00FCB91F /* Main.storyboard in Resources */,
 				B2BFCF4527EBBE3C00C9F138 /* PastAssessmentTableViewCell.xib in Resources */,
 				B28D910327E3F8D80083CFC5 /* TargetPerson.storyboard in Resources */,
-				B28D910A27E404360083CFC5 /* FunctionSelection.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -592,6 +584,7 @@
 				B2647DD727E217A400ED5F12 /* NotificationToken.swift in Sources */,
 				B2BFCF3B27EBB88F00C9F138 /* PastAssessmentViewController.swift in Sources */,
 				B2B4261627E1665400C41DD0 /* RootNavigationController.swift in Sources */,
+				B27B36F32839969900030FCA /* FunctionSelectionViewController.swift in Sources */,
 				B2647DBE27E2179D00ED5F12 /* RoundedAddButton.swift in Sources */,
 				B2647DAE27E2179300ED5F12 /* TargetPersonRepository.swift in Sources */,
 				B2647DCF27E217A400ED5F12 /* UITableView+Extensions.swift in Sources */,
@@ -605,7 +598,6 @@
 				B2647DA727E2179300ED5F12 /* Entity.swift in Sources */,
 				B2647DBF27E2179D00ED5F12 /* InputFormContainerView.swift in Sources */,
 				B2647DAA27E2179300ED5F12 /* Assessor.swift in Sources */,
-				B28D910B27E404360083CFC5 /* FunctionSelectionViewController.swift in Sources */,
 				B2647DA527E2179300ED5F12 /* RealmTargetPerson.swift in Sources */,
 				B2647DD027E217A400ED5F12 /* DispatchQueue.swift in Sources */,
 				B2647DB927E2179D00ED5F12 /* FunctionSelectionItemButton.swift in Sources */,

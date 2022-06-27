@@ -440,7 +440,7 @@
 				B23A9E1727E0116F00FCB91F /* Frameworks */,
 				B23A9E1827E0116F00FCB91F /* Resources */,
 				4DF68B5EDE0D78B82917F6C1 /* [CP] Embed Pods Frameworks */,
-		                B2B4261327E1645300C41DD0 /* Run Script */,
+				B2B4261327E1645300C41DD0 /* Run Script */,
 			);
 			buildRules = (
 			);
@@ -784,7 +784,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1.1;
+				MARKETING_VERSION = 1.1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.muranaka.HasegawasDementiaScaleRevised;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -814,7 +814,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1.1;
+				MARKETING_VERSION = 1.1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.muranaka.HasegawasDementiaScaleRevised;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;

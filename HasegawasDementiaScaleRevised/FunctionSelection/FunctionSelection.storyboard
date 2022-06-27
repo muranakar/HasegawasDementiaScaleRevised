@@ -38,22 +38,45 @@
                                     <segue destination="wBP-IL-DqP" kind="show" destinationCreationSelector="makePastAssessmentWithCoder:sender:segueIdentifier:" id="FS1-fj-MZF"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="130" placeholderIntrinsicHeight="60" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DVW-9v-bJn" customClass="RequestViaTwitterButton" customModule="HasegawasDementiaScaleRevised" customModuleProvider="target">
-                                <rect key="frame" x="20" y="782" width="130" height="60"/>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <connections>
-                                    <action selector="openTwitterWithSender:" destination="s3g-Rx-O1n" eventType="touchUpInside" id="7eT-2p-3bW"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="eBT-Zb-N4k">
+                                <rect key="frame" x="0.0" y="752" width="414" height="80"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="twitter" translatesAutoresizingMaskIntoConstraints="NO" id="5x1-wK-sWH">
+                                        <rect key="frame" x="0.0" y="0.0" width="138" height="80"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="36y-if-7ob" appends="YES" id="mZG-ax-Air"/>
+                                        </connections>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LINE_Brand_icon" translatesAutoresizingMaskIntoConstraints="NO" id="yjQ-od-pb0">
+                                        <rect key="frame" x="138" y="0.0" width="138" height="80"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="ELc-NE-tak" appends="YES" id="sE4-6J-Vpa"/>
+                                        </connections>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="otherApp" translatesAutoresizingMaskIntoConstraints="NO" id="4NM-pH-1NS">
+                                        <rect key="frame" x="276" y="0.0" width="138" height="80"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="8lf-ux-GHd" appends="YES" id="0WY-T8-y9G"/>
+                                        </connections>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="yXP-5z-BAF"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="cpP-KG-AGu"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="cpP-KG-AGu" firstAttribute="bottom" secondItem="DVW-9v-bJn" secondAttribute="bottom" constant="20" id="FoX-Ls-JL7"/>
                             <constraint firstItem="eoC-gw-awt" firstAttribute="centerY" secondItem="r7D-1r-vOT" secondAttribute="centerY" constant="-50" id="LGd-Ai-WjH"/>
                             <constraint firstItem="eoC-gw-awt" firstAttribute="centerX" secondItem="r7D-1r-vOT" secondAttribute="centerX" id="LhX-lf-gcO"/>
-                            <constraint firstItem="DVW-9v-bJn" firstAttribute="leading" secondItem="cpP-KG-AGu" secondAttribute="leading" constant="20" id="aJA-0N-x44"/>
                             <constraint firstItem="bKZ-3w-6GD" firstAttribute="centerX" secondItem="r7D-1r-vOT" secondAttribute="centerX" id="iOt-1a-7a1"/>
+                            <constraint firstItem="eBT-Zb-N4k" firstAttribute="leading" secondItem="r7D-1r-vOT" secondAttribute="leading" id="iin-tA-qMY"/>
+                            <constraint firstItem="cpP-KG-AGu" firstAttribute="bottom" secondItem="eBT-Zb-N4k" secondAttribute="bottom" constant="30" id="qfB-IN-phd"/>
+                            <constraint firstAttribute="trailing" secondItem="eBT-Zb-N4k" secondAttribute="trailing" id="rgB-Ez-XS8"/>
                             <constraint firstItem="bKZ-3w-6GD" firstAttribute="centerY" secondItem="r7D-1r-vOT" secondAttribute="centerY" constant="90" id="xbp-pR-LXu"/>
                         </constraints>
                     </view>
@@ -68,6 +91,21 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s3g-Rx-O1n" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="oel-Pm-gZu" userLabel="Exit" sceneMemberID="exit"/>
+                <tapGestureRecognizer id="36y-if-7ob">
+                    <connections>
+                        <action selector="shareTwitter:" destination="Ga9-a2-xr2" id="T1n-HA-5fn"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="ELc-NE-tak">
+                    <connections>
+                        <action selector="shareLine:" destination="Ga9-a2-xr2" id="2ZZ-IE-jhV"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="8lf-ux-GHd">
+                    <connections>
+                        <action selector="shareOtherApp:" destination="Ga9-a2-xr2" id="ywe-uY-8ZD"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1802.8985507246377" y="79.6875"/>
         </scene>
@@ -93,9 +131,6 @@
         </scene>
     </scenes>
     <designables>
-        <designable name="DVW-9v-bJn">
-            <size key="intrinsicContentSize" width="130" height="60"/>
-        </designable>
         <designable name="bKZ-3w-6GD">
             <size key="intrinsicContentSize" width="200" height="70"/>
         </designable>
@@ -104,9 +139,12 @@
         </designable>
     </designables>
     <resources>
+        <image name="LINE_Brand_icon" width="1001" height="1000"/>
         <image name="applepencil" catalog="system" width="128" height="113"/>
         <image name="chevron.backward" catalog="system" width="96" height="128"/>
         <image name="list.dash" catalog="system" width="128" height="85"/>
+        <image name="otherApp" width="1080" height="1080"/>
+        <image name="twitter" width="256" height="256"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

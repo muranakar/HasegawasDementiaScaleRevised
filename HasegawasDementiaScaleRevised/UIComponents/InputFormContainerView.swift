@@ -30,7 +30,7 @@ class InputFormContainerView: UIView {
     }
 
     private func initializeContent() {
-        backgroundColor = .white
+        backgroundColor = UIColor(named: "white")!
     }
 
     private func updateLayer() {

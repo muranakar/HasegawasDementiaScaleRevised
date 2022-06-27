@@ -18,7 +18,7 @@ private extension UINavigationBar {
     static func setupAppearance() {
         let appearance = UINavigationBarAppearance()
         appearance.configureWithOpaqueBackground()
-        appearance.backgroundColor = Colors.baseColor
+        appearance.backgroundColor = UIColor(named: "navigation")!
         let navigationBar = self.appearance()
         navigationBar.standardAppearance = appearance
         navigationBar.scrollEdgeAppearance = appearance

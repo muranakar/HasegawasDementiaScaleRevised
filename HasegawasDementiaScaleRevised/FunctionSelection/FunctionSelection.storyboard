@@ -42,24 +42,31 @@
                                 <rect key="frame" x="0.0" y="752" width="414" height="80"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="twitter" translatesAutoresizingMaskIntoConstraints="NO" id="5x1-wK-sWH">
-                                        <rect key="frame" x="0.0" y="0.0" width="138" height="80"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="103.5" height="80"/>
                                         <gestureRecognizers/>
                                         <connections>
                                             <outletCollection property="gestureRecognizers" destination="36y-if-7ob" appends="YES" id="mZG-ax-Air"/>
                                         </connections>
                                     </imageView>
                                     <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LINE_Brand_icon" translatesAutoresizingMaskIntoConstraints="NO" id="yjQ-od-pb0">
-                                        <rect key="frame" x="138" y="0.0" width="138" height="80"/>
+                                        <rect key="frame" x="103.5" y="0.0" width="103.5" height="80"/>
                                         <gestureRecognizers/>
                                         <connections>
                                             <outletCollection property="gestureRecognizers" destination="ELc-NE-tak" appends="YES" id="sE4-6J-Vpa"/>
                                         </connections>
                                     </imageView>
                                     <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="otherApp" translatesAutoresizingMaskIntoConstraints="NO" id="4NM-pH-1NS">
-                                        <rect key="frame" x="276" y="0.0" width="138" height="80"/>
+                                        <rect key="frame" x="207" y="0.0" width="103.5" height="80"/>
                                         <gestureRecognizers/>
                                         <connections>
                                             <outletCollection property="gestureRecognizers" destination="8lf-ux-GHd" appends="YES" id="0WY-T8-y9G"/>
+                                        </connections>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="review" translatesAutoresizingMaskIntoConstraints="NO" id="OrC-yz-iR1">
+                                        <rect key="frame" x="310.5" y="0.0" width="103.5" height="80"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="UCZ-Iy-ocR" appends="YES" id="rGw-tC-dOC"/>
                                         </connections>
                                     </imageView>
                                 </subviews>
@@ -106,6 +113,11 @@
                         <action selector="shareOtherApp:" destination="Ga9-a2-xr2" id="ywe-uY-8ZD"/>
                     </connections>
                 </tapGestureRecognizer>
+                <tapGestureRecognizer id="UCZ-Iy-ocR">
+                    <connections>
+                        <action selector="review:" destination="Ga9-a2-xr2" id="ddV-0K-21a"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1802.8985507246377" y="79.6875"/>
         </scene>
@@ -144,6 +156,7 @@
         <image name="chevron.backward" catalog="system" width="96" height="128"/>
         <image name="list.dash" catalog="system" width="128" height="85"/>
         <image name="otherApp" width="1080" height="1080"/>
+        <image name="review" width="1080" height="1080"/>
         <image name="twitter" width="256" height="256"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

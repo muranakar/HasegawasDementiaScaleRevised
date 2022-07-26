@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import StoreKit
 
 final class FunctionSelectionViewController: UIViewController {
     private let targetPerson: TargetPerson
@@ -34,6 +35,13 @@ final class FunctionSelectionViewController: UIViewController {
     }
     @IBAction private func shareOtherApp(_ sender: Any) {
         shareOnOtherApp()
+    }
+    @IBAction private func review(_ sender: Any) {
+        let urlString = URL(string: "https://apps.apple.com/app/id1616574755?action=write-review")
+        guard let writeReviewURL = urlString else {
+            fatalError("Expected a valid URL")
+        }
+        UIApplication.shared.open(writeReviewURL, options: [:], completionHandler: nil)
     }
     private func shareOnTwitter() {
         // シェアするテキストを作成
@@ -118,5 +126,11 @@ extension FunctionSelectionViewController {
     }
 
     @IBAction private func backToFunctionSelectionTableViewController(segue: UIStoryboardSegue) {
+        let reviewNum = ReviewRepository.processAfterAddReviewNumPulsOneAndSaveReviewNum()
+        if reviewNum == 10 || reviewNum == 31 || reviewNum == 50 {
+            if let scene = UIApplication.shared.connectedScenes.first as? UIWindowScene {
+                SKStoreReviewController.requestReview(in: scene)
+            }
+        }
     }
 }

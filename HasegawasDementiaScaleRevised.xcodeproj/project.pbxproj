@@ -68,6 +68,7 @@
 		B28D910327E3F8D80083CFC5 /* TargetPerson.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B28D90FE27E3F8D70083CFC5 /* TargetPerson.storyboard */; };
 		B28D910527E3FD310083CFC5 /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28D910427E3FD310083CFC5 /* UIApplication.swift */; };
 		B2B4261627E1665400C41DD0 /* RootNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B4261527E1665400C41DD0 /* RootNavigationController.swift */; };
+		B2B898E728908522009B7FCF /* ReviewRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B898E628908522009B7FCF /* ReviewRepository.swift */; };
 		B2BFCF3927EBB87500C9F138 /* PastAssessment.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2BFCF3827EBB87500C9F138 /* PastAssessment.storyboard */; };
 		B2BFCF3B27EBB88F00C9F138 /* PastAssessmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BFCF3A27EBB88F00C9F138 /* PastAssessmentViewController.swift */; };
 		B2BFCF4127EBBA7600C9F138 /* PastAssessmentViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BFCF4027EBBA7600C9F138 /* PastAssessmentViewItem.swift */; };
@@ -140,6 +141,7 @@
 		B28D90FE27E3F8D70083CFC5 /* TargetPerson.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TargetPerson.storyboard; sourceTree = "<group>"; };
 		B28D910427E3FD310083CFC5 /* UIApplication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
 		B2B4261527E1665400C41DD0 /* RootNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootNavigationController.swift; sourceTree = "<group>"; };
+		B2B898E628908522009B7FCF /* ReviewRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewRepository.swift; sourceTree = "<group>"; };
 		B2BFCF3827EBB87500C9F138 /* PastAssessment.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PastAssessment.storyboard; sourceTree = "<group>"; };
 		B2BFCF3A27EBB88F00C9F138 /* PastAssessmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastAssessmentViewController.swift; sourceTree = "<group>"; };
 		B2BFCF4027EBBA7600C9F138 /* PastAssessmentViewItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastAssessmentViewItem.swift; sourceTree = "<group>"; };
@@ -197,6 +199,7 @@
 				B2647DC027E217A400ED5F12 /* Utilities */,
 				B2647DAF27E2179D00ED5F12 /* UIComponents */,
 				B2647D9327E2179300ED5F12 /* Models */,
+				B2B898E628908522009B7FCF /* ReviewRepository.swift */,
 				B2B4261427E1660500C41DD0 /* Root */,
 				B28D90EE27E3F8BD0083CFC5 /* Assessor */,
 				B28D90F927E3F8D70083CFC5 /* TargetPerson */,
@@ -584,6 +587,7 @@
 				B25DE13E27EF52670044615C /* AnimatedTransitioningViewController.swift in Sources */,
 				B2647DD727E217A400ED5F12 /* NotificationToken.swift in Sources */,
 				B2BFCF3B27EBB88F00C9F138 /* PastAssessmentViewController.swift in Sources */,
+				B2B898E728908522009B7FCF /* ReviewRepository.swift in Sources */,
 				B2B4261627E1665400C41DD0 /* RootNavigationController.swift in Sources */,
 				B27B36F32839969900030FCA /* FunctionSelectionViewController.swift in Sources */,
 				B2647DBE27E2179D00ED5F12 /* RoundedAddButton.swift in Sources */,
@@ -784,7 +788,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1.3;
+				MARKETING_VERSION = 1.1.4;
 				PRODUCT_BUNDLE_IDENTIFIER = com.muranaka.HasegawasDementiaScaleRevised;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -814,7 +818,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1.3;
+				MARKETING_VERSION = 1.1.4;
 				PRODUCT_BUNDLE_IDENTIFIER = com.muranaka.HasegawasDementiaScaleRevised;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;

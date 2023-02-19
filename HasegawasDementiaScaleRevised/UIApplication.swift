@@ -11,7 +11,7 @@ extension UIApplication {
     // MARK: -
     /// Twitter を開く
     @IBAction private func openTwitter(sender: Any) {
-        let url = URL(string: "https://twitter.com/iOS76923384")!
+        let url = URL(string: "https://twitter.com/KaradaHelp")!
         open(url, options: [:], completionHandler: nil)
     }
 }

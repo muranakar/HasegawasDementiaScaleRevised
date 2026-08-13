@@ -3,663 +3,158 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 55;
+	objectVersion = 77;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		752ACA03575261E22368B686 /* Pods_HasegawasDementiaScaleRevised.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFF833C58B29C46FC45B7A82 /* Pods_HasegawasDementiaScaleRevised.framework */; };
-		B238EEC827EE837400D0E265 /* ImageListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B238EEC727EE837400D0E265 /* ImageListViewController.swift */; };
-		B23A9E1E27E0116F00FCB91F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23A9E1D27E0116F00FCB91F /* AppDelegate.swift */; };
-		B23A9E2027E0116F00FCB91F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23A9E1F27E0116F00FCB91F /* SceneDelegate.swift */; };
-		B23A9E2527E0116F00FCB91F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B23A9E2327E0116F00FCB91F /* Main.storyboard */; };
-		B23A9E2727E0117000FCB91F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B23A9E2627E0117000FCB91F /* Assets.xcassets */; };
-		B23A9E2A27E0117000FCB91F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B23A9E2827E0117000FCB91F /* LaunchScreen.storyboard */; };
-		B24FBD0E27E5C25B00063F42 /* DetailAssessment.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B24FBD0D27E5C25B00063F42 /* DetailAssessment.storyboard */; };
-		B24FBD1227E5C28700063F42 /* DetailAssessmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24FBD1127E5C28700063F42 /* DetailAssessmentViewController.swift */; };
-		B24FBD1427E5C57700063F42 /* DetailAssessmentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24FBD1327E5C57700063F42 /* DetailAssessmentTableViewCell.swift */; };
-		B25DE13E27EF52670044615C /* AnimatedTransitioningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25DE13D27EF52670044615C /* AnimatedTransitioningViewController.swift */; };
-		B26201F027E528DA00AEF4BB /* AssessmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26201EF27E528DA00AEF4BB /* AssessmentViewController.swift */; };
-		B26201F227E528EB00AEF4BB /* Assessment.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B26201F127E528EB00AEF4BB /* Assessment.storyboard */; };
-		B26201F427E52DD900AEF4BB /* HDSR.json in Resources */ = {isa = PBXBuildFile; fileRef = B26201F327E52DD900AEF4BB /* HDSR.json */; };
-		B26201F627E571D700AEF4BB /* AssessmentAnswerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26201F527E571D700AEF4BB /* AssessmentAnswerButton.swift */; };
-		B26201F827E5744B00AEF4BB /* ImageList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B26201F727E5744B00AEF4BB /* ImageList.storyboard */; };
-		B2647D8F27E2177A00ED5F12 /* UIAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2647D8E27E2177A00ED5F12 /* UIAlertController.swift */; };
-		B2647D9227E2178500ED5F12 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2647D9127E2178500ED5F12 /* Colors.swift */; };
-		B2647DA327E2179300ED5F12 /* RealmEntityObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2647D9527E2179300ED5F12 /* RealmEntityObject.swift */; };
-		B2647DA427E2179300ED5F12 /* RealmAssessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2647D9627E2179300ED5F12 /* RealmAssessor.swift */; };
-		B2647DA527E2179300ED5F12 /* RealmTargetPerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2647D9727E2179300ED5F12 /* RealmTargetPerson.swift */; };
-		B2647DA627E2179300ED5F12 /* RealmAssessment.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2647D9827E2179300ED5F12 /* RealmAssessment.swift */; };
-		B2647DA727E2179300ED5F12 /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2647D9A27E2179300ED5F12 /* Entity.swift */; };
-		B2647DA827E2179300ED5F12 /* TargetPerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2647D9B27E2179300ED5F12 /* TargetPerson.swift */; };
-		B2647DA927E2179300ED5F12 /* Assessment.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2647D9C27E2179300ED5F12 /* Assessment.swift */; };
-		B2647DAA27E2179300ED5F12 /* Assessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2647D9D27E2179300ED5F12 /* Assessor.swift */; };
-		B2647DAB27E2179300ED5F12 /* AssessmentRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2647D9F27E2179300ED5F12 /* AssessmentRepository.swift */; };
-		B2647DAC27E2179300ED5F12 /* AssessorRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2647DA027E2179300ED5F12 /* AssessorRepository.swift */; };
-		B2647DAD27E2179300ED5F12 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2647DA127E2179300ED5F12 /* Repository.swift */; };
-		B2647DAE27E2179300ED5F12 /* TargetPersonRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2647DA227E2179300ED5F12 /* TargetPersonRepository.swift */; };
-		B2647DB827E2179D00ED5F12 /* BottomFloatingItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2647DB027E2179D00ED5F12 /* BottomFloatingItems.swift */; };
-		B2647DB927E2179D00ED5F12 /* FunctionSelectionItemButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2647DB127E2179D00ED5F12 /* FunctionSelectionItemButton.swift */; };
-		B2647DBA27E2179D00ED5F12 /* AssessmentItemButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2647DB227E2179D00ED5F12 /* AssessmentItemButton.swift */; };
-		B2647DBB27E2179D00ED5F12 /* RoundedTimerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2647DB327E2179D00ED5F12 /* RoundedTimerButton.swift */; };
-		B2647DBC27E2179D00ED5F12 /* RequestViaTwitterButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2647DB427E2179D00ED5F12 /* RequestViaTwitterButton.swift */; };
-		B2647DBD27E2179D00ED5F12 /* TimerLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2647DB527E2179D00ED5F12 /* TimerLabel.swift */; };
-		B2647DBE27E2179D00ED5F12 /* RoundedAddButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2647DB627E2179D00ED5F12 /* RoundedAddButton.swift */; };
-		B2647DBF27E2179D00ED5F12 /* InputFormContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2647DB727E2179D00ED5F12 /* InputFormContainerView.swift */; };
-		B2647DCF27E217A400ED5F12 /* UITableView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2647DC227E217A400ED5F12 /* UITableView+Extensions.swift */; };
-		B2647DD027E217A400ED5F12 /* DispatchQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2647DC427E217A400ED5F12 /* DispatchQueue.swift */; };
-		B2647DD127E217A400ED5F12 /* AssessmentResultPasteboardFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2647DC627E217A400ED5F12 /* AssessmentResultPasteboardFormatter.swift */; };
-		B2647DD227E217A400ED5F12 /* TimerFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2647DC727E217A400ED5F12 /* TimerFormatter.swift */; };
-		B2647DD327E217A400ED5F12 /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2647DC827E217A400ED5F12 /* DateFormatter.swift */; };
-		B2647DD427E217A400ED5F12 /* InputMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2647DC927E217A400ED5F12 /* InputMode.swift */; };
-		B2647DD527E217A400ED5F12 /* DisplayLinkWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2647DCB27E217A400ED5F12 /* DisplayLinkWrapper.swift */; };
-		B2647DD627E217A400ED5F12 /* Realm.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2647DCD27E217A400ED5F12 /* Realm.swift */; };
-		B2647DD727E217A400ED5F12 /* NotificationToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2647DCE27E217A400ED5F12 /* NotificationToken.swift */; };
-		B27B36F22839969900030FCA /* FunctionSelection.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B27B36F02839969900030FCA /* FunctionSelection.storyboard */; };
-		B27B36F32839969900030FCA /* FunctionSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27B36F12839969900030FCA /* FunctionSelectionViewController.swift */; };
-		B28D90F427E3F8BE0083CFC5 /* AssessorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28D90EF27E3F8BD0083CFC5 /* AssessorTableViewCell.swift */; };
-		B28D90F527E3F8BE0083CFC5 /* InputAssessorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28D90F027E3F8BD0083CFC5 /* InputAssessorViewController.swift */; };
-		B28D90F627E3F8BE0083CFC5 /* Assessor.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B28D90F127E3F8BD0083CFC5 /* Assessor.storyboard */; };
-		B28D90F727E3F8BE0083CFC5 /* InputAssessor.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B28D90F227E3F8BD0083CFC5 /* InputAssessor.storyboard */; };
-		B28D90F827E3F8BE0083CFC5 /* AssessorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28D90F327E3F8BD0083CFC5 /* AssessorViewController.swift */; };
-		B28D90FF27E3F8D80083CFC5 /* InputTargetPersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28D90FA27E3F8D70083CFC5 /* InputTargetPersonViewController.swift */; };
-		B28D910027E3F8D80083CFC5 /* TargetPersonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28D90FB27E3F8D70083CFC5 /* TargetPersonTableViewCell.swift */; };
-		B28D910127E3F8D80083CFC5 /* TargetPersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28D90FC27E3F8D70083CFC5 /* TargetPersonViewController.swift */; };
-		B28D910227E3F8D80083CFC5 /* InputTargetPerson.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B28D90FD27E3F8D70083CFC5 /* InputTargetPerson.storyboard */; };
-		B28D910327E3F8D80083CFC5 /* TargetPerson.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B28D90FE27E3F8D70083CFC5 /* TargetPerson.storyboard */; };
-		B28D910527E3FD310083CFC5 /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28D910427E3FD310083CFC5 /* UIApplication.swift */; };
-		B2B4261627E1665400C41DD0 /* RootNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B4261527E1665400C41DD0 /* RootNavigationController.swift */; };
-		B2B898E728908522009B7FCF /* ReviewRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B898E628908522009B7FCF /* ReviewRepository.swift */; };
-		B2BFCF3927EBB87500C9F138 /* PastAssessment.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2BFCF3827EBB87500C9F138 /* PastAssessment.storyboard */; };
-		B2BFCF3B27EBB88F00C9F138 /* PastAssessmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BFCF3A27EBB88F00C9F138 /* PastAssessmentViewController.swift */; };
-		B2BFCF4127EBBA7600C9F138 /* PastAssessmentViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BFCF4027EBBA7600C9F138 /* PastAssessmentViewItem.swift */; };
-		B2BFCF4427EBBE3C00C9F138 /* PastAssessmentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BFCF4227EBBE3C00C9F138 /* PastAssessmentTableViewCell.swift */; };
-		B2BFCF4527EBBE3C00C9F138 /* PastAssessmentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2BFCF4327EBBE3C00C9F138 /* PastAssessmentTableViewCell.xib */; };
+		AA0000000000000000000012 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = AA0000000000000000000011 /* RealmSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		A6F32D172EDD101DDE69E87B /* Pods-HasegawasDementiaScaleRevised.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HasegawasDementiaScaleRevised.debug.xcconfig"; path = "Target Support Files/Pods-HasegawasDementiaScaleRevised/Pods-HasegawasDementiaScaleRevised.debug.xcconfig"; sourceTree = "<group>"; };
-		AFF833C58B29C46FC45B7A82 /* Pods_HasegawasDementiaScaleRevised.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HasegawasDementiaScaleRevised.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B238EEC727EE837400D0E265 /* ImageListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageListViewController.swift; sourceTree = "<group>"; };
-		B23A9E1A27E0116F00FCB91F /* HasegawasDementiaScaleRevised.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HasegawasDementiaScaleRevised.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		B23A9E1D27E0116F00FCB91F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B23A9E1F27E0116F00FCB91F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B23A9E2427E0116F00FCB91F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		B23A9E2627E0117000FCB91F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		B23A9E2927E0117000FCB91F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		B23A9E2B27E0117000FCB91F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B24FBD0D27E5C25B00063F42 /* DetailAssessment.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetailAssessment.storyboard; sourceTree = "<group>"; };
-		B24FBD1127E5C28700063F42 /* DetailAssessmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailAssessmentViewController.swift; sourceTree = "<group>"; };
-		B24FBD1327E5C57700063F42 /* DetailAssessmentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailAssessmentTableViewCell.swift; sourceTree = "<group>"; };
-		B25DE13D27EF52670044615C /* AnimatedTransitioningViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedTransitioningViewController.swift; sourceTree = "<group>"; };
-		B26201EF27E528DA00AEF4BB /* AssessmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssessmentViewController.swift; sourceTree = "<group>"; };
-		B26201F127E528EB00AEF4BB /* Assessment.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Assessment.storyboard; sourceTree = "<group>"; };
-		B26201F327E52DD900AEF4BB /* HDSR.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = HDSR.json; sourceTree = "<group>"; };
-		B26201F527E571D700AEF4BB /* AssessmentAnswerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssessmentAnswerButton.swift; sourceTree = "<group>"; };
-		B26201F727E5744B00AEF4BB /* ImageList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ImageList.storyboard; sourceTree = "<group>"; };
-		B2647D8E27E2177A00ED5F12 /* UIAlertController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIAlertController.swift; sourceTree = "<group>"; };
-		B2647D9127E2178500ED5F12 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
-		B2647D9527E2179300ED5F12 /* RealmEntityObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmEntityObject.swift; sourceTree = "<group>"; };
-		B2647D9627E2179300ED5F12 /* RealmAssessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmAssessor.swift; sourceTree = "<group>"; };
-		B2647D9727E2179300ED5F12 /* RealmTargetPerson.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmTargetPerson.swift; sourceTree = "<group>"; };
-		B2647D9827E2179300ED5F12 /* RealmAssessment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmAssessment.swift; sourceTree = "<group>"; };
-		B2647D9A27E2179300ED5F12 /* Entity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
-		B2647D9B27E2179300ED5F12 /* TargetPerson.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TargetPerson.swift; sourceTree = "<group>"; };
-		B2647D9C27E2179300ED5F12 /* Assessment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assessment.swift; sourceTree = "<group>"; };
-		B2647D9D27E2179300ED5F12 /* Assessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assessor.swift; sourceTree = "<group>"; };
-		B2647D9F27E2179300ED5F12 /* AssessmentRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssessmentRepository.swift; sourceTree = "<group>"; };
-		B2647DA027E2179300ED5F12 /* AssessorRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssessorRepository.swift; sourceTree = "<group>"; };
-		B2647DA127E2179300ED5F12 /* Repository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
-		B2647DA227E2179300ED5F12 /* TargetPersonRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TargetPersonRepository.swift; sourceTree = "<group>"; };
-		B2647DB027E2179D00ED5F12 /* BottomFloatingItems.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomFloatingItems.swift; sourceTree = "<group>"; };
-		B2647DB127E2179D00ED5F12 /* FunctionSelectionItemButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunctionSelectionItemButton.swift; sourceTree = "<group>"; };
-		B2647DB227E2179D00ED5F12 /* AssessmentItemButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssessmentItemButton.swift; sourceTree = "<group>"; };
-		B2647DB327E2179D00ED5F12 /* RoundedTimerButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedTimerButton.swift; sourceTree = "<group>"; };
-		B2647DB427E2179D00ED5F12 /* RequestViaTwitterButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestViaTwitterButton.swift; sourceTree = "<group>"; };
-		B2647DB527E2179D00ED5F12 /* TimerLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerLabel.swift; sourceTree = "<group>"; };
-		B2647DB627E2179D00ED5F12 /* RoundedAddButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedAddButton.swift; sourceTree = "<group>"; };
-		B2647DB727E2179D00ED5F12 /* InputFormContainerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputFormContainerView.swift; sourceTree = "<group>"; };
-		B2647DC227E217A400ED5F12 /* UITableView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Extensions.swift"; sourceTree = "<group>"; };
-		B2647DC427E217A400ED5F12 /* DispatchQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DispatchQueue.swift; sourceTree = "<group>"; };
-		B2647DC627E217A400ED5F12 /* AssessmentResultPasteboardFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssessmentResultPasteboardFormatter.swift; sourceTree = "<group>"; };
-		B2647DC727E217A400ED5F12 /* TimerFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerFormatter.swift; sourceTree = "<group>"; };
-		B2647DC827E217A400ED5F12 /* DateFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
-		B2647DC927E217A400ED5F12 /* InputMode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputMode.swift; sourceTree = "<group>"; };
-		B2647DCB27E217A400ED5F12 /* DisplayLinkWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayLinkWrapper.swift; sourceTree = "<group>"; };
-		B2647DCD27E217A400ED5F12 /* Realm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Realm.swift; sourceTree = "<group>"; };
-		B2647DCE27E217A400ED5F12 /* NotificationToken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationToken.swift; sourceTree = "<group>"; };
-		B27B36F02839969900030FCA /* FunctionSelection.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = FunctionSelection.storyboard; sourceTree = "<group>"; };
-		B27B36F12839969900030FCA /* FunctionSelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunctionSelectionViewController.swift; sourceTree = "<group>"; };
-		B28D90EF27E3F8BD0083CFC5 /* AssessorTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssessorTableViewCell.swift; sourceTree = "<group>"; };
-		B28D90F027E3F8BD0083CFC5 /* InputAssessorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputAssessorViewController.swift; sourceTree = "<group>"; };
-		B28D90F127E3F8BD0083CFC5 /* Assessor.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Assessor.storyboard; sourceTree = "<group>"; };
-		B28D90F227E3F8BD0083CFC5 /* InputAssessor.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = InputAssessor.storyboard; sourceTree = "<group>"; };
-		B28D90F327E3F8BD0083CFC5 /* AssessorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssessorViewController.swift; sourceTree = "<group>"; };
-		B28D90FA27E3F8D70083CFC5 /* InputTargetPersonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputTargetPersonViewController.swift; sourceTree = "<group>"; };
-		B28D90FB27E3F8D70083CFC5 /* TargetPersonTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TargetPersonTableViewCell.swift; sourceTree = "<group>"; };
-		B28D90FC27E3F8D70083CFC5 /* TargetPersonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TargetPersonViewController.swift; sourceTree = "<group>"; };
-		B28D90FD27E3F8D70083CFC5 /* InputTargetPerson.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = InputTargetPerson.storyboard; sourceTree = "<group>"; };
-		B28D90FE27E3F8D70083CFC5 /* TargetPerson.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TargetPerson.storyboard; sourceTree = "<group>"; };
-		B28D910427E3FD310083CFC5 /* UIApplication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
-		B2B4261527E1665400C41DD0 /* RootNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootNavigationController.swift; sourceTree = "<group>"; };
-		B2B898E628908522009B7FCF /* ReviewRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewRepository.swift; sourceTree = "<group>"; };
-		B2BFCF3827EBB87500C9F138 /* PastAssessment.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PastAssessment.storyboard; sourceTree = "<group>"; };
-		B2BFCF3A27EBB88F00C9F138 /* PastAssessmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastAssessmentViewController.swift; sourceTree = "<group>"; };
-		B2BFCF4027EBBA7600C9F138 /* PastAssessmentViewItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastAssessmentViewItem.swift; sourceTree = "<group>"; };
-		B2BFCF4227EBBE3C00C9F138 /* PastAssessmentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastAssessmentTableViewCell.swift; sourceTree = "<group>"; };
-		B2BFCF4327EBBE3C00C9F138 /* PastAssessmentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PastAssessmentTableViewCell.xib; sourceTree = "<group>"; };
-		EB863FDB070D3E8271BD6D6F /* Pods-HasegawasDementiaScaleRevised.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HasegawasDementiaScaleRevised.release.xcconfig"; path = "Target Support Files/Pods-HasegawasDementiaScaleRevised/Pods-HasegawasDementiaScaleRevised.release.xcconfig"; sourceTree = "<group>"; };
+		AA0000000000000000000006 /* HasegawasDementiaScaleRevised.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HasegawasDementiaScaleRevised.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		AA0000000000000000000013 /* Exceptions for "HasegawasDementiaScaleRevised" folder in "HasegawasDementiaScaleRevised" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = AA0000000000000000000002 /* HasegawasDementiaScaleRevised */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		AA0000000000000000000003 /* HasegawasDementiaScaleRevised */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				AA0000000000000000000013 /* Exceptions for "HasegawasDementiaScaleRevised" folder in "HasegawasDementiaScaleRevised" target */,
+			);
+			path = HasegawasDementiaScaleRevised;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
 /* Begin PBXFrameworksBuildPhase section */
-		B23A9E1727E0116F00FCB91F /* Frameworks */ = {
+		AA0000000000000000000008 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				752ACA03575261E22368B686 /* Pods_HasegawasDementiaScaleRevised.framework in Frameworks */,
+				AA0000000000000000000012 /* RealmSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4E934AE4AA26A870A5E22427 /* Frameworks */ = {
+		AA0000000000000000000004 = {
 			isa = PBXGroup;
 			children = (
-				AFF833C58B29C46FC45B7A82 /* Pods_HasegawasDementiaScaleRevised.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		B23A9E1127E0116F00FCB91F = {
-			isa = PBXGroup;
-			children = (
-				B23A9E1C27E0116F00FCB91F /* HasegawasDementiaScaleRevised */,
-				B23A9E1B27E0116F00FCB91F /* Products */,
-				CE0877FFBB5B372F1AE8D2E1 /* Pods */,
-				4E934AE4AA26A870A5E22427 /* Frameworks */,
+				AA0000000000000000000003 /* HasegawasDementiaScaleRevised */,
+				AA0000000000000000000005 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		B23A9E1B27E0116F00FCB91F /* Products */ = {
+		AA0000000000000000000005 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B23A9E1A27E0116F00FCB91F /* HasegawasDementiaScaleRevised.app */,
+				AA0000000000000000000006 /* HasegawasDementiaScaleRevised.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		B23A9E1C27E0116F00FCB91F /* HasegawasDementiaScaleRevised */ = {
-			isa = PBXGroup;
-			children = (
-				B23A9E1D27E0116F00FCB91F /* AppDelegate.swift */,
-				B23A9E1F27E0116F00FCB91F /* SceneDelegate.swift */,
-				B28D910427E3FD310083CFC5 /* UIApplication.swift */,
-				B2647D8D27E2177A00ED5F12 /* Alert */,
-				B2647D9027E2178500ED5F12 /* Color */,
-				B2647DC027E217A400ED5F12 /* Utilities */,
-				B2647DAF27E2179D00ED5F12 /* UIComponents */,
-				B2647D9327E2179300ED5F12 /* Models */,
-				B2B898E628908522009B7FCF /* ReviewRepository.swift */,
-				B2B4261427E1660500C41DD0 /* Root */,
-				B28D90EE27E3F8BD0083CFC5 /* Assessor */,
-				B28D90F927E3F8D70083CFC5 /* TargetPerson */,
-				B27B36EF2839969900030FCA /* FunctionSelection */,
-				B26201EE27E528A000AEF4BB /* Assessment */,
-				B24FBD0B27E5C1EF00063F42 /* PastAssessment */,
-				B24FBD0A27E5C1D900063F42 /* DetailAssessment */,
-				B23A9E2627E0117000FCB91F /* Assets.xcassets */,
-				B23A9E2827E0117000FCB91F /* LaunchScreen.storyboard */,
-				B23A9E2B27E0117000FCB91F /* Info.plist */,
-			);
-			path = HasegawasDementiaScaleRevised;
-			sourceTree = "<group>";
-		};
-		B24FBD0A27E5C1D900063F42 /* DetailAssessment */ = {
-			isa = PBXGroup;
-			children = (
-				B24FBD0D27E5C25B00063F42 /* DetailAssessment.storyboard */,
-				B24FBD1127E5C28700063F42 /* DetailAssessmentViewController.swift */,
-				B24FBD1327E5C57700063F42 /* DetailAssessmentTableViewCell.swift */,
-			);
-			path = DetailAssessment;
-			sourceTree = "<group>";
-		};
-		B24FBD0B27E5C1EF00063F42 /* PastAssessment */ = {
-			isa = PBXGroup;
-			children = (
-				B2BFCF3A27EBB88F00C9F138 /* PastAssessmentViewController.swift */,
-				B2BFCF3827EBB87500C9F138 /* PastAssessment.storyboard */,
-				B2BFCF4027EBBA7600C9F138 /* PastAssessmentViewItem.swift */,
-				B2BFCF4227EBBE3C00C9F138 /* PastAssessmentTableViewCell.swift */,
-				B2BFCF4327EBBE3C00C9F138 /* PastAssessmentTableViewCell.xib */,
-			);
-			path = PastAssessment;
-			sourceTree = "<group>";
-		};
-		B26201EE27E528A000AEF4BB /* Assessment */ = {
-			isa = PBXGroup;
-			children = (
-				B26201EF27E528DA00AEF4BB /* AssessmentViewController.swift */,
-				B26201F127E528EB00AEF4BB /* Assessment.storyboard */,
-				B26201F327E52DD900AEF4BB /* HDSR.json */,
-				B26201F727E5744B00AEF4BB /* ImageList.storyboard */,
-				B238EEC727EE837400D0E265 /* ImageListViewController.swift */,
-				B25DE13D27EF52670044615C /* AnimatedTransitioningViewController.swift */,
-			);
-			path = Assessment;
-			sourceTree = "<group>";
-		};
-		B2647D8D27E2177A00ED5F12 /* Alert */ = {
-			isa = PBXGroup;
-			children = (
-				B2647D8E27E2177A00ED5F12 /* UIAlertController.swift */,
-			);
-			path = Alert;
-			sourceTree = "<group>";
-		};
-		B2647D9027E2178500ED5F12 /* Color */ = {
-			isa = PBXGroup;
-			children = (
-				B2647D9127E2178500ED5F12 /* Colors.swift */,
-			);
-			path = Color;
-			sourceTree = "<group>";
-		};
-		B2647D9327E2179300ED5F12 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				B2647D9427E2179300ED5F12 /* RealmObjects */,
-				B2647D9927E2179300ED5F12 /* Values */,
-				B2647D9E27E2179300ED5F12 /* Repositories */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		B2647D9427E2179300ED5F12 /* RealmObjects */ = {
-			isa = PBXGroup;
-			children = (
-				B2647D9527E2179300ED5F12 /* RealmEntityObject.swift */,
-				B2647D9627E2179300ED5F12 /* RealmAssessor.swift */,
-				B2647D9727E2179300ED5F12 /* RealmTargetPerson.swift */,
-				B2647D9827E2179300ED5F12 /* RealmAssessment.swift */,
-			);
-			path = RealmObjects;
-			sourceTree = "<group>";
-		};
-		B2647D9927E2179300ED5F12 /* Values */ = {
-			isa = PBXGroup;
-			children = (
-				B2647D9A27E2179300ED5F12 /* Entity.swift */,
-				B2647D9B27E2179300ED5F12 /* TargetPerson.swift */,
-				B2647D9C27E2179300ED5F12 /* Assessment.swift */,
-				B2647D9D27E2179300ED5F12 /* Assessor.swift */,
-			);
-			path = Values;
-			sourceTree = "<group>";
-		};
-		B2647D9E27E2179300ED5F12 /* Repositories */ = {
-			isa = PBXGroup;
-			children = (
-				B2647D9F27E2179300ED5F12 /* AssessmentRepository.swift */,
-				B2647DA027E2179300ED5F12 /* AssessorRepository.swift */,
-				B2647DA127E2179300ED5F12 /* Repository.swift */,
-				B2647DA227E2179300ED5F12 /* TargetPersonRepository.swift */,
-			);
-			path = Repositories;
-			sourceTree = "<group>";
-		};
-		B2647DAF27E2179D00ED5F12 /* UIComponents */ = {
-			isa = PBXGroup;
-			children = (
-				B2647DB027E2179D00ED5F12 /* BottomFloatingItems.swift */,
-				B2647DB127E2179D00ED5F12 /* FunctionSelectionItemButton.swift */,
-				B2647DB227E2179D00ED5F12 /* AssessmentItemButton.swift */,
-				B2647DB327E2179D00ED5F12 /* RoundedTimerButton.swift */,
-				B2647DB427E2179D00ED5F12 /* RequestViaTwitterButton.swift */,
-				B2647DB527E2179D00ED5F12 /* TimerLabel.swift */,
-				B2647DB627E2179D00ED5F12 /* RoundedAddButton.swift */,
-				B2647DB727E2179D00ED5F12 /* InputFormContainerView.swift */,
-				B26201F527E571D700AEF4BB /* AssessmentAnswerButton.swift */,
-			);
-			path = UIComponents;
-			sourceTree = "<group>";
-		};
-		B2647DC027E217A400ED5F12 /* Utilities */ = {
-			isa = PBXGroup;
-			children = (
-				B2647DC127E217A400ED5F12 /* UIKit */,
-				B2647DC327E217A400ED5F12 /* Dispatch */,
-				B2647DC527E217A400ED5F12 /* Formatter */,
-				B2647DC927E217A400ED5F12 /* InputMode.swift */,
-				B2647DCA27E217A400ED5F12 /* QuartzCore */,
-				B2647DCC27E217A400ED5F12 /* Realm */,
-			);
-			path = Utilities;
-			sourceTree = "<group>";
-		};
-		B2647DC127E217A400ED5F12 /* UIKit */ = {
-			isa = PBXGroup;
-			children = (
-				B2647DC227E217A400ED5F12 /* UITableView+Extensions.swift */,
-			);
-			path = UIKit;
-			sourceTree = "<group>";
-		};
-		B2647DC327E217A400ED5F12 /* Dispatch */ = {
-			isa = PBXGroup;
-			children = (
-				B2647DC427E217A400ED5F12 /* DispatchQueue.swift */,
-			);
-			path = Dispatch;
-			sourceTree = "<group>";
-		};
-		B2647DC527E217A400ED5F12 /* Formatter */ = {
-			isa = PBXGroup;
-			children = (
-				B2647DC627E217A400ED5F12 /* AssessmentResultPasteboardFormatter.swift */,
-				B2647DC727E217A400ED5F12 /* TimerFormatter.swift */,
-				B2647DC827E217A400ED5F12 /* DateFormatter.swift */,
-			);
-			path = Formatter;
-			sourceTree = "<group>";
-		};
-		B2647DCA27E217A400ED5F12 /* QuartzCore */ = {
-			isa = PBXGroup;
-			children = (
-				B2647DCB27E217A400ED5F12 /* DisplayLinkWrapper.swift */,
-			);
-			path = QuartzCore;
-			sourceTree = "<group>";
-		};
-		B2647DCC27E217A400ED5F12 /* Realm */ = {
-			isa = PBXGroup;
-			children = (
-				B2647DCD27E217A400ED5F12 /* Realm.swift */,
-				B2647DCE27E217A400ED5F12 /* NotificationToken.swift */,
-			);
-			path = Realm;
-			sourceTree = "<group>";
-		};
-		B27B36EF2839969900030FCA /* FunctionSelection */ = {
-			isa = PBXGroup;
-			children = (
-				B27B36F02839969900030FCA /* FunctionSelection.storyboard */,
-				B27B36F12839969900030FCA /* FunctionSelectionViewController.swift */,
-			);
-			path = FunctionSelection;
-			sourceTree = "<group>";
-		};
-		B28D90EE27E3F8BD0083CFC5 /* Assessor */ = {
-			isa = PBXGroup;
-			children = (
-				B28D90EF27E3F8BD0083CFC5 /* AssessorTableViewCell.swift */,
-				B28D90F027E3F8BD0083CFC5 /* InputAssessorViewController.swift */,
-				B28D90F127E3F8BD0083CFC5 /* Assessor.storyboard */,
-				B28D90F227E3F8BD0083CFC5 /* InputAssessor.storyboard */,
-				B28D90F327E3F8BD0083CFC5 /* AssessorViewController.swift */,
-			);
-			path = Assessor;
-			sourceTree = "<group>";
-		};
-		B28D90F927E3F8D70083CFC5 /* TargetPerson */ = {
-			isa = PBXGroup;
-			children = (
-				B28D90FA27E3F8D70083CFC5 /* InputTargetPersonViewController.swift */,
-				B28D90FB27E3F8D70083CFC5 /* TargetPersonTableViewCell.swift */,
-				B28D90FC27E3F8D70083CFC5 /* TargetPersonViewController.swift */,
-				B28D90FD27E3F8D70083CFC5 /* InputTargetPerson.storyboard */,
-				B28D90FE27E3F8D70083CFC5 /* TargetPerson.storyboard */,
-			);
-			path = TargetPerson;
-			sourceTree = "<group>";
-		};
-		B2B4261427E1660500C41DD0 /* Root */ = {
-			isa = PBXGroup;
-			children = (
-				B23A9E2327E0116F00FCB91F /* Main.storyboard */,
-				B2B4261527E1665400C41DD0 /* RootNavigationController.swift */,
-			);
-			path = Root;
-			sourceTree = "<group>";
-		};
-		CE0877FFBB5B372F1AE8D2E1 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				A6F32D172EDD101DDE69E87B /* Pods-HasegawasDementiaScaleRevised.debug.xcconfig */,
-				EB863FDB070D3E8271BD6D6F /* Pods-HasegawasDementiaScaleRevised.release.xcconfig */,
-			);
-			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B23A9E1927E0116F00FCB91F /* HasegawasDementiaScaleRevised */ = {
+		AA0000000000000000000002 /* HasegawasDementiaScaleRevised */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B23A9E2E27E0117000FCB91F /* Build configuration list for PBXNativeTarget "HasegawasDementiaScaleRevised" */;
+			buildConfigurationList = AA000000000000000000000B /* Build configuration list for PBXNativeTarget "HasegawasDementiaScaleRevised" */;
 			buildPhases = (
-				B25CBB6053A394A829C6346A /* [CP] Check Pods Manifest.lock */,
-				B23A9E1627E0116F00FCB91F /* Sources */,
-				B23A9E1727E0116F00FCB91F /* Frameworks */,
-				B23A9E1827E0116F00FCB91F /* Resources */,
-				4DF68B5EDE0D78B82917F6C1 /* [CP] Embed Pods Frameworks */,
-				B2B4261327E1645300C41DD0 /* Run Script */,
+				AA0000000000000000000007 /* Sources */,
+				AA0000000000000000000008 /* Frameworks */,
+				AA0000000000000000000009 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
+			fileSystemSynchronizedGroups = (
+				AA0000000000000000000003 /* HasegawasDementiaScaleRevised */,
+			);
 			name = HasegawasDementiaScaleRevised;
+			packageProductDependencies = (
+				AA0000000000000000000011 /* RealmSwift */,
+			);
 			productName = HasegawasDementiaScaleRevised;
-			productReference = B23A9E1A27E0116F00FCB91F /* HasegawasDementiaScaleRevised.app */;
+			productReference = AA0000000000000000000006 /* HasegawasDementiaScaleRevised.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		B23A9E1227E0116F00FCB91F /* Project object */ = {
+		AA0000000000000000000001 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1330;
-				LastUpgradeCheck = 1330;
+				LastSwiftUpdateCheck = 2660;
+				LastUpgradeCheck = 2660;
 				TargetAttributes = {
-					B23A9E1927E0116F00FCB91F = {
-						CreatedOnToolsVersion = 13.3;
+					AA0000000000000000000002 = {
+						CreatedOnToolsVersion = 26.0;
 					};
 				};
 			};
-			buildConfigurationList = B23A9E1527E0116F00FCB91F /* Build configuration list for PBXProject "HasegawasDementiaScaleRevised" */;
-			compatibilityVersion = "Xcode 13.0";
-			developmentRegion = en;
+			buildConfigurationList = AA000000000000000000000A /* Build configuration list for PBXProject "HasegawasDementiaScaleRevised" */;
+			developmentRegion = ja;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
+				ja,
 				Base,
 			);
-			mainGroup = B23A9E1127E0116F00FCB91F;
-			productRefGroup = B23A9E1B27E0116F00FCB91F /* Products */;
+			mainGroup = AA0000000000000000000004;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				AA0000000000000000000010 /* XCRemoteSwiftPackageReference "realm-swift" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = AA0000000000000000000005 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B23A9E1927E0116F00FCB91F /* HasegawasDementiaScaleRevised */,
+				AA0000000000000000000002 /* HasegawasDementiaScaleRevised */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		B23A9E1827E0116F00FCB91F /* Resources */ = {
+		AA0000000000000000000009 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B23A9E2A27E0117000FCB91F /* LaunchScreen.storyboard in Resources */,
-				B28D910227E3F8D80083CFC5 /* InputTargetPerson.storyboard in Resources */,
-				B28D90F727E3F8BE0083CFC5 /* InputAssessor.storyboard in Resources */,
-				B24FBD0E27E5C25B00063F42 /* DetailAssessment.storyboard in Resources */,
-				B28D90F627E3F8BE0083CFC5 /* Assessor.storyboard in Resources */,
-				B27B36F22839969900030FCA /* FunctionSelection.storyboard in Resources */,
-				B2BFCF3927EBB87500C9F138 /* PastAssessment.storyboard in Resources */,
-				B26201F827E5744B00AEF4BB /* ImageList.storyboard in Resources */,
-				B26201F427E52DD900AEF4BB /* HDSR.json in Resources */,
-				B26201F227E528EB00AEF4BB /* Assessment.storyboard in Resources */,
-				B23A9E2727E0117000FCB91F /* Assets.xcassets in Resources */,
-				B23A9E2527E0116F00FCB91F /* Main.storyboard in Resources */,
-				B2BFCF4527EBBE3C00C9F138 /* PastAssessmentTableViewCell.xib in Resources */,
-				B28D910327E3F8D80083CFC5 /* TargetPerson.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		4DF68B5EDE0D78B82917F6C1 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-HasegawasDementiaScaleRevised/Pods-HasegawasDementiaScaleRevised-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-HasegawasDementiaScaleRevised/Pods-HasegawasDementiaScaleRevised-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HasegawasDementiaScaleRevised/Pods-HasegawasDementiaScaleRevised-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B25CBB6053A394A829C6346A /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-HasegawasDementiaScaleRevised-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B2B4261327E1645300C41DD0 /* Run Script */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "Run Script";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
-		B23A9E1627E0116F00FCB91F /* Sources */ = {
+		AA0000000000000000000007 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B2647DB827E2179D00ED5F12 /* BottomFloatingItems.swift in Sources */,
-				B2647DA327E2179300ED5F12 /* RealmEntityObject.swift in Sources */,
-				B28D90FF27E3F8D80083CFC5 /* InputTargetPersonViewController.swift in Sources */,
-				B26201F027E528DA00AEF4BB /* AssessmentViewController.swift in Sources */,
-				B2647DA427E2179300ED5F12 /* RealmAssessor.swift in Sources */,
-				B2647DBD27E2179D00ED5F12 /* TimerLabel.swift in Sources */,
-				B2647D9227E2178500ED5F12 /* Colors.swift in Sources */,
-				B24FBD1227E5C28700063F42 /* DetailAssessmentViewController.swift in Sources */,
-				B25DE13E27EF52670044615C /* AnimatedTransitioningViewController.swift in Sources */,
-				B2647DD727E217A400ED5F12 /* NotificationToken.swift in Sources */,
-				B2BFCF3B27EBB88F00C9F138 /* PastAssessmentViewController.swift in Sources */,
-				B2B898E728908522009B7FCF /* ReviewRepository.swift in Sources */,
-				B2B4261627E1665400C41DD0 /* RootNavigationController.swift in Sources */,
-				B27B36F32839969900030FCA /* FunctionSelectionViewController.swift in Sources */,
-				B2647DBE27E2179D00ED5F12 /* RoundedAddButton.swift in Sources */,
-				B2647DAE27E2179300ED5F12 /* TargetPersonRepository.swift in Sources */,
-				B2647DCF27E217A400ED5F12 /* UITableView+Extensions.swift in Sources */,
-				B2647DBB27E2179D00ED5F12 /* RoundedTimerButton.swift in Sources */,
-				B2647DBC27E2179D00ED5F12 /* RequestViaTwitterButton.swift in Sources */,
-				B2647DA627E2179300ED5F12 /* RealmAssessment.swift in Sources */,
-				B2647DAC27E2179300ED5F12 /* AssessorRepository.swift in Sources */,
-				B2647DD527E217A400ED5F12 /* DisplayLinkWrapper.swift in Sources */,
-				B28D90F427E3F8BE0083CFC5 /* AssessorTableViewCell.swift in Sources */,
-				B23A9E1E27E0116F00FCB91F /* AppDelegate.swift in Sources */,
-				B2647DA727E2179300ED5F12 /* Entity.swift in Sources */,
-				B2647DBF27E2179D00ED5F12 /* InputFormContainerView.swift in Sources */,
-				B2647DAA27E2179300ED5F12 /* Assessor.swift in Sources */,
-				B2647DA527E2179300ED5F12 /* RealmTargetPerson.swift in Sources */,
-				B2647DD027E217A400ED5F12 /* DispatchQueue.swift in Sources */,
-				B2647DB927E2179D00ED5F12 /* FunctionSelectionItemButton.swift in Sources */,
-				B28D90F527E3F8BE0083CFC5 /* InputAssessorViewController.swift in Sources */,
-				B2647DD327E217A400ED5F12 /* DateFormatter.swift in Sources */,
-				B28D910527E3FD310083CFC5 /* UIApplication.swift in Sources */,
-				B26201F627E571D700AEF4BB /* AssessmentAnswerButton.swift in Sources */,
-				B28D910027E3F8D80083CFC5 /* TargetPersonTableViewCell.swift in Sources */,
-				B2BFCF4427EBBE3C00C9F138 /* PastAssessmentTableViewCell.swift in Sources */,
-				B2647DA927E2179300ED5F12 /* Assessment.swift in Sources */,
-				B2647DD227E217A400ED5F12 /* TimerFormatter.swift in Sources */,
-				B2647DD627E217A400ED5F12 /* Realm.swift in Sources */,
-				B28D910127E3F8D80083CFC5 /* TargetPersonViewController.swift in Sources */,
-				B24FBD1427E5C57700063F42 /* DetailAssessmentTableViewCell.swift in Sources */,
-				B2647DAD27E2179300ED5F12 /* Repository.swift in Sources */,
-				B238EEC827EE837400D0E265 /* ImageListViewController.swift in Sources */,
-				B2BFCF4127EBBA7600C9F138 /* PastAssessmentViewItem.swift in Sources */,
-				B23A9E2027E0116F00FCB91F /* SceneDelegate.swift in Sources */,
-				B2647D8F27E2177A00ED5F12 /* UIAlertController.swift in Sources */,
-				B2647DBA27E2179D00ED5F12 /* AssessmentItemButton.swift in Sources */,
-				B28D90F827E3F8BE0083CFC5 /* AssessorViewController.swift in Sources */,
-				B2647DAB27E2179300ED5F12 /* AssessmentRepository.swift in Sources */,
-				B2647DD127E217A400ED5F12 /* AssessmentResultPasteboardFormatter.swift in Sources */,
-				B2647DA827E2179300ED5F12 /* TargetPerson.swift in Sources */,
-				B2647DD427E217A400ED5F12 /* InputMode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXVariantGroup section */
-		B23A9E2327E0116F00FCB91F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B23A9E2427E0116F00FCB91F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		B23A9E2827E0117000FCB91F /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B23A9E2927E0117000FCB91F /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
 /* Begin XCBuildConfiguration section */
-		B23A9E2C27E0117000FCB91F /* Debug */ = {
+		AA000000000000000000000C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -689,7 +184,8 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -703,23 +199,25 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
-		B23A9E2D27E0117000FCB91F /* Release */ = {
+		AA000000000000000000000D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -749,7 +247,8 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
@@ -757,32 +256,29 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		B23A9E2F27E0117000FCB91F /* Debug */ = {
+		AA000000000000000000000E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A6F32D172EDD101DDE69E87B /* Pods-HasegawasDementiaScaleRevised.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = DJ7VR35KC8;
+				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = HasegawasDementiaScaleRevised/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "HDS-R";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -797,22 +293,19 @@
 			};
 			name = Debug;
 		};
-		B23A9E3027E0117000FCB91F /* Release */ = {
+		AA000000000000000000000F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EB863FDB070D3E8271BD6D6F /* Pods-HasegawasDementiaScaleRevised.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = DJ7VR35KC8;
+				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = HasegawasDementiaScaleRevised/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "HDS-R";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -830,25 +323,44 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B23A9E1527E0116F00FCB91F /* Build configuration list for PBXProject "HasegawasDementiaScaleRevised" */ = {
+		AA000000000000000000000A /* Build configuration list for PBXProject "HasegawasDementiaScaleRevised" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B23A9E2C27E0117000FCB91F /* Debug */,
-				B23A9E2D27E0117000FCB91F /* Release */,
+				AA000000000000000000000C /* Debug */,
+				AA000000000000000000000D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B23A9E2E27E0117000FCB91F /* Build configuration list for PBXNativeTarget "HasegawasDementiaScaleRevised" */ = {
+		AA000000000000000000000B /* Build configuration list for PBXNativeTarget "HasegawasDementiaScaleRevised" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B23A9E2F27E0117000FCB91F /* Debug */,
-				B23A9E3027E0117000FCB91F /* Release */,
+				AA000000000000000000000E /* Debug */,
+				AA000000000000000000000F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AA0000000000000000000010 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 20.0.5;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AA0000000000000000000011 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AA0000000000000000000010 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
-	rootObject = B23A9E1227E0116F00FCB91F /* Project object */;
+	rootObject = AA0000000000000000000001 /* Project object */;
 }

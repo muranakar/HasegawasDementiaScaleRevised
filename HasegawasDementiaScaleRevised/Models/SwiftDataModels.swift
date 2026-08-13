@@ -135,6 +135,9 @@ extension Assessment {
     /// 満点（30点）
     static let fullScore = 30
 
+    /// 各項目の満点（評価順）。HDSR.json の選択肢の最高点と一致する
+    static let hdsrItemFullScore = [1, 4, 2, 3, 2, 2, 6, 5, 5]
+
     /// 各項目の得点（評価順）
     var hdsrItemResult: [Int] {
         [

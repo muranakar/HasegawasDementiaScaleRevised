@@ -45,6 +45,16 @@ final class HDSRLogicTests: XCTestCase {
         XCTAssertEqual(Assessment.fullScore, 30)
     }
 
+    func testItemFullScoresMatchJSON() {
+        let questions = HDSRQuestion.loadAll()
+        let maxScores = questions.map { $0.choices.map(\.score).max() ?? 0 }
+        XCTAssertEqual(
+            Assessment.hdsrItemFullScore, maxScores,
+            "詳細画面に出す項目ごとの満点が HDSR.json とずれている"
+        )
+        XCTAssertEqual(Assessment.hdsrItemFullScore.reduce(0, +), Assessment.fullScore)
+    }
+
     func testVisualMemoryQuestionIndexPointsToCorrectItem() {
         let questions = HDSRQuestion.loadAll()
         let index = HDSRQuestion.visualMemoryIndex

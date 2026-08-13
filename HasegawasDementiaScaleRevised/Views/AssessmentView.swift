@@ -35,7 +35,8 @@ struct AssessmentView: View {
                 ProgressView()
             }
         }
-        .navigationTitle("対象者:　\(targetPerson.name)　様")
+        // 対象者名が長いとナビゲーションバーで省略されるため、名前は画面内に置く
+        .navigationTitle("HDS-R 評価")
         .navigationBarTitleDisplayMode(.inline)
         .navigationBarBackButtonHidden(true)
         .toolbar {
@@ -58,6 +59,10 @@ struct AssessmentView: View {
                         ToolbarItem(placement: .confirmationAction) {
                             Button("完了") {
                                 completedAssessment = nil
+                                // 評価の途中や結果確認中に割り込まないよう、閉じるときに依頼する
+                                if ReviewCounter.incrementAndShouldRequestReview() {
+                                    requestReview()
+                                }
                                 dismiss()
                             }
                         }
@@ -76,9 +81,7 @@ struct AssessmentView: View {
 
     private func questionView(_ question: HDSRQuestion) -> some View {
         VStack(spacing: 0) {
-            ProgressView(value: Double(currentIndex), total: Double(questions.count))
-                .tint(Theme.main)
-                .padding(.horizontal)
+            header
 
             ScrollView {
                 VStack(alignment: .leading, spacing: 16) {
@@ -117,19 +120,14 @@ struct AssessmentView: View {
                     Divider().padding(.vertical, 8)
 
                     ForEach(question.choices) { choice in
-                        Button {
-                            select(choice)
-                        } label: {
-                            Text(choice.title)
-                                .frame(maxWidth: .infinity)
-                        }
-                        .buttonStyle(.borderedProminent)
-                        .controlSize(.large)
-                        .tint(Theme.main)
+                        choiceButton(choice)
                     }
                 }
                 .padding()
             }
+            // 設問が変わったらスクロール位置を先頭に戻す。
+            // 戻さないと、前の設問でスクロールした位置のままになり設問文が画面外になる
+            .id(currentIndex)
 
             if currentIndex >= 1 {
                 Button {
@@ -137,9 +135,57 @@ struct AssessmentView: View {
                 } label: {
                     Label("1つ前に戻る", systemImage: "chevron.left")
                 }
-                .padding(.bottom, 8)
+                .padding(.vertical, 8)
             }
         }
+    }
+
+    /// 進捗と対象者名。設問が切り替わっても位置が変わらないよう固定して表示する
+    private var header: some View {
+        VStack(alignment: .leading, spacing: 6) {
+            HStack {
+                Text("対象者:　\(targetPerson.name)　様")
+                    .font(.subheadline)
+                    .foregroundStyle(.secondary)
+                    .lineLimit(1)
+                Spacer()
+                Text("\(currentIndex + 1) / \(questions.count)")
+                    .font(.subheadline.weight(.semibold))
+                    .foregroundStyle(Theme.main)
+                    .monospacedDigit()
+            }
+            ProgressView(value: Double(currentIndex), total: Double(questions.count))
+                .tint(Theme.main)
+        }
+        .padding(.horizontal)
+        .padding(.bottom, 8)
+    }
+
+    private func choiceButton(_ choice: HDSRQuestion.Choice) -> some View {
+        Button {
+            select(choice)
+        } label: {
+            HStack(spacing: 12) {
+                // 点数を左端に固定幅で置き、選択肢が並んだときに視線が縦に流れるようにする
+                Text("\(choice.score)")
+                    .font(.title3.weight(.bold))
+                    .frame(width: 28)
+                    .monospacedDigit()
+                Text(choice.title)
+                    .font(.body)
+                    .multilineTextAlignment(.leading)
+                    .fixedSize(horizontal: false, vertical: true)
+                Spacer(minLength: 0)
+            }
+            .frame(maxWidth: .infinity, alignment: .leading)
+            .padding(.vertical, 4)
+        }
+        .buttonStyle(.borderedProminent)
+        .controlSize(.large)
+        .tint(Theme.main)
+        // 点数と選択肢名を別々に並べているため、読み上げは選択肢名だけにまとめる
+        .accessibilityLabel(choice.title)
+        .accessibilityIdentifier("choice-\(choice.score)")
     }
 
     // MARK: - 操作
@@ -169,9 +215,5 @@ struct AssessmentView: View {
         // 評価記録は失うと再入力が必要になるため、自動保存に任せず確実に書き込む
         try? modelContext.save()
         completedAssessment = assessment
-
-        if ReviewCounter.incrementAndShouldRequestReview() {
-            requestReview()
-        }
     }
 }

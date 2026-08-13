@@ -30,11 +30,15 @@ struct DetailAssessmentView: View {
 
             Section("評価項目") {
                 ForEach(Array(Assessment.hdsrItemName.enumerated()), id: \.offset) { index, itemName in
+                    let score = assessment.hdsrItemResult[index]
+                    let fullScore = Assessment.hdsrItemFullScore[index]
                     HStack {
                         Text(itemName)
                         Spacer()
-                        Text("\(assessment.hdsrItemResult[index]) 点")
-                            .foregroundStyle(.secondary)
+                        // 満点を併記して、その項目がどの程度かを一目で分かるようにする
+                        Text("\(score) / \(fullScore) 点")
+                            .monospacedDigit()
+                            .foregroundStyle(score == 0 && fullScore > 0 ? .orange : .secondary)
                     }
                 }
             }

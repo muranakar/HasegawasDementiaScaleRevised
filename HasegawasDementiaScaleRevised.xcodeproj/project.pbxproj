@@ -10,8 +10,19 @@
 		AA0000000000000000000012 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = AA0000000000000000000011 /* RealmSwift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		AA0000000000000000000028 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA0000000000000000000001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AA0000000000000000000002;
+			remoteInfo = HasegawasDementiaScaleRevised;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		AA0000000000000000000006 /* HasegawasDementiaScaleRevised.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HasegawasDementiaScaleRevised.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA0000000000000000000025 /* HasegawasDementiaScaleRevisedUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HasegawasDementiaScaleRevisedUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -33,6 +44,7 @@
 			path = HasegawasDementiaScaleRevised;
 			sourceTree = "<group>";
 		};
+		AA0000000000000000000024 /* HasegawasDementiaScaleRevisedUITests */ = {isa = PBXFileSystemSynchronizedRootGroup; path = HasegawasDementiaScaleRevisedUITests; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				AA0000000000000000000003 /* HasegawasDementiaScaleRevised */,
+				AA0000000000000000000024 /* HasegawasDementiaScaleRevisedUITests */,
 				AA0000000000000000000005 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -59,6 +72,7 @@
 			isa = PBXGroup;
 			children = (
 				AA0000000000000000000006 /* HasegawasDementiaScaleRevised.app */,
+				AA0000000000000000000025 /* HasegawasDementiaScaleRevisedUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -89,6 +103,27 @@
 			productReference = AA0000000000000000000006 /* HasegawasDementiaScaleRevised.app */;
 			productType = "com.apple.product-type.application";
 		};
+		AA0000000000000000000020 /* HasegawasDementiaScaleRevisedUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA0000000000000000000021 /* Build configuration list for PBXNativeTarget "HasegawasDementiaScaleRevisedUITests" */;
+			buildPhases = (
+				AA0000000000000000000022 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AA0000000000000000000023 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				AA0000000000000000000024 /* HasegawasDementiaScaleRevisedUITests */,
+			);
+			name = HasegawasDementiaScaleRevisedUITests;
+			packageProductDependencies = (
+			);
+			productName = HasegawasDementiaScaleRevisedUITests;
+			productReference = AA0000000000000000000025 /* HasegawasDementiaScaleRevisedUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -101,6 +136,10 @@
 				TargetAttributes = {
 					AA0000000000000000000002 = {
 						CreatedOnToolsVersion = 26.0;
+					};
+					AA0000000000000000000020 = {
+						CreatedOnToolsVersion = 26.0;
+						TestTargetID = AA0000000000000000000002;
 					};
 				};
 			};
@@ -122,6 +161,7 @@
 			projectRoot = "";
 			targets = (
 				AA0000000000000000000002 /* HasegawasDementiaScaleRevised */,
+				AA0000000000000000000020 /* HasegawasDementiaScaleRevisedUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -144,7 +184,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AA0000000000000000000022 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AA0000000000000000000023 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AA0000000000000000000002 /* HasegawasDementiaScaleRevised */;
+			targetProxy = AA0000000000000000000028 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		AA000000000000000000000C /* Debug */ = {
@@ -320,6 +375,40 @@
 			};
 			name = Release;
 		};
+		AA0000000000000000000026 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DJ7VR35KC8;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.muranaka.HasegawasDementiaScaleRevisedUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_TARGET_NAME = HasegawasDementiaScaleRevised;
+			};
+			name = Debug;
+		};
+		AA0000000000000000000027 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DJ7VR35KC8;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.muranaka.HasegawasDementiaScaleRevisedUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_TARGET_NAME = HasegawasDementiaScaleRevised;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -337,6 +426,15 @@
 			buildConfigurations = (
 				AA000000000000000000000E /* Debug */,
 				AA000000000000000000000F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA0000000000000000000021 /* Build configuration list for PBXNativeTarget "HasegawasDementiaScaleRevisedUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA0000000000000000000026 /* Debug */,
+				AA0000000000000000000027 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

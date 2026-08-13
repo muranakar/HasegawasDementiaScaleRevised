@@ -15,10 +15,22 @@ struct PastAssessmentListView: View {
     @State private var isAscending = false
     @State private var isShowingCopyCompleted = false
 
+    // targetPerson.assessments を直接参照すると、評価を追加・削除しても画面が更新されない。
+    // リレーション経由の変更は SwiftUI へ通知されないため @Query で取得する
+    @Query private var allAssessments: [Assessment]
+
+    init(targetPerson: TargetPerson) {
+        self.targetPerson = targetPerson
+        let targetPersonID = targetPerson.uuidString
+        _allAssessments = Query(
+            filter: #Predicate<Assessment> { $0.targetPerson?.uuidString == targetPersonID },
+            sort: \Assessment.createdAt
+        )
+    }
+
+    /// 並び替えは @Query では動的に変えられないため、取得後に並べ替える
     private var assessments: [Assessment] {
-        targetPerson.assessments.sorted {
-            isAscending ? $0.createdAt < $1.createdAt : $0.createdAt > $1.createdAt
-        }
+        isAscending ? allAssessments : allAssessments.reversed()
     }
 
     var body: some View {

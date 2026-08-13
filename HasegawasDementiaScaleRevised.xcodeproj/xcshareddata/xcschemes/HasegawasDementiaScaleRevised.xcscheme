@@ -34,6 +34,16 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
+               BlueprintIdentifier = "AA0000000000000000000030"
+               BuildableName = "HasegawasDementiaScaleRevisedTests.xctest"
+               BlueprintName = "HasegawasDementiaScaleRevisedTests"
+               ReferencedContainer = "container:HasegawasDementiaScaleRevised.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
                BlueprintIdentifier = "AA0000000000000000000020"
                BuildableName = "HasegawasDementiaScaleRevisedUITests.xctest"
                BlueprintName = "HasegawasDementiaScaleRevisedUITests"

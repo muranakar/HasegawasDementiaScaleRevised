@@ -25,6 +25,9 @@ final class AssessmentFlowUITests: XCTestCase {
         "１０個以上：５点"
     ]
 
+    /// 前に実行したテストのデータが端末に残るため、名前を毎回変えてテスト同士を独立させる
+    private lazy var runID = String(UUID().uuidString.prefix(6))
+
     override func setUpWithError() throws {
         continueAfterFailure = false
         app = XCUIApplication()
@@ -33,8 +36,8 @@ final class AssessmentFlowUITests: XCTestCase {
 
     /// 評価者登録 → 対象者登録 → HDS-R評価 → 結果確認 → 履歴確認
     func testAssessmentFlowSavesFullScore() throws {
-        let assessorName = "テスト評価者"
-        let targetPersonName = "テスト対象者"
+        let assessorName = "評価者\(runID)"
+        let targetPersonName = "対象者\(runID)"
 
         addAssessor(named: assessorName)
         tap(app.buttons[assessorName], "評価者の行")
@@ -73,8 +76,8 @@ final class AssessmentFlowUITests: XCTestCase {
 
     /// 評価を中止した場合は保存されない
     func testCancelledAssessmentIsNotSaved() throws {
-        let assessorName = "中止テスト評価者"
-        let targetPersonName = "中止テスト対象者"
+        let assessorName = "中止評価者\(runID)"
+        let targetPersonName = "中止対象者\(runID)"
 
         addAssessor(named: assessorName)
         tap(app.buttons[assessorName], "評価者の行")

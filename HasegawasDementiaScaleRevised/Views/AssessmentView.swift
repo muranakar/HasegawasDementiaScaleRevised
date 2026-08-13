@@ -166,6 +166,8 @@ struct AssessmentView: View {
         let assessment = Assessment(results: scores)
         modelContext.insert(assessment)
         assessment.targetPerson = targetPerson
+        // 評価記録は失うと再入力が必要になるため、自動保存に任せず確実に書き込む
+        try? modelContext.save()
         completedAssessment = assessment
 
         if ReviewCounter.incrementAndShouldRequestReview() {

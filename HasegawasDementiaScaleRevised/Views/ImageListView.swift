@@ -9,9 +9,15 @@ import SwiftUI
 
 struct ImageListView: View {
     @Environment(\.dismiss) private var dismiss
-    @State private var selectedImageName: String?
+    @State private var zoomedImage: ZoomedImage?
 
     private let imageNames = ["Hair", "Coin", "Clock", "Pen", "Key"]
+
+    /// 拡大表示する物品。`sheet(item:)` に渡すため Identifiable にしている
+    private struct ZoomedImage: Identifiable {
+        let id = UUID()
+        let name: String
+    }
 
     private let columns = [
         GridItem(.adaptive(minimum: 140), spacing: 16)
@@ -23,7 +29,7 @@ struct ImageListView: View {
                 LazyVGrid(columns: columns, spacing: 16) {
                     ForEach(imageNames, id: \.self) { name in
                         Button {
-                            selectedImageName = name
+                            zoomedImage = ZoomedImage(name: name)
                         } label: {
                             Image(name)
                                 .resizable()
@@ -45,8 +51,8 @@ struct ImageListView: View {
                     Button("閉じる") { dismiss() }
                 }
             }
-            .sheet(item: $selectedImageName) { name in
-                ZoomedImageView(imageName: name)
+            .sheet(item: $zoomedImage) { image in
+                ZoomedImageView(imageName: image.name)
             }
         }
     }
@@ -73,10 +79,4 @@ private struct ZoomedImageView: View {
                 }
         }
     }
-}
-
-// MARK: -
-/// `sheet(item:)` に String をそのまま渡せるようにする
-extension String: @retroactive Identifiable {
-    public var id: String { self }
 }

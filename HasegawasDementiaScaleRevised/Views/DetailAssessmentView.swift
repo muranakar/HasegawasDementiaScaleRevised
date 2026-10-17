@@ -53,6 +53,14 @@ struct DetailAssessmentView: View {
         }
         .navigationTitle("評価結果")
         .navigationBarTitleDisplayMode(.inline)
+        #if DEBUG
+        .task {
+            if ScreenshotMode.showsCopyCompleted {
+                try? await Task.sleep(for: .seconds(1))
+                isShowingCopyCompleted = true
+            }
+        }
+        #endif
         .alert("コピーしました", isPresented: $isShowingCopyCompleted) {
             Button("OK") {}
         } message: {

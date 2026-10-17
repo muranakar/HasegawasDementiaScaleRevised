@@ -47,6 +47,14 @@ struct AssessmentView: View {
         .task {
             if questions.isEmpty {
                 questions = HDSRQuestion.loadAll()
+                #if DEBUG
+                if let start = ScreenshotMode.assessmentStartIndex {
+                    // 撮影用の見本の回答（それまでの設問は架空の点数で回答済みにする）
+                    scores = Array([1, 3, 2, 3, 2, 2, 4, 4, 3].prefix(start))
+                    currentIndex = start
+                    isShowingImageList = ScreenshotMode.showsImageList
+                }
+                #endif
             }
         }
         .sheet(isPresented: $isShowingImageList) {

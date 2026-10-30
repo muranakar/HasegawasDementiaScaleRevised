@@ -11,7 +11,7 @@ import StoreKit
 enum AppLinks {
     static let appStoreURL = URL(string: "https://apps.apple.com/jp/app/hds-r/id1616574755")!
     static let reviewURL = URL(string: "https://apps.apple.com/app/id1616574755?action=write-review")!
-    static let developerSiteURL = URL(string: "https://sites.google.com/view/muranakar")!
+    static let developerSiteURL = URL(string: "https://irodori-labo.com/")!
 
     // swiftlint:disable:next line_length
     private static let shareMessage = "認知機能検査のHDS-Rを評価することが可能！\n #ADL #長谷川式 #認知機能 #病院 #クリニック #在宅 #医師 #理学療法士 #作業療法士 #言語聴覚士 #介護 #評価 #認知　#認知評価   \n\(appStoreURL.absoluteString)"
